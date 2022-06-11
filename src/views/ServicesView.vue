@@ -6,44 +6,44 @@
       <ul>
         <li>
           <div class="timeline-content">
-            <h3>регулярная уборка квартир</h3>
+            <h3>Регулярная уборка квартир</h3>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero fugit vitae aperiam consequatur molestias sequi officia, eos at blanditiis asperiores provident totam quia, eum minus cum quo fuga ea facilis atque sit expedita maxime obcaecati vel ducimus. Voluptate, dolor enim illo similique iusto blanditiis suscipit laudantium minus, aliquid itaque perferendis.
           </div>
         </li>
          <li>
           <div class="timeline-content">
-            <h3>уборка после ремонта</h3>
+            <h3>Уборка после ремонта</h3>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero fugit vitae aperiam consequatur molestias sequi officia, eos at blanditiis asperiores provident totam quia, eum minus cum quo fuga ea facilis atque sit expedita maxime obcaecati vel ducimus. Voluptate, dolor enim illo similique iusto blanditiis suscipit laudantium minus, aliquid itaque perferendis.
           </div>
         </li>
          <li>
           <div class="timeline-content">
-            <h3>генеральная уборка от а до я</h3>
+            <h3>Генеральная уборка от а до я</h3>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero fugit vitae aperiam consequatur molestias sequi officia, eos at blanditiis asperiores provident totam quia, eum minus cum quo fuga ea facilis atque sit expedita maxime obcaecati vel ducimus. Voluptate, dolor enim illo similique iusto blanditiis suscipit laudantium minus, aliquid itaque perferendis.
           </div>
         </li>
          <li>
           <div class="timeline-content">
-            <h3>уборка домов и коттеджей</h3>
+            <h3>Уборка домов и коттеджей</h3>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero fugit vitae aperiam consequatur molestias sequi officia, eos at blanditiis asperiores provident totam quia, eum minus cum quo fuga ea facilis atque sit expedita maxime obcaecati vel ducimus. Voluptate, dolor enim illo similique iusto blanditiis suscipit laudantium minus, aliquid itaque perferendis.
           </div>
         </li>
          <li>
           <div class="timeline-content">
-            <h3>чистка матрасов от клещей</h3>
+            <h3>Чистка матрасов от клещей</h3>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero fugit vitae aperiam consequatur molestias sequi officia, eos at blanditiis asperiores provident totam quia, eum minus cum quo fuga ea facilis atque sit expedita maxime obcaecati vel ducimus. Voluptate, dolor enim illo similique iusto blanditiis suscipit laudantium minus, aliquid itaque perferendis.
           </div>
         </li>
          <li>
           <div class="timeline-content">
-            <h3>профессиональная уборка офисов</h3>
+            <h3>Профессиональная уборка офисов</h3>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero fugit vitae aperiam consequatur molestias sequi officia, eos at blanditiis asperiores provident totam quia, eum minus cum quo fuga ea facilis atque sit expedita maxime obcaecati vel ducimus. Voluptate, dolor enim illo similique iusto blanditiis suscipit laudantium minus, aliquid itaque perferendis.
           </div>
         </li>
       </ul>
     </div>
     </div>
-    <h2 class="cards__title">тарифы:</h2>
+    <h2 class="cards__title">Тарифы:</h2>
  <div class="cards__wrap">
   <v-card
     class="mx-auto my-12"
@@ -57,7 +57,7 @@
       ></v-progress-linear>
     </template>
 
-    <v-card-title>одноразовый тариф </v-card-title>
+    <v-card-title>Одноразовый тариф </v-card-title>
 
     <v-card-text>
 
@@ -85,7 +85,7 @@
       ></v-progress-linear>
     </template>
 
-    <v-card-title>одноразовый тариф</v-card-title>
+    <v-card-title>Одноразовый тариф</v-card-title>
 
     <v-card-text>
 
@@ -113,7 +113,7 @@
       ></v-progress-linear>
     </template>
 
-    <v-card-title>одноразовый тариф</v-card-title>
+    <v-card-title>Одноразовый тариф</v-card-title>
 
     <v-card-text>
 
@@ -139,7 +139,7 @@
       ></v-progress-linear>
     </template>
 
-    <v-card-title> Регулярные тарифы без инструктора:
+    <v-card-title> Регулярные тарифы без инструктора
 </v-card-title>
 
     <v-card-text>
@@ -166,7 +166,7 @@
       ></v-progress-linear>
     </template>
 
-    <v-card-title>Регулярные тарифы без инструктора:
+    <v-card-title>Регулярные тарифы без инструктора
 </v-card-title>
 
     <v-card-text>
@@ -193,7 +193,7 @@
       ></v-progress-linear>
     </template>
 
-    <v-card-title >Регулярные тарифы  без инструктора:</v-card-title>
+    <v-card-title >Регулярные тарифы  без инструктора</v-card-title>
 
     <v-card-text>
 
@@ -215,6 +215,10 @@
 </template>
 
 <style scoped lang="css">
+
+    .service__title{
+      margin-top: 30px;
+    }
 .cards__title{
   text-align: center;
   font-size: 45px;
@@ -245,7 +249,6 @@
   align-items: center;
   justify-content: center;
   background-color: white;
-  box-shadow: 0 5px 0 0   black;
 }
 .timeline{
   width: 80%;

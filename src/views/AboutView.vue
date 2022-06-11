@@ -1,26 +1,34 @@
 <template>
-  <div class="about">
-
-    <img class="about__img" src="../assets/image1.png">
-     <p  class="about__description">
-      Healthy Home - Уникальная услуга для здоровья по очищению воздуха Вашего
-      дома Впервые в Узбекистане - американская очистительная система Rainbow
-    </p >
-    <p class="about__description">Система, при помощи которой возможно идеальное очищение воздуха и любых всевозможных поверхностей от грязи, пыли, песка, пылевых клещей, вирусов, и бактерий, которая не только прекрасно очищает ваш дом, но и улучшает общее состояние вашего здоровья.
-Благодаря Rainbow вы можете забыть об аллергии на пыль, раздражении слизистой и спать спокойно.
-</p>
-  </div>
+  <v-carousel>
+    <v-carousel-item
+      v-for="(item, i) in items"
+      :key="i"
+      :src="item.src"
+      style="
+        width: 100%;
+        height: 100vh;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+      "
+      reverse-transition="fade-transition"
+      transition="fade-transition"
+    ></v-carousel-item>
+  </v-carousel>
 </template>
-<style scoped lang="css">
-.about__img{
-  width: 100%;
-  height: auto;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-.about__description{
-  font-size: 16px;
-  font-weight: 500;
-}
-</style>
+
+<script>
+export default {
+  data() {
+    return {
+      items: [
+        { src: require("@/assets/slidde1.jpg") },
+        { src: require("@/assets/slide2.jpg") },
+        { src: require("@/assets/slide1.jpg") },
+        { src: require("@/assets/slide3.jpg") },
+      ],
+    };
+  },
+};
+</script>
+<style scoped lang="css"></style>

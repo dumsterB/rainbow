@@ -1,73 +1,148 @@
 <template>
   <div class="functionRs">
-    <h2>Функции rainbow</h2>
-     <div class="func-rainbow">
-       <img class="func__img" src="../assets/image2.png" alt="rainbow photo">
-       <p>В системе Rainbow используется водяной фильтр и сепаратор;  Пыль не только оседает на мебели, вещах и на полу, но также витает в воздухе.  Система улавливает все частицы пыли, бактерии и факторы , вызывающие или провоцирующие аллергию, возвращая в Ваш дом только естественно чистый, профильтрованный водой воздух. Для пыли, которая не смачивается водой, используются фильтры HEPA . Благодаря тройной системе очистки, Rainbow способен удалять частицы размером с молекулу.
-</p>
-     </div>
-    <section class="product">
-      <div class="container product__container">
-        <img src="../assets/cover.jpg">
-        <div class="product__content">
-          <p class="product__description">
-           Rainbow Systems позволяет проводить глубинную чистку, избавляя от грязи и пыли из глубины таких изделий как: ковры, матрасы, мягкая мебель
-
-          </p>
+    <h2 class="function__title">
+      Очистите свой дом естественным образом с помощью Power of Water®
+    </h2>
+    <div class="func-rainbow">
+      <div class="wpb_wrapper">
+        <div class="spacer" style="height: 40px"></div>
+        <div
+          class="iconbox wpb_content_element iconbox-style-2 icon-color-greyscale color-dark clearfix"
+        >
+          <div class="iconbox-icon">
+            <img
+              src="https://rainbowsystem.com/wp-content/uploads/2017/05/no-vacuum-bags.png"
+              class="iconimg"
+            >
+          </div>
+          <div class="iconbox-content">
+            <h3>NO Vacuum Bags</h3>
+            <p></p>
+          </div>
+        </div>
+        <div
+          class="iconbox wpb_content_element iconbox-style-2 icon-color-greyscale color-dark clearfix"
+        >
+          <div class="iconbox-icon">
+            <img
+              src="https://rainbowsystem.com/wp-content/uploads/2017/05/water-based-cleaning.png"
+              class="iconimg"
+            >
+          </div>
+          <div class="iconbox-content">
+            <h3>Water-Based Filtration</h3>
+            <p></p>
+          </div>
+        </div>
+        <div
+          class="iconbox wpb_content_element iconbox-style-2 icon-color-greyscale color-dark clearfix"
+        >
+          <div class="iconbox-icon">
+            <img
+              src="https://rainbowsystem.com/wp-content/uploads/2017/05/eco-friendly.png"
+              class="iconimg"
+            >
+          </div>
+          <div class="iconbox-content">
+            <h3>Eco-friendly</h3>
+            <p></p>
+          </div>
         </div>
       </div>
-    </section>
-     <section class="product">
-      <div class="container product__container">
-        <img src="../assets/duxi.jpg">
-        <div class="product__content">
-          <p class="product__description">
-          Для того чтобы придать воздуху в квартире аромат, в контейнер с водой можно добавлять несколько капель ароматизатора. Или же применить увлажнитель Rainbow Rain Mate. Вы можете использовать ароматы цитруса, эвкалипта, фиалки, ванили, яблока и другие.
+      <img
+        src="https://rainbowsystem.com/wp-content/uploads/2019/10/rainbow-cleaning-system-srx.jpg"
+        class="attachment-full"
+        alt="Rainbow SRX"
+        loading="lazy"
+        title="rainbow-cleaning-system-srx"
+        srcset="
+          https://rainbowsystem.com/wp-content/uploads/2019/10/rainbow-cleaning-system-srx.jpg         378w,
+          https://rainbowsystem.com/wp-content/uploads/2019/10/rainbow-cleaning-system-srx-228x300.jpg 228w
+        "
+        sizes="(max-width: 378px) 100vw, 378px"
+        width="378"
+        height="497"
+      >
 
-
-          </p>
+      <div class="wpb_wrapper">
+        <div class="spacer" style="height: 40px"></div>
+        <div
+          class="iconbox wpb_content_element iconbox-style-2 icon-color-greyscale color-dark clearfix"
+        >
+          <div class="iconbox-icon">
+          <img
+              src="https://rainbowsystem.com/wp-content/uploads/2017/05/cleaner-air.png"
+              class="iconimg"
+            >
+          </div>
+          <div class="iconbox-content">
+            <h3>Certified Air Cleaner</h3>
+            <p></p>
+          </div>
+        </div>
+        <div
+          class="iconbox wpb_content_element iconbox-style-2 icon-color-greyscale color-dark clearfix"
+        >
+          <div class="iconbox-icon">
+            <img
+              src="https://rainbowsystem.com/wp-content/uploads/2017/05/odor-elimination.png"
+              class="iconimg"
+            >
+          </div>
+          <div class="iconbox-content">
+            <h3>Odor Elimination</h3>
+            <p></p>
+          </div>
+        </div>
+        <div
+          class="iconbox wpb_content_element iconbox-style-2 icon-color-greyscale color-dark clearfix"
+        >
+          <div class="iconbox-icon">
+            <img
+              src="https://rainbowsystem.com/wp-content/uploads/2017/05/allergen-reduction.png"
+              class="iconimg"
+            >
+          </div>
+          <div class="iconbox-content">
+            <h3>Allergen Reduction</h3>
+            <p></p>
+          </div>
         </div>
       </div>
-    </section>
-     <section class="product">
-      <div class="container product__container">
-        <img src="../assets/zhivye-kartiny-1.jpg">
-        <div class="product__content">
-          <p class="product__description">
-          С помощью системы Rainbow также можно очистить и увлажнить растения в вашем доме. Для очищения комнатных цветов необходимо использовать насадку, предназначенную для сбора пыли с хрупких поверхностей. Щетка не повреждает растения, а компрессор-пульверизатор позволяет одновременно с чисткой увлажнить листья. Эту же насадку можно применять для очищения лежанок домашних животных: она удалит грязь и шерсть эффективнее, чем обычная щетка.
-
-          </p>
-        </div>
-      </div>
-    </section>
-     <section class="product">
-      <div class="container product__container">
-        <img src="../assets/plato.webp">
-        <div class="product__content">
-          <p class="product__description">
-          Чистка одежды с Rainbow удалит грязь из глубины изделий и возвратит им первозданный цвет. Rainbow бережно очищает любые ткани, не повреждая их.
-
-
-          </p>
-        </div>
-      </div>
-    </section>
-     <section class="product">
-      <div class="container product__container">
-        <img src="../assets/clec.jpg">
-        <div class="product__content">
-          <p class="product__description">
-          Очистительная система избавляет ваши спальные зоны от опасных пылевых клещей. Пылевые клещи нередко называют спальными,
-
-          </p>
-        </div>
-      </div>
+    </div>
+    <section>
+      <h2>Пылесос Rainbow против аллергии</h2>
+      <p>
+        Очистительная система Rainbow – мощное оружие в борьбе с аллергией. В
+        пылесосах Rainbow используется несколько уникальных технологических
+        решений, получивших патенты международного класса. Независимые
+        иностранные организации ASL (Allergy Standards Limited) и AAFA (Asthma
+        and allergy Foundation of America), специализирующиеся на борьбе с
+        аллергией, рекомендуют Rainbow людям, страдающим от астмы и аллергии на
+        пыль. Эффективность фильтрационной системы подтверждена рядом
+        сертификатов от этих и других организаций.
+      </p>
+      <hr>
+      <p>Система Rainbow – это не только пылесос, это универсальное устройство для уборки
+                                        жилых и офисных помещений, выполняющее множество функций: высококачественную
+                                        влажную и сухую уборку, в том числе в труднодоступных местах, очистку,
+                                        увлажнение и ароматизацию воздуха.</p>
     </section>
   </div>
 </template>
 <style scoped lang="css">
-
-.func__img{
+.function__title{
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.func-rainbow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.func__img {
   width: 100%;
   height: 60vh;
   background-repeat: no-repeat;
@@ -75,39 +150,4 @@
   background-position: center center;
   height: auto;
 }
-.product {
-  padding: 60px 0;
-}
-
-.product:nth-child(odd) .product__container {
-  flex-direction: row-reverse;
-}
-
-.product__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-
-}
-
-.product__content {
-
-}
-
-.product__title {
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 1;
-  margin-bottom: 20px;
-}
-
-.product__description {
-  line-height: 150%;
-  margin-bottom: 50px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-}
- </style>
+</style>

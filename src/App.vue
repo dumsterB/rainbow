@@ -21,8 +21,7 @@
         style="color: #00838f"
         @click="drawer = !drawer"
       ></v-app-bar-nav-icon>
-
-      <v-toolbar-title>Health home</v-toolbar-title>
+      <v-toolbar-title>  Health home </v-toolbar-title>
 
       <v-spacer></v-spacer>
       <div>
