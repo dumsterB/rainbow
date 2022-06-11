@@ -2,6 +2,8 @@
   "headerDefault": {
     "aboutUs": "О нас",
     "services": "Услуги",
-    "function": "Функции RS"
+    "function": "Функции RS",
+    "delivery":"Доставка",
+    "quality":"Качество"
   }
 }

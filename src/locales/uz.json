@@ -2,6 +2,8 @@
   "headerDefault": {
     "aboutUs": "About us",
     "services": "Services",
-    "function": "Function RS"
+    "function": "Function RS",
+    "delivery":"Delivery",
+    "quality":"Quality"
   }
 }
