@@ -32,6 +32,15 @@
         <v-btn text class="links" v-scroll-to="'#services'">
           {{ $t("headerDefault.services") }}
         </v-btn>
+        <v-btn text class="links" v-scroll-to="'#function'">
+          {{ $t("headerDefault.function") }}
+        </v-btn>
+        <v-btn text class="links" v-scroll-to="'#delivery'">
+          {{ $t("headerDefault.delivery") }}
+        </v-btn>
+        <v-btn text class="links" v-scroll-to="">
+          {{ $t("headerDefault.quality") }}
+        </v-btn>
       </div>
 
       <div class="ml-2">
@@ -61,6 +70,9 @@
       <!-- Provides the application the proper gutter -->
       <v-container fluid>
         <AboutView id="aboutUs"></AboutView>
+        <ServicesView id="services"></ServicesView>
+        <FunctionView id="function"></FunctionView>
+        <DeliveryView id="delivery"></DeliveryView>
       </v-container>
     </v-main>
 
@@ -71,11 +83,18 @@
 <script>
 import CountryFlag from "vue-country-flag";
 import AboutView from "./views/AboutView";
+import ServicesView from "./views/ServicesView";
+import FunctionView from "./views/FunctionView";
+import DeliveryView from "./views/DeliveryView";
+
 export default {
   name: "App",
   components: {
     CountryFlag,
     AboutView,
+    ServicesView,
+    FunctionView,
+    DeliveryView,
   },
 
   data() {
