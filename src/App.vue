@@ -69,9 +69,10 @@
       <!-- Provides the application the proper gutter -->
       <v-container fluid>
         <AboutView id="aboutUs"></AboutView>
-        <ServicesView id="services"></ServicesView>
-        <FunctionView id="function"></FunctionView>
-        <DeliveryView id="delivery"></DeliveryView>
+        <RainbowAtricleView></RainbowAtricleView>
+
+
+
       </v-container>
     </v-main>
 
@@ -82,18 +83,15 @@
 <script>
 import CountryFlag from "vue-country-flag";
 import AboutView from "./views/AboutView";
-import ServicesView from "./views/ServicesView";
-import FunctionView from "./views/FunctionView";
-import DeliveryView from "./views/DeliveryView";
+import RainbowAtricleView from './views/RainbowAtricleView'
 
 export default {
   name: "App",
   components: {
     CountryFlag,
     AboutView,
-    ServicesView,
-    FunctionView,
-    DeliveryView,
+  RainbowAtricleView
+
   },
 
   data() {
