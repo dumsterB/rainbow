@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app app>
     <v-navigation-drawer app v-model="drawer" temporary>
       <v-card class="mx-auto" max-width="300" tile elevation="0">
         <v-list dense>
@@ -40,6 +40,9 @@
         <v-btn text class="links" v-scroll-to="">
           {{ $t("headerDefault.quality") }}
         </v-btn>
+        <v-btn class="primary" depressed v-scroll-to="'#order_call'">
+          <a style="text-decoration: none; color: white" href=""> Заказать звонок</a>
+        </v-btn>
       </div>
 
       <div class="ml-2">
@@ -66,14 +69,11 @@
 
     <!-- Sizes your content based upon application components -->
     <v-main>
-      <!-- Provides the application the proper gutter -->
-      <v-container fluid>
+      <div>
         <AboutView id="aboutUs"></AboutView>
         <RainbowAtricleView></RainbowAtricleView>
-
-
-
-      </v-container>
+        <OrderCall id="order_call"></OrderCall>
+      </div>
     </v-main>
 
     <v-footer app> </v-footer>
@@ -84,13 +84,15 @@
 import CountryFlag from "vue-country-flag";
 import AboutView from "./views/AboutView";
 import RainbowAtricleView from './views/RainbowAtricleView'
+import OrderCall from "@/views/OrderCall";
 
 export default {
   name: "App",
   components: {
     CountryFlag,
     AboutView,
-  RainbowAtricleView
+    RainbowAtricleView,
+    OrderCall
 
   },
 
