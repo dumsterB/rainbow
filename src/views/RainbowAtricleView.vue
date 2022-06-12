@@ -1,12 +1,89 @@
 <template>
   <div class="rainbow__containter">
-    <h2>Почему стоит выбрать именно Rainbow?</h2>
-    <p>
-      <span> Пылесос с аквафильтром</span> незаменим для тех, кто стремится
-      достичь идеальной чистоты в своем доме. Почему среди всех подобных
-      устройств стоит выбрать именно Rainbow?
-    </p>
+    <h2 class="rainbow__title">Возможности Rainbow</h2>
+      <div class="rainbow__wrap">
+        <v-card  class="mx-auto  rainbow__card"
+    min-width="320"
+    outlined >
+
+         <v-card-text>
+        Чистка игрушек
+         </v-card-text>
+          <v-card-text>
+         Чистка одежды
+         </v-card-text>
+          <v-card-text>
+        Чистка и увлажнения цветов
+         </v-card-text>
+        </v-card>
+
+        <v-card class="mx-auto rainbow__card"
+    min-width="320"
+    outlined>
+         <v-card-text>
+         Влажная уборка
+         </v-card-text>
+          <v-card-text>
+        Сухая уборка
+         </v-card-text>
+          <v-card-text>
+        Уборка труднодоступных мест
+         </v-card-text>
+        </v-card>
+
+        <v-card class="mx-auto rainbow__card"
+    min-width="320"
+    outlined>
+         <v-card-text>
+        Глубокая чистка мягкой мебели
+         </v-card-text>
+          <v-card-text>
+         Поверхностная чистка для мягкой мебели
+         </v-card-text>
+         <v-card-text>
+       Надувание матрасов и шаров
+         </v-card-text>
+
+        </v-card>
+
+        <v-card class="mx-auto rainbow__card "
+    min-width="320"
+    outlined>
+         <v-card-text>
+         Мойка ковров
+         </v-card-text>
+          <v-card-text>
+        Чистка подушек
+         </v-card-text>
+          <v-card-text>
+        Ароматерапия
+         </v-card-text>
+
+
+        </v-card>
+      </div>
   </div>
 </template>
 
-<style scoped lang="css"></style>
+<style scoped lang="css">
+.rainbow__card{
+  background-color: #00838f !important;
+}
+.rainbow__title{
+
+   margin-top: 40px;
+  line-height: 48px;
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 66px;
+  text-align: center;
+  color: #455560;
+}
+.rainbow__wrap{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>

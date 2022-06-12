@@ -21,7 +21,7 @@
         style="color: #00838f"
         @click="drawer = !drawer"
       ></v-app-bar-nav-icon>
-      <v-toolbar-title>  Health home </v-toolbar-title>
+      <v-toolbar-title> Health home </v-toolbar-title>
 
       <v-spacer></v-spacer>
       <div>
@@ -41,7 +41,9 @@
           {{ $t("headerDefault.quality") }}
         </v-btn>
         <v-btn class="primary" depressed v-scroll-to="'#order_call'">
-          <a style="text-decoration: none; color: white" href=""> Заказать звонок</a>
+          <a style="text-decoration: none; color: white" href="">
+            Заказать звонок</a
+          >
         </v-btn>
       </div>
 
@@ -73,6 +75,8 @@
         <AboutView id="aboutUs"></AboutView>
         <RainbowAtricleView></RainbowAtricleView>
         <OrderCall id="order_call"></OrderCall>
+        <KertificateView></KertificateView>
+        <TatifView></TatifView>
       </div>
     </v-main>
 
@@ -83,8 +87,12 @@
 <script>
 import CountryFlag from "vue-country-flag";
 import AboutView from "./views/AboutView";
-import RainbowAtricleView from './views/RainbowAtricleView'
-import OrderCall from "@/views/OrderCall";
+import RainbowAtricleView from "./views/RainbowAtricleView";
+import OrderCall from "./views/OrderCall";
+import KertificateView from "./views/KertificateView";
+import TatifView from "./views/TatifView";
+
+
 
 export default {
   name: "App",
@@ -92,8 +100,9 @@ export default {
     CountryFlag,
     AboutView,
     RainbowAtricleView,
-    OrderCall
-
+    OrderCall,
+    KertificateView,
+    TatifView
   },
 
   data() {

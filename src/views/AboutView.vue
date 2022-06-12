@@ -9,17 +9,17 @@
         <img src="../assets/rainbow.png" alt="" />
       </div>
       <div>
-        <p class="work__description">
-          Аэродинамика: Воздух в движений Воздух в движений собирает пыль,
+          <p  class="work__span"> Аэродинамика: Воздух в движений </p>
+         <br> <p class="work__description"> Воздух в движений собирает пыль,
           мелкие частицы и тд в резервуар Rainbow с водой.
         </p>
-        <p class="work__description">
-          Гидродинамика: Вода в движений Вода в движений собирает пыль и мусор в
+           <p  class="work__span">Гидродинамика: Вода в движени</p>
+          <p class="work__description"> <br> Вода в движений собирает пыль и мусор в
           воде с помощью образующегося водного вихря. А чистый, освеженный
           воздух распостраняется по всей комнате.
         </p>
-        <p class="work__description">
-          Сочетание Аэродинамики и Гидродинамики дает Вам чистый и здоровый
+        <p class="work__span">
+          Сочетание Аэродинамики и Гидродинамики дает Вам <br> чистый и здоровый
           образ жизни.
         </p>
       </div>
@@ -39,6 +39,13 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.work__span{
+ margin:  40px 0 10px 0;
+font-size: 20px;
+line-height: 30px;
+max-width: 600px;
+color: #455560;
+}
 .about__wrap-work {
   display: flex;
   align-items: center;
@@ -46,9 +53,8 @@ export default {
   flex-wrap: wrap;
 }
 .work__description{
-  padding: 10px;
   max-width: 500px;
-  font-size: 18px;
+  font-size: 15px;
 line-height: 24px;
 font-weight: 400;
 color: #455560;
