@@ -42,7 +42,8 @@
         </v-btn>
         <v-btn class="primary" depressed v-scroll-to="'#order_call'">
           <a style="text-decoration: none; color: white" href="">
-            Заказать звонок</a
+           {{ $t("headerDefault.call") }}
+           </a
           >
         </v-btn>
       </div>

@@ -1,9 +1,35 @@
 {
   "headerDefault": {
-    "aboutUs": "About us",
-    "services": "Services",
-    "function": "Function RS",
-    "delivery":"Delivery",
-    "quality":"Quality"
+    "aboutUs": "Biz haqimizda",
+    "services": "xizmatlar",
+    "function": "rs funktsiyalari",
+    "delivery": "yetkazib berish",
+    "quality": "sifat",
+    "call":"Qo'ng'iroqni talab qiling"
+  },
+  "principWork": {
+    "title": "Ish printsipi",
+    "title__one": "Aerodinamika: harakatdagi havo",
+    "description__one": "Harakatdagi havo chang, mayda zarralar va hokazolarni Rainbow suv idishiga to'playdi.",
+    "title__two": "Gidrodinamika: harakatdagi suv",
+    "description__two": "Harakatdagi suv hosil bo'lgan suv girdobi yordamida suvdagi chang va qoldiqlarni to'playdi. Va toza, yangilangan havo xona bo'ylab taqsimlanadi. ",
+    "description__three": "Harakatdagi havo chang, mayda zarralar va hokazolarni Rainbow suv idishiga to'playdi."
+  },
+  "possibility": {
+    "title": "Kamalak Imkoniyati",
+    "pillarOne__one": "O'yinchoqlarni tozalash ",
+    "pillarOne__two": "Kiyimlarni tozalash",
+    "pillarOne__three": "Gullarni tozalash va namlash",
+    "pillarTwo__one": "Nam tozalash ",
+    "pillarTwo__two": "Quruq tozalash ",
+    "pillarTwo__three": "Kirish qiyin bo'lgan joylarni tozalash",
+
+    "pillarThree__one": "Yumshoq mebellarni chuqur tozalash ",
+    "pillarThree__two": "Yumshoq mebel uchun sirtni tozalash  ",
+    "pillarThree__three": "To'shak va sharlarni puflash",
+
+    "pillarFour__one":"Gilam yuvish",
+    "pillarFour__two":"Yostiqni tozalash ",
+    "pillarFour__three":"aromaterapiya "
   }
 }

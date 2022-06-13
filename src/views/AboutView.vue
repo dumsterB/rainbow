@@ -9,24 +9,22 @@
     ></v-carousel-item>
   </v-carousel>
     </div>
-    <h2 class="about__title">Принцип работы</h2>
+    <h2 class="about__title"> {{ $t("principWork.title") }}</h2>
     <div class="about__wrap-work">
       <div>
         <img src="../assets/rainbow.png" alt="" />
       </div>
       <div>
-          <p  class="work__span"> Аэродинамика: Воздух в движений </p>
-         <br> <p class="work__description"> Воздух в движений собирает пыль,
-          мелкие частицы и тд в резервуар Rainbow с водой.
+          <p  class="work__span">  {{ $t("principWork.title__one") }}  </p>
+         <br> <p class="work__description">
+          {{ $t("principWork.description__one") }}
         </p>
-           <p  class="work__span">Гидродинамика: Вода в движени</p>
-          <p class="work__description"> <br> Вода в движений собирает пыль и мусор в
-          воде с помощью образующегося водного вихря. А чистый, освеженный
-          воздух распостраняется по всей комнате.
+           <p  class="work__span"> {{ $t("principWork.title__two") }}</p>
+          <p class="work__description"> <br>
+           {{ $t("principWork.description__two") }}
         </p>
         <p class="work__span">
-          Сочетание Аэродинамики и Гидродинамики дает Вам <br> чистый и здоровый
-          образ жизни.
+             {{ $t("principWork.description__three") }}
         </p>
       </div>
     </div>

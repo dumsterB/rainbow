@@ -1,45 +1,45 @@
 <template>
   <div class="rainbow__containter">
-    <h2 class="rainbow__title">Возможности Rainbow</h2>
+    <h2 class="rainbow__title">{{ $t("possibility.title") }}</h2>
     <div class="rainbow__wrap">
       <v-container>
         <v-row>
           <v-col lg="3" md="3" cols="6" sm="6">
             <v-card elevation="0" class=" rainbow__card" min-width="280">
               <v-card-text class="card__text">
-                Чистка игрушек
+               {{ $t("possibility.pillarOne__one") }}
               </v-card-text>
               <v-card-text class="card__text">
-                Чистка одежды
+              {{ $t("possibility.pillarOne__two") }}
               </v-card-text>
               <v-card-text class="card__text">
-                Чистка и увлажнения цветов
+               {{ $t("possibility.pillarOne__three") }}
               </v-card-text>
             </v-card>
           </v-col>
           <v-col lg="3" md="3" cols="6" sm="6">
             <v-card elevation="0" class="rainbow__card" min-width="280">
               <v-card-text class="card__text">
-                Влажная уборка
+                {{ $t("possibility.pillarTwo__one") }}
               </v-card-text>
               <v-card-text class="card__text">
-                Сухая уборка
+               {{ $t("possibility.pillarTwo__two") }}
               </v-card-text>
               <v-card-text class="card__text">
-                Уборка труднодоступных мест
+                {{ $t("possibility.pillarTwo__three") }}
               </v-card-text>
             </v-card>
           </v-col>
           <v-col lg="3" md="3" cols="6" sm="6">
             <v-card elevation="0" class=" mx-auto rainbow__card" min-width="280">
               <v-card-text class="card__text">
-                Глубокая чистка мягкой мебели
+              {{ $t("possibility.pillarThree__one") }}
               </v-card-text>
               <v-card-text class="card__text">
-                Поверхностная чистка для мягкой мебели
+                 {{ $t("possibility.pillarThree__two") }}
               </v-card-text>
               <v-card-text class="card__text">
-                Надувание матрасов и шаров
+               {{ $t("possibility.pillarThree__three") }}
               </v-card-text>
 
             </v-card>
@@ -47,13 +47,13 @@
           <v-col lg="3" md="3" cols="6" sm="6">
             <v-card elevation="0" class=" mx-auto rainbow__card " min-width="280">
               <v-card-text class="card__text">
-                Мойка ковров
+               {{ $t("possibility.pillarFour__one") }}
               </v-card-text>
               <v-card-text class="card__text">
-                Чистка подушек
+               {{ $t("possibility.pillarFour__two") }}
               </v-card-text>
               <v-card-text class="card__text">
-                Ароматерапия
+                {{ $t("possibility.pillarFour__three") }}
               </v-card-text>
             </v-card>
           </v-col>
