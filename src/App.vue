@@ -77,6 +77,7 @@
         <OrderCall id="order_call"></OrderCall>
         <KertificateView></KertificateView>
         <TatifView></TatifView>
+        <Services></Services>
       </div>
     </v-main>
 
@@ -91,8 +92,7 @@ import RainbowAtricleView from "./views/RainbowAtricleView";
 import OrderCall from "./views/OrderCall";
 import KertificateView from "./views/KertificateView";
 import TatifView from "./views/TatifView";
-
-
+import Services from "@/views/Services";
 
 export default {
   name: "App",
@@ -102,7 +102,8 @@ export default {
     RainbowAtricleView,
     OrderCall,
     KertificateView,
-    TatifView
+    TatifView,
+    Services,
   },
 
   data() {
