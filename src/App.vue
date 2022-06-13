@@ -18,7 +18,7 @@
     <v-app-bar app style="background: white" elevation="0">
       <v-app-bar-nav-icon
         class="hidden-md-and-up"
-        style="color: #00838f"
+        style="color: #269aff"
         @click="drawer = !drawer"
       ></v-app-bar-nav-icon>
       <v-toolbar-title> Health home </v-toolbar-title>
@@ -79,6 +79,7 @@
         <KertificateView></KertificateView>
         <Services></Services>
         <Tatif></Tatif>
+        <Prices></Prices>
       </div>
     </v-main>
 
@@ -93,6 +94,7 @@ import RainbowAtricleView from "./views/RainbowAtricleView";
 import OrderCall from "./views/OrderCall";
 import Services from "@/views/Services";
 import Tatif from "./views/Tatif.vue";
+import Prices from './views/Prices'
 
 export default {
   name: "App",
@@ -102,7 +104,8 @@ export default {
     RainbowAtricleView,
     OrderCall,
     Services,
-    Tatif
+    Tatif,
+    Prices,
 },
 
   data() {

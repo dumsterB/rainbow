@@ -22,7 +22,7 @@
                           icon
                           small
                           fab
-                          style="background:#00B0FF"
+                          class="primary"
                           @click="show1 = !show1"
                       >
                         <v-icon>{{ show1 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
@@ -52,7 +52,7 @@
                           icon
                           small
                           fab
-                          style="background:#00B0FF"
+                          class="primary"
                           @click="show2 = !show2"
                       >
                         <v-icon>{{ show2 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
@@ -82,7 +82,7 @@
                           icon
                           small
                           fab
-                          style="background: #00B0FF"
+                          class="primary"
                           @click="show3 = !show3"
                       >
                         <v-icon>{{ show3 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
@@ -117,7 +117,7 @@
                           icon
                           small
                           fab
-                          style="background: #00B0FF"
+                          class="primary"
                           @click="show7 = !show7"
                       >
                         <v-icon>{{ show7 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
@@ -145,7 +145,7 @@
                           icon
                           small
                           fab
-                          style="background: #00B0FF"
+                          class="primary"
                           @click="show8 = !show8"
                       >
                         <v-icon>{{ show8 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
@@ -173,7 +173,7 @@
                           icon
                           small
                           fab
-                          style="background:#00B0FF"
+                          class="primary"
                           @click="show9 = !show9"
                       >
                         <v-icon>{{ show1 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
@@ -253,12 +253,6 @@ export default {
     font-size: 16px;
     font-weight: 500;
   }
-}
-.analyticHeader-description{
-  color: #00B0FF;
-  font-size: 23px;
-  font-weight: 500;
-  text-align: center;
 }
 .questions .mdi:before, .mdi-set{
   color: white;
