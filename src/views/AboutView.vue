@@ -1,7 +1,13 @@
 <template>
   <div class="about__container">
     <div class="about">
-      <img class="about__photo" src="../assets/rainbow.png" alt="" />
+     <v-carousel hide-delimiters>
+    <v-carousel-item
+      v-for="(item,i) in items"
+      :key="i"
+      :src="item.src"
+    ></v-carousel-item>
+  </v-carousel>
     </div>
     <h2 class="about__title">Принцип работы</h2>
     <div class="about__wrap-work">
@@ -33,6 +39,14 @@ export default {
   data() {
     return {
       show: false,
+       items: [
+          {
+            src: '../assets/bgHeader.jpeg',
+          },
+           {
+            src: '../assets/',
+          },
+        ],
     };
   },
 };

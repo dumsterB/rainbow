@@ -76,8 +76,8 @@
         <RainbowAtricleView></RainbowAtricleView>
         <OrderCall id="order_call"></OrderCall>
         <KertificateView></KertificateView>
-        <TatifView></TatifView>
         <Services></Services>
+        <Tatif></Tatif>
       </div>
     </v-main>
 
@@ -90,9 +90,8 @@ import CountryFlag from "vue-country-flag";
 import AboutView from "./views/AboutView";
 import RainbowAtricleView from "./views/RainbowAtricleView";
 import OrderCall from "./views/OrderCall";
-import KertificateView from "./views/KertificateView";
-import TatifView from "./views/TatifView";
 import Services from "@/views/Services";
+import Tatif from "./views/Tatif.vue";
 
 export default {
   name: "App",
@@ -101,10 +100,9 @@ export default {
     AboutView,
     RainbowAtricleView,
     OrderCall,
-    KertificateView,
-    TatifView,
     Services,
-  },
+    Tatif
+},
 
   data() {
     return {
