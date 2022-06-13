@@ -40,7 +40,7 @@ export default {
 
 <style lang="css" scoped>
 .work__span{
- margin:  40px 0 10px 0;
+ margin:  20px 0 5px 0;
 font-size: 20px;
 line-height: 30px;
 max-width: 600px;

@@ -18,7 +18,7 @@
       </v-card>
     </v-dialog>
     <v-container>
-      <h1 style="text-align: center; margin-top: 20px; margin-bottom: 20px;" >Заказать звонок</h1>
+      <h2 class="call__title" >Заказать звонок</h2>
       <v-row>
         <v-col cols="6">
           <v-card elevation="1" class="contactTryCard">
@@ -129,4 +129,14 @@ export default {
 </script>
 
 <style scoped>
+.call__title{
+  margin-top: 40px;
+  line-height: 48px;
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 66px;
+  text-align: center;
+  color: #455560;
+}
 </style>

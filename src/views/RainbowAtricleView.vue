@@ -3,8 +3,7 @@
     <h2 class="rainbow__title">Возможности Rainbow</h2>
       <div class="rainbow__wrap">
         <v-card  class="mx-auto  rainbow__card"
-    min-width="320"
-    outlined >
+    min-width="320" >
 
          <v-card-text>
         Чистка игрушек
@@ -18,8 +17,7 @@
         </v-card>
 
         <v-card class="mx-auto rainbow__card"
-    min-width="320"
-    outlined>
+    min-width="320">
          <v-card-text>
          Влажная уборка
          </v-card-text>
@@ -33,9 +31,9 @@
 
         <v-card class="mx-auto rainbow__card"
     min-width="320"
-    outlined>
+   >
          <v-card-text>
-        Глубокая чистка мягкой мебели
+         Глубокая чистка мягкой мебели
          </v-card-text>
           <v-card-text>
          Поверхностная чистка для мягкой мебели
@@ -48,7 +46,7 @@
 
         <v-card class="mx-auto rainbow__card "
     min-width="320"
-    outlined>
+>
          <v-card-text>
          Мойка ковров
          </v-card-text>
@@ -67,7 +65,7 @@
 
 <style scoped lang="css">
 .rainbow__card{
-  background-color: #00838f !important;
+ background: linear-gradient(to bottom, #eef2f7 0%, rgba(125, 185, 232, 0) 100%) !important;
 }
 .rainbow__title{
 
