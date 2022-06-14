@@ -1,0 +1,54 @@
+{
+  "headerDefault": {
+    "aboutUs": "about Us",
+    "services": "Services",
+    "function": "Function RS",
+    "delivery": "Delivery",
+    "quality": "Quality",
+    "call": "Request a call"
+  },
+  "principWork": {
+    "title": "Principle of operation",
+    "title__one": "Aerodynamics: Air in motion",
+    "description__one": " The air in motion collects dust, fine particles, etc. into the Rainbow water tank.",
+    "title__two": "Hydrodynamics: Water in motion",
+    "description__two": "Water in motion collects dust and debris in the water with the help of the resulting water vortex. And clean, refreshed air is distributed throughout the room.",
+    "description__three": "The combination of Aerodynamics and Hydrodynamics gives you a clean and healthy lifestyle."
+  },
+  "possibility": {
+    "title": "Rainbow features",
+    "pillarOne__one": "Сleaning toys ",
+    "pillarOne__two": "Cleaning clothes",
+    "pillarOne__three": "Сleaning toys ",
+    "pillarTwo__one": "Wet cleaning ",
+    "pillarTwo__two": "Dry cleaning ",
+    "pillarTwo__three": "Cleaning hard to reach places ",
+    "pillarThree__one": "Deep cleaning of upholstered furniture ",
+    "pillarThree__two": "Surface cleaning for upholstered furniture  ",
+    "pillarThree__three": "Inflating mattresses and balloons ",
+    "pillarFour__one": "Carpet washing",
+    "pillarFour__two": "Pillow cleaning ",
+    "pillarFour__three": "aromatherapy "
+  },
+  "callBlock": {
+    "title": "Request a call",
+    "callRegist": "Thank you for registering!",
+    "callThanks": "Our operators will contact you to confirm registration and answer your questions. Regards, Rainbow",
+    "undest": "clear",
+    "yourName": "Your name",
+    "send": "Send"
+  },
+  "services": {
+    "title": "Our services",
+    "servicesTitle__one": "Regular cleaning of apartments",
+    "servicesDescription__one": "We believe that in our difficult time you have things to do that are more important and interesting than cleaning your apartment, or in order to put things in order at home, you spend a lot of time and effort.   ",
+    "servicesTitle__two": "Cleaning after renovation   ",
+    "servicesDescription__two": "So, your long-awaited repair has come to an end. The builders call you and inform you that their work is finished and the “owner(s)” should come and take the job.   ",
+    "servicesTitle__three": "General cleaning from A to Z   ",
+    "servicesDescription__three": "General cleaning is always accompanied by long, primarily emotional preparations on the part of the owners.   ",
+    "servicesTitle__four": "Cleaning of houses and cottages",
+    "servicesDescription__four": "Any hostess or owner will confirm that even the current cleaning of the house is a rather laborious and tedious process, especially after a hard day's work.   ",
+    "servicesTitle__five": "Cleaning mattresses from ticks   ",
+    "servicesDescription__five": "So, warm days are coming and the hostesses are beginning to endure their carpets and carpets for washing and getting rid of dust. This process is very difficult   "
+  }
+}

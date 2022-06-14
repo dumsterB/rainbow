@@ -1,7 +1,7 @@
 <template>
  <div class="questions">
     <br>
-    <h2 class="section__title">Наши услуги</h2>
+    <h2 class="section__title">  {{ $t("services.title") }}</h2>
     <br>
     <div class="content">
       <div>
@@ -14,7 +14,7 @@
                   <div class="mx-auto"
                        max-width="400">
                     <v-card-actions>
-                      <p class="v-card-title mb-1">Регулярная уборка квартир</p>
+                      <p class="v-card-title mb-1"> {{ $t("services.servicesTitle__one") }}</p>
 
                       <v-spacer></v-spacer>
 
@@ -34,7 +34,7 @@
                         <v-divider></v-divider>
 
                         <v-card-text class="">
-                        Мы считаем , что в наше трудное время к Вас есть дела , более важные и интересные , чем уборка своей квартиры , или для того , чтобы навести порядок у себя дома , Вы тратите много сил и времени .
+                           {{ $t("services.servicesDescription__one") }}
                         </v-card-text>
                       </div>
                     </v-expand-transition>
@@ -44,7 +44,7 @@
                   <div class="mx-auto"
                        max-width="420">
                     <v-card-actions>
-                      <p class="v-card-title mb-1">Уборка после ремонта</p>
+                      <p class="v-card-title mb-1"> {{ $t("services.servicesTitle__two") }}</p>
 
                       <v-spacer></v-spacer>
 
@@ -64,7 +64,7 @@
                         <v-divider></v-divider>
 
                         <v-card-text >
-                          Итак , Ваш долгожданный ремонт подошёл к концу . Строители звонят вам и сообщают о том , что их работа закончена и «хозяин(йка)» должны подойти и принять работу.
+                            {{ $t("services.servicesDescription__two") }}
                         </v-card-text>
                       </div>
                     </v-expand-transition>
@@ -74,7 +74,7 @@
                   <div class="mx-auto"
                        max-width="430">
                     <v-card-actions>
-                      <p class="v-card-title mb-1" >Генеральная уборка от А до Я</p>
+                      <p class="v-card-title mb-1" >{{ $t("services.servicesTitle__three") }}</p>
 
                       <v-spacer></v-spacer>
 
@@ -94,7 +94,7 @@
                         <v-divider></v-divider>
 
                         <v-card-text >
-                          Проведение Генеральной уборки всегда сопровождается долгими , в первую очередь эмоциональными приготовлениями со стороны хозяев.
+                           {{ $t("services.servicesDescription__three") }}
                         </v-card-text>
                       </div>
                     </v-expand-transition>
@@ -109,7 +109,7 @@
                   <div class="mx-auto"
                        max-width="450">
                     <v-card-actions>
-                      <p class="v-card-title mb-1">Уборка домов и коттеджей</p>
+                      <p class="v-card-title mb-1">{{ $t("services.servicesTitle__four") }}</p>
 
                       <v-spacer></v-spacer>
 
@@ -128,7 +128,7 @@
                       <div v-show="show7">
                         <v-divider></v-divider>
 
-                        <p class=" mb-1" >Любая хозяйка или хозяин подтвердит , что даже текущая уборка дома является достаточно трудоемким и утомительным процессом , особенно после напряженного рабочего дня .</p>
+                        <p class=" mb-1" >{{ $t("services.servicesDescription__four") }}</p>
                       </div>
                     </v-expand-transition>
                   </div>
@@ -137,7 +137,7 @@
                   <div class="mx-auto"
                        max-width="400">
                     <v-card-actions>
-                      <p class="v-card-title mb-1" >Чистка матрасов от клещей</p>
+                      <p class="v-card-title mb-1" >{{ $t("services.servicesTitle__five") }}</p>
 
                       <v-spacer></v-spacer>
 
@@ -156,7 +156,7 @@
                       <div v-show="show8">
                         <v-divider></v-divider>
 
-                        <p class=" mb-1" >Итак , наступают тёплые дни и хозяйки повально начинают выносить свои ковры и ковровые дорожки для мытья и избавления от пыли .Этот процесс происходит очень затруднительно</p>
+                        <p class=" mb-1" >{{ $t("services.servicesDescription__five") }}</p>
                       </div>
                     </v-expand-transition>
                   </div>
@@ -165,7 +165,7 @@
                   <div class="mx-auto"
                        max-width="400">
                     <v-card-actions>
-                      <p class="v-card-title mb-1" >Профессиональная уборка офисов</p>
+                      <p class="v-card-title mb-1" >{{ $t("services.servicesTitle__six") }}</p>
 
                       <v-spacer></v-spacer>
 
@@ -184,7 +184,7 @@
                       <div v-show="show9">
                         <v-divider></v-divider>
 
-                        <p class=" mb-1" >Хотите , чтобы ваш офис всегда был чистым ? Совершенно нет необходимости раздувать штат и оплачивать работу технического персонала .</p>
+                        <p class=" mb-1" >{{ $t("services.servicesDescription__six") }}</p>
                       </div>
                     </v-expand-transition>
                   </div>

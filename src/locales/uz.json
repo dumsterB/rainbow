@@ -5,7 +5,7 @@
     "function": "rs funktsiyalari",
     "delivery": "yetkazib berish",
     "quality": "sifat",
-    "call":"Qo'ng'iroqni talab qiling"
+    "call": "Qo'ng'iroqni talab qiling"
   },
   "principWork": {
     "title": "Ish printsipi",
@@ -23,13 +23,34 @@
     "pillarTwo__one": "Nam tozalash ",
     "pillarTwo__two": "Quruq tozalash ",
     "pillarTwo__three": "Kirish qiyin bo'lgan joylarni tozalash",
-
     "pillarThree__one": "Yumshoq mebellarni chuqur tozalash ",
     "pillarThree__two": "Yumshoq mebel uchun sirtni tozalash  ",
     "pillarThree__three": "To'shak va sharlarni puflash",
-
-    "pillarFour__one":"Gilam yuvish",
-    "pillarFour__two":"Yostiqni tozalash ",
-    "pillarFour__three":"aromaterapiya "
+    "pillarFour__one": "Gilam yuvish",
+    "pillarFour__two": "Yostiqni tozalash ",
+    "pillarFour__three": "aromaterapiya "
+  },
+  "callBlock": {
+    "title": "Qo'ng'iroqni talab qiling",
+    "callRegist": " Ro'yxatdan o'tganingiz uchun tashakkur!",
+    "callThanks": "Bizning operatorlarimiz ro'yxatdan o'tishni tasdiqlash va savollaringizga javob berish uchun siz bilan bog'lanadi. Hurmat bilan, Rainbow ",
+    "undest": "aniq",
+    "yourName": "Sizning ismingiz",
+    "send": "yuborish"
+  },
+  "services": {
+    "title": "Bizning xizmatlarimiz",
+    "servicesTitle__one": "Kvartiralarni muntazam tozalash",
+    "servicesDescription__one": "Ishonamizki, bizning qiyin paytimizda sizning kvartirangizni tozalashdan ko'ra muhimroq va qiziqarli qiladigan ishlaringiz bor yoki uyda narsalarni tartibga solish uchun siz ko'p vaqt va kuch sarflaysiz. ",
+    "servicesTitle__two": "Ta'mirlashdan keyin tozalash  ",
+    "servicesDescription__two": "Shunday qilib, sizning uzoq kutilgan ta'mirlashingiz nihoyasiga yetdi. Quruvchilar sizga qo'ng'iroq qilib, ularning ishi tugaganligini va egasi(lar)i kelib ishni qabul qilishlari kerakligini ma'lum qiladi.",
+    "servicesTitle__three": "A dan Z gacha umumiy tozalash",
+    "servicesDescription__three": "Umumiy tozalash har doim egalari tomonidan uzoq, birinchi navbatda, hissiy tayyorgarlik bilan birga keladi. ",
+    "servicesTitle__four": "Uy va kottejlarni tozalash",
+    "servicesDescription__four": "Har qanday styuardessa yoki egasi hatto uyni hozirgi tozalash ham juda mashaqqatli va zerikarli jarayon ekanligini tasdiqlaydi, ayniqsa og'ir kundan keyin.",
+    "servicesTitle__five": "Matraslarni Shomildan tozalash",
+    "servicesDescription__five": "Xullas, iliq kunlar yaqinlashmoqda va styuardessalar o'zlarining gilamlari va gilamlarini yuvish va changdan tozalash uchun chiday boshlaydilar.Bu jarayon juda qiyin.",
+    "servicesTitle__six": "Professional ofis tozalash",
+    "servicesDescription__six": "Ofisingiz doimo toza bo'lishini xohlaysizmi? Xodimlarni ko'paytirish va texnik xodimlarning ishiga haq to'lashning mutlaqo hojati yo'q. "
   }
 }
