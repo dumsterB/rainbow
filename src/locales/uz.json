@@ -52,5 +52,9 @@
     "servicesDescription__five": "Xullas, iliq kunlar yaqinlashmoqda va styuardessalar o'zlarining gilamlari va gilamlarini yuvish va changdan tozalash uchun chiday boshlaydilar.Bu jarayon juda qiyin.",
     "servicesTitle__six": "Professional ofis tozalash",
     "servicesDescription__six": "Ofisingiz doimo toza bo'lishini xohlaysizmi? Xodimlarni ko'paytirish va texnik xodimlarning ishiga haq to'lashning mutlaqo hojati yo'q. "
-  }
+  },
+  "prices":{
+    "titleOne":"O'qituvchisiz 8 soat",
+    "titleTwo":"1"
+   }
 }

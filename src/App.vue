@@ -80,6 +80,7 @@
         <Services></Services>
         <Tatif></Tatif>
         <Prices></Prices>
+        <Footer></Footer>
       </div>
     </v-main>
 
@@ -94,7 +95,8 @@ import RainbowAtricleView from "./views/RainbowAtricleView";
 import OrderCall from "./views/OrderCall";
 import Services from "@/views/Services";
 import Tatif from "./views/Tatif.vue";
-import Prices from './views/Prices'
+import Prices from './views/Prices';
+import Footer from './views/Footer'
 
 export default {
   name: "App",
@@ -106,6 +108,7 @@ export default {
     Services,
     Tatif,
     Prices,
+    Footer
 },
 
   data() {
