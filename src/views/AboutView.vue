@@ -1,7 +1,7 @@
 <template>
   <div class="about__container">
     <div class="about">
-     <v-carousel hide-delimiters>
+  <v-carousel hide-delimiters>
     <v-carousel-item
       v-for="(item,i) in items"
       :key="i"
@@ -38,11 +38,17 @@ export default {
     return {
       show: false,
        items: [
-          {
-            src: '../assets/bgHeader.jpeg',
-          },
            {
-            src: '../assets/',
+            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+          },
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+          },
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+          },
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
           },
         ],
     };
