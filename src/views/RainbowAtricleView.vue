@@ -15,6 +15,9 @@
               <v-card-text class="card__text">
                {{ $t("possibility.pillarOne__three") }}
               </v-card-text>
+               <v-card-text class="card__text">
+                дезинфекция
+              </v-card-text>
             </v-card>
           </v-col>
           <v-col lg="3" md="3" cols="6" sm="6">
@@ -28,6 +31,9 @@
               <v-card-text class="card__text">
                 {{ $t("possibility.pillarTwo__three") }}
               </v-card-text>
+              <v-card-text class="card__text">
+                ароматизации
+              </v-card-text>
             </v-card>
           </v-col>
           <v-col lg="3" md="3" cols="6" sm="6">
@@ -40,6 +46,9 @@
               </v-card-text>
               <v-card-text class="card__text">
                {{ $t("possibility.pillarThree__three") }}
+              </v-card-text>
+               <v-card-text class="card__text">
+               ионизации воздуха
               </v-card-text>
 
             </v-card>
@@ -55,6 +64,10 @@
               <v-card-text class="card__text">
                 {{ $t("possibility.pillarFour__three") }}
               </v-card-text>
+
+              <v-card-text class="card__text">
+             сухой глубинной чистки мягких поверхностей
+              </v-card-text>
             </v-card>
           </v-col>
         </v-row>
@@ -65,10 +78,12 @@
 </template>
 
 <style scoped lang="css">
+
 .rainbow__card {
   background: linear-gradient(to bottom, #eef2f7 0%, rgba(125, 185, 232, 0) 100%) !important;
   padding: 55px 30px;
   margin-right: 13px;
+  padding-bottom: 50px;
 }
 
 .rainbow__title {

@@ -78,6 +78,7 @@
         <OrderCall id="order_call"></OrderCall>
         <Services></Services>
         <Prices></Prices>
+        <Delivery></Delivery>
         <Footer></Footer>
       </div>
     </v-main>
@@ -93,6 +94,7 @@ import RainbowAtricleView from "./views/RainbowAtricleView";
 import OrderCall from "./views/OrderCall";
 import Services from "@/views/Services";
 import Prices from './views/Prices';
+import Delivery from "./views/Delivery";
 import Footer from './views/Footer'
 
 export default {
@@ -104,6 +106,7 @@ export default {
     OrderCall,
     Services,
     Prices,
+    Delivery,
     Footer
 },
 
