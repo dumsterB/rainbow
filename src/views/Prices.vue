@@ -2,8 +2,8 @@
 <div style="position: relative">
   <v-container >
     <v-row style="display: flex; justify-content: center;margin: auto; ">
-      <button @click="type = 2" :class="type === 1 ? 'btn-type-active' : 'btn-type'">Одноразовые тарифы:</button>
-      <button @click="type = 1"  :class="type === 2 ? 'btn-type-active' : 'btn-type'">Регулярные тарифы <br> без инструктора: </button>
+      <button @click="type = 2" :class="type === 1 ? 'btn-type-active' : 'btn-type'">Одноразовые тарифы</button>
+      <button @click="type = 1"  :class="type === 2 ? 'btn-type-active' : 'btn-type'">Регулярные тарифы <br> без инструктора </button>
     </v-row>
   </v-container>
   <div class="background">
@@ -11,7 +11,7 @@
       <div class="panel pricing-table">
         <div class="pricing-plan">
           <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img">
-          <h3 class="pricing-header" v-html=" type === 1 ? $t('prices.titleOne') :  $t('prices.titleTwo') "></h3>
+          <h3 class="pricing-header">8 часов без инструктора</h3>
           <ul class="pricing-features">
             <li class="pricing-features-item">Custom domains</li>
             <li class="pricing-features-item">Sleeps after 30 mins of inactivity</li>
@@ -64,19 +64,21 @@ export default {
   box-sizing: border-box;
 }
 .btn-type{
-  width: 200px;
+  width: 300px;
   padding: 20px 0;
   background: #4394f4;
+  font-weight: 700;
   color: white;
   border: 2px solid transparent;
-  font-size: 1rem;
+  font-size: 20px;
 }
 .btn-type-active{
+  font-weight: 700;
   border: 2px solid #4394f4;
   color: black;
   padding: 20px 0;
-  font-size: 1rem;
-  width: 200px;
+  font-size: 20px;
+  width: 300px;
 }
 
 .background {

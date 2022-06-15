@@ -54,7 +54,26 @@
     "servicesDescription__six": "Ofisingiz doimo toza bo'lishini xohlaysizmi? Xodimlarni ko'paytirish va texnik xodimlarning ishiga haq to'lashning mutlaqo hojati yo'q. "
   },
   "prices":{
-    "titleOne":"O'qituvchisiz 8 soat",
-    "titleTwo":"1"
-   }
+    "TitleOne":"Bir martalik tariflar:",
+    "TitleTwo__one":"Oddiy tariflar",
+    "TitleTwo__two":"o'qituvchisiz",
+    "titleOne__one":"O'qituvchisiz 8 soat",
+   "titleOne__two":"To'shakni chang oqadilaridan tozalash",
+   "titleOne__three":"O'qituvchi bilan 4 soat",
+
+   "titleTwo__one":"Haftada - haftasiga 3 marta 8 soatdan",
+   "titleTwo__two":"Oylik standart - bir oy davomida haftasiga 3 marta   ",
+   "titleTwo__three":"Oylik cheksiz"
+   },
+   "prices__price":{
+    "priceOne__one":"300.000",
+    "priceOne__two":"150.000",
+    "priceOne__three":"300.000",
+
+    "priceTwo__one":"700.000",
+    "priceTwo__two":"2.000000",
+    "priceTwo__three":"2.500000"
+
+
+  }
 }

@@ -76,9 +76,7 @@
         <AboutView id="aboutUs"></AboutView>
         <RainbowAtricleView></RainbowAtricleView>
         <OrderCall id="order_call"></OrderCall>
-        <KertificateView></KertificateView>
         <Services></Services>
-        <Tatif></Tatif>
         <Prices></Prices>
         <Footer></Footer>
       </div>
@@ -94,7 +92,6 @@ import AboutView from "./views/AboutView";
 import RainbowAtricleView from "./views/RainbowAtricleView";
 import OrderCall from "./views/OrderCall";
 import Services from "@/views/Services";
-import Tatif from "./views/Tatif.vue";
 import Prices from './views/Prices';
 import Footer from './views/Footer'
 
@@ -106,7 +103,6 @@ export default {
     RainbowAtricleView,
     OrderCall,
     Services,
-    Tatif,
     Prices,
     Footer
 },
