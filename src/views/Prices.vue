@@ -11,7 +11,7 @@
       <div class="panel pricing-table">
         <div class="pricing-plan">
           <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img">
-          <h3 class="pricing-header" :v-html=" type === 1 ? $t('prices.titleOne') :  $t('prices.titleTwo') "></h3>
+          <h3 class="pricing-header" v-html=" type === 1 ? $t('prices.titleOne') :  $t('prices.titleTwo') "></h3>
           <ul class="pricing-features">
             <li class="pricing-features-item">Custom domains</li>
             <li class="pricing-features-item">Sleeps after 30 mins of inactivity</li>
