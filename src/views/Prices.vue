@@ -120,7 +120,7 @@ export default {
   padding: 15px 25px;
   position: relative;
   width: 100%;
-  z-index: 10;
+  z-index: 2;
 }
 
 .pricing-table {

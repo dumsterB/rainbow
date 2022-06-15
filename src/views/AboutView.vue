@@ -1,18 +1,28 @@
 <template>
   <div class="about__container">
     <div class="about">
-  <v-carousel hide-delimiters>
+  <v-carousel height="80vh" hide-delimiters>
     <v-carousel-item
       v-for="(item,i) in items"
       :key="i"
       :src="item.src"
-    ></v-carousel-item>
+    >
+      <div class="d-flex justify-space-between">
+
+      <div class="">
+    <h1 class="mt-15"> fkewjfewj</h1>
+      </div>
+      <div class="carousel_img">
+        <img height="400" src="../assets/rainbow.png" alt="">
+      </div>
+      </div>
+
+    </v-carousel-item>
   </v-carousel>
     </div>
     <h2 class="about__title"> {{ $t("principWork.title") }}</h2>
-    <div class="about__wrap-work">
+<!--    <div class="about__wrap-work">
       <div>
-        <img src="../assets/rainbow.png" alt="" />
       </div>
       <div>
           <p  class="work__span">  {{ $t("principWork.title__one") }}  </p>
@@ -27,7 +37,29 @@
              {{ $t("principWork.description__three") }}
         </p>
       </div>
-    </div>
+    </div>-->
+    <v-container>
+      <v-row>
+        <v-col>
+          <img src="../assets/rainbow.png" alt="" />
+        </v-col>
+        <v-col>
+          <div style="margin-top: 100px">
+            <p  class="work__span">  {{ $t("principWork.title__one") }}  </p>
+            <br> <p class="work__description">
+            {{ $t("principWork.description__one") }}
+          </p>
+            <p  class="work__span"> {{ $t("principWork.title__two") }}</p>
+            <p class="work__description"> <br>
+              {{ $t("principWork.description__two") }}
+            </p>
+            <p class="work__span">
+              {{ $t("principWork.description__three") }}
+            </p>
+          </div>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
   <!-- <h2 class="about__title">Преимущества</h2> -->
 </template>
@@ -111,5 +143,10 @@ outline: 0 none;
   font-weight: 400;
   outline: 0 none;
   font-family: "Proxima", Helvetica, Arial, sans-serif;
+}
+.carousel_img{
+  justify-content: center;
+  display: flex;
+  margin: auto;
 }
 </style>
