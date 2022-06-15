@@ -134,4 +134,7 @@ export default {
 .links {
   font-size: 17px !important;
 }
+.v-footer{
+  padding: 0px 0px;
+}
 </style>

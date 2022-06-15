@@ -138,4 +138,5 @@ export default {
   text-align: center;
   color: #455560;
 }
+
 </style>
