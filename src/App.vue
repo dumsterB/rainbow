@@ -15,7 +15,7 @@
       </v-card>
     </v-navigation-drawer>
 
-    <v-app-bar app style="background: white" elevation="0">
+    <v-app-bar  app  style="background: white!important;" elevation="0">
       <v-app-bar-nav-icon
         class="hidden-md-and-up"
         style="color: #269aff"
@@ -136,5 +136,8 @@ export default {
 <style>
 .links {
   font-size: 17px !important;
+}
+.v-footer{
+  padding: 0px 0px;
 }
 </style>
