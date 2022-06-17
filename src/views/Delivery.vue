@@ -34,7 +34,7 @@
 </p>
               </v-card>
             </v-timeline-item>
-            <v-timeline-item class="text-right " icon="6" :color="color">
+            <v-timeline-item class="text-right " icon="6" >
               <v-card  class="cardProcess">
               <p  class="timilineText">Вы имеете чистый дом и свежий воздух
 </p>
@@ -74,6 +74,9 @@
 }
 .timilineText{
   text-align: center;
-   padding: 55px 40px;
+   padding: 30px 30px;
+}
+.cardProcess{
+  max-width: 800px;
 }
  </style>

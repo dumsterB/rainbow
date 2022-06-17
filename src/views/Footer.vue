@@ -39,9 +39,6 @@
               </li>
             </ul>
           </div>
-          <div class="contacts__map-wrapper">
-          <img class="contacts__map" src="../assets/karta.svg" alt="карта доствки">
-          </div>
         </div>
 </template>
 <script>
@@ -56,11 +53,16 @@
   }
 </script>
 <style scoped>
-
+.map__title{
+  font-size: 25px;
+  color: white;
+  margin-bottom: 20px;
+}
 
  .contacts__container {
       background-color:#4394f4 ;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding-left: max(72px, calc((100% - 1180px)/2));
   padding-right: 0;
@@ -108,15 +110,5 @@ a{
 .social__link {
   color: #4394f4;
 }
-.contacts__map-wrapper {
-  flex-shrink: 1;
-  width: calc(100%-380px);
-  height: 386px;
-}
 
-.contacts__map {
-  margin-left: 100px;
-  width: 100%;
-  height: 100%;
-}
 </style>

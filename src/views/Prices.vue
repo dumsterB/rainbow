@@ -11,41 +11,41 @@
       <div class="panel pricing-table">
         <div class="pricing-plan">
           <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img">
-          <h3 class="pricing-header">8 часов без инструктора</h3>
+          <h3 class="pricing-header" v-html=" type === 1 ? $t('prices.titleTwo__one') : $t('prices.titleOne__one') "></h3>
           <ul class="pricing-features">
             <li class="pricing-features-item">Custom domains</li>
             <li class="pricing-features-item">Sleeps after 30 mins of inactivity</li>
           </ul>
-          <span class="pricing-price">300 000 сум</span>
+          <span class="pricing-price" v-html=" type === 1 ? $t('prices__price.priceTwo__one') + ' сум' :  $t('prices__price.priceOne__one') + ' сум' "></span>
           <a href="#/" class="pricing-button">Заказать</a>
         </div>
 
         <div class="pricing-plan">
           <img src="https://s28.postimg.cc/ju5bnc3x9/plane.png" alt="" class="pricing-img">
-          <h3 class="pricing-header">Чистка матраса от пыльевых клещей</h3>
+          <h3 class="pricing-header" v-html=" type === 1 ? $t('prices.titleTwo__two') :  $t('prices.titleOne__two') "></h3>
           <ul class="pricing-features">
             <li class="pricing-features-item">Never sleeps</li>
             <li class="pricing-features-item">Multiple workers for more powerful apps</li>
           </ul>
-          <span class="pricing-price">150.000 сум</span>
+          <span class="pricing-price" v-html=" type === 1 ? $t('prices__price.priceTwo__two') + ' сум' :  $t('prices__price.priceOne__two') + ' сум'"></span>
           <a href="#/" class="pricing-button is-featured">Заказать</a>
         </div>
 
         <div class="pricing-plan">
           <img src="https://s21.postimg.cc/tpm0cge4n/space-ship.png" alt="" class="pricing-img">
-          <h3 class="pricing-header">4 часа с инструктором</h3>
+          <h3 class="pricing-header" v-html=" type === 1 ? $t('prices.titleTwo__three') :  $t('prices.titleOne__three')"></h3>
           <ul class="pricing-features">
             <li class="pricing-features-item">Dedicated</li>
             <li class="pricing-features-item">Simple horizontal scalability</li>
           </ul>
-          <span class="pricing-price">300 000  сум</span>
+          <span class="pricing-price" v-html=" type === 1 ? $t('prices__price.priceTwo__three') + ' сум' :  $t('prices__price.priceOne__three') + ' сум' "></span>
           <a href="#/" class="pricing-button">Заказать</a>
         </div>
-
       </div>
     </div>
   </div>
 </div>
+
 </template>
 
 <script>
