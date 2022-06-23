@@ -15,13 +15,15 @@
       </v-card>
     </v-navigation-drawer>
 
-    <v-app-bar  app  style="background: white!important;" elevation="0">
+    <v-app-bar elevate-on-scroll  app  style="background: white!important;">
+
       <v-app-bar-nav-icon
         class="hidden-md-and-up"
         style="color: #269aff"
         @click="drawer = !drawer"
       ></v-app-bar-nav-icon>
-      <v-toolbar-title> Health home </v-toolbar-title>
+
+      <div class="d-flex"><img height="65" src="./assets/logo.png" alt=""> <span style="font-weight: 700" class="mt-5 ml-5">Healthy home</span>  </div>
 
       <v-spacer></v-spacer>
       <div>
@@ -73,6 +75,7 @@
     <!-- Sizes your content based upon application components -->
     <v-main>
       <div>
+        <Carousel></Carousel>
         <AboutView id="aboutUs"></AboutView>
         <RainbowAtricleView></RainbowAtricleView>
         <OrderCall id="order_call"></OrderCall>
@@ -88,6 +91,7 @@
 </template>
 
 <script>
+import Carousel from "@/views/Carousel";
 import CountryFlag from "vue-country-flag";
 import AboutView from "./views/AboutView";
 import RainbowAtricleView from "./views/RainbowAtricleView";
@@ -107,7 +111,8 @@ export default {
     Services,
     Prices,
     Delivery,
-    Footer
+    Footer,
+    Carousel
 },
 
   data() {

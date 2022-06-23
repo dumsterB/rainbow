@@ -5,68 +5,31 @@
     <div class="content">
       <v-row class="d-flex justify-center">
         <v-timeline class="pa-5 hiddenMobileProcess">
-          <v-timeline-item class="timeline_item"  icon="1">
+          <v-timeline-item class="timeline_item" icon="1">
             <v-card class="cardProcess">
               <p class="timilineText">Отправляете контакт на сайт</p>
             </v-card>
-<<<<<<< HEAD
-            </v-timeline-item>
-            <v-timeline-item class="text-right " icon="2" :color="color">
-              <v-card  class="cardProcess">
-              <p  class="timilineText">Наш специалист с вами свяжется и назначит время</p>
-              </v-card>
-            </v-timeline-item>
-            <v-timeline-item :color="color" icon="3" >
-              <v-card  class="cardProcess">
-                <p class="timilineText" >Мы приедем на обучение пользования аппаратом
-</p>
-              </v-card>
-            </v-timeline-item>
-            <v-timeline-item class="text-right " icon="4" :color="color">
-              <v-card  class="cardProcess">
-                <p class="timilineText">Вы получаете сертификат эксперта
-</p>
-              </v-card>
-            </v-timeline-item>
-            <v-timeline-item  :color="color" icon="5">
-              <v-card  class="cardProcess">
-              <p  class="timilineText" >Мы назначаем частоту и опцию аренды
-</p>
-              </v-card>
-            </v-timeline-item>
-            <v-timeline-item class="text-right " icon="6" >
-              <v-card  class="cardProcess">
-              <p  class="timilineText">Вы имеете чистый дом и свежий воздух
-</p>
-              </v-card>
-            </v-timeline-item>
-
-
-          </v-timeline>
-        </v-row>
-
-=======
           </v-timeline-item>
-          <v-timeline-item class="text-right" icon="2">
+          <v-timeline-item class="text-right" icon="2" :color="color">
             <v-card class="cardProcess">
               <p class="timilineText">
                 Наш специалист с вами свяжется и назначит время
               </p>
             </v-card>
           </v-timeline-item>
-          <v-timeline-item  icon="3">
+          <v-timeline-item :color="color" icon="3">
             <v-card class="cardProcess">
               <p class="timilineText">
                 Мы приедем на обучение пользования аппаратом
               </p>
             </v-card>
           </v-timeline-item>
-          <v-timeline-item class="text-right" icon="4" >
+          <v-timeline-item class="text-right" icon="4" :color="color">
             <v-card class="cardProcess">
               <p class="timilineText">Вы получаете сертификат эксперта</p>
             </v-card>
           </v-timeline-item>
-          <v-timeline-item  icon="5">
+          <v-timeline-item :color="color" icon="5">
             <v-card class="cardProcess">
               <p class="timilineText">Мы назначаем частоту и опцию аренды</p>
             </v-card>
@@ -78,12 +41,36 @@
           </v-timeline-item>
         </v-timeline>
       </v-row>
->>>>>>> 187e86400854a5720f3e53728c3a33e31cdc34e6
+      <v-timeline-item class="text-right" icon="2">
+        <v-card class="cardProcess">
+          <p class="timilineText">
+            Наш специалист с вами свяжется и назначит время
+          </p>
+        </v-card>
+      </v-timeline-item>
+      <v-timeline-item icon="3">
+        <v-card class="cardProcess">
+          <p class="timilineText">
+            Мы приедем на обучение пользования аппаратом
+          </p>
+        </v-card>
+      </v-timeline-item>
+      <v-timeline-item class="text-right" icon="4">
+        <v-card class="cardProcess">
+          <p class="timilineText">Вы получаете сертификат эксперта</p>
+        </v-card>
+      </v-timeline-item>
+      <v-timeline-item icon="5">
+        <v-card class="cardProcess">
+          <p class="timilineText">Мы назначаем частоту и опцию аренды</p>
+        </v-card>
+      </v-timeline-item>
+      <v-timeline-item class="text-right" icon="6">
+        <v-card class="cardProcess">
+          <p class="timilineText">Вы имеете чистый дом и свежий воздух</p>
+        </v-card>
+      </v-timeline-item>
     </div>
-    <div>
-      <div class="circle"></div>
-    </div>
-    <br />
   </div>
 </template>
 <style scoped>
@@ -109,27 +96,24 @@
 }
 .timilineText {
   text-align: center;
-<<<<<<< HEAD
-   padding: 30px 30px;
+  padding: 10px 10px;
 }
-.cardProcess{
+.cardProcess {
   max-width: 800px;
-=======
   padding: 20px 20px;
->>>>>>> 187e86400854a5720f3e53728c3a33e31cdc34e6
 }
-.timeline_item{
+.timeline_item {
   width: 700px;
 }
-.circle{
+.circle {
   height: 80px;
-  width:80px;
+  width: 80px;
   border-radius: 50%;
-  background: #016FF9;
+  background: #016ff9;
   position: absolute;
   top: 10px;
 }
-.contact{
+.contact {
   position: relative;
 }
 </style>

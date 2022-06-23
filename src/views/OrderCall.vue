@@ -20,7 +20,7 @@
       <h2 class="call__title" > {{ $t("callBlock.title") }}</h2>
       <v-row>
         <v-col cols="6">
-          <v-card elevation="1" class="contactTryCard">
+          <v-card  elevation="1" class="contactTryCard">
             <v-form ref="form" v-model="valid" lazy-validation class="pa-10">
               <v-text-field
                 v-model="name"

@@ -66,7 +66,7 @@ export default {
 .btn-type{
   width: 300px;
   padding: 20px 0;
-  background: #4394f4;
+  background: #6aaf38;
   font-weight: 700;
   color: white;
   border: 2px solid transparent;
@@ -74,7 +74,7 @@ export default {
 }
 .btn-type-active{
   font-weight: 700;
-  border: 2px solid #4394f4;
+  border: 2px solid #6aaf38;
   color: black;
   padding: 20px 0;
   font-size: 20px;
@@ -89,10 +89,7 @@ export default {
 
 .background::after {
   content: '';
-  background: #60a9ff;
-  background: -moz-linear-gradient(top, #60a9ff 0%, #4394f4 100%);
-  background: -webkit-linear-gradient(top, #60a9ff 0%,#4394f4 100%);
-  background: linear-gradient(to bottom, #60a9ff 0%,#4394f4 100%);
+  background: #6aaf38;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60a9ff', endColorstr='#4394f4',GradientType=0 );
   height: 450px;
   left: 0;
@@ -174,7 +171,7 @@ export default {
 }
 
 .pricing-features {
-  color: #016FF9;
+  color: #6aaf38;
   font-weight: 600;
   letter-spacing: 1px;
   margin: 20px 0 25px;
@@ -192,7 +189,7 @@ export default {
 }
 
 .pricing-price {
-  color: #016FF9;
+  color: #6aaf38;
   display: block;
   font-size: 25px;
   font-weight: 700;
@@ -201,7 +198,7 @@ export default {
 .pricing-button {
   border: 1px solid #9dd1ff;
   border-radius: 10px;
-  color: #348EFE;
+  color: #6aaf38;
   display: inline-block;
   margin: 25px 0;
   padding: 15px 35px;
@@ -215,12 +212,12 @@ export default {
 }
 
 .pricing-button.is-featured {
-  background-color: #48aaff;
+  background-color: #6aaf38;
   color: #fff;
 }
 
 .pricing-button.is-featured:hover,
 .pricing-button.is-featured:active {
-  background-color: #269aff;
+  background-color: #6aaf38 ;
 }
 </style>
