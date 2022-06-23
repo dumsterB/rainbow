@@ -65,7 +65,7 @@
           <p class="timilineText">Мы назначаем частоту и опцию аренды</p>
         </v-card>
       </v-timeline-item>
-      <v-timeline-item class="text-right" icon="6">
+      <v-timeline-item class="text-right"  icon="6">
         <v-card class="cardProcess">
           <p class="timilineText">Вы имеете чистый дом и свежий воздух</p>
         </v-card>

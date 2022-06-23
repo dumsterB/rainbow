@@ -98,7 +98,7 @@ import RainbowAtricleView from "./views/RainbowAtricleView";
 import OrderCall from "./views/OrderCall";
 import Prices from './views/Prices';
 import Delivery from "./views/Delivery";
-// import Services from './views/Services'
+
 import Footer from './views/Footer'
 
 export default {
