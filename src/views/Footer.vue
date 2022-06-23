@@ -22,7 +22,7 @@ export default {
 }
 
 .contacts__container {
-  background-color: #4394f4;
+  background-color: #6aaf38;
   display: flex;
   flex-wrap: wrap;
   align-items: center;

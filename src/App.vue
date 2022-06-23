@@ -79,8 +79,8 @@
         <AboutView id="aboutUs"></AboutView>
         <RainbowAtricleView></RainbowAtricleView>
         <OrderCall id="order_call"></OrderCall>
-        <Services></Services>
         <Prices></Prices>
+        <Services></Services>
         <Delivery></Delivery>
         <Footer></Footer>
       </div>
@@ -96,9 +96,9 @@ import CountryFlag from "vue-country-flag";
 import AboutView from "./views/AboutView";
 import RainbowAtricleView from "./views/RainbowAtricleView";
 import OrderCall from "./views/OrderCall";
-import Services from "@/views/Services";
 import Prices from './views/Prices';
 import Delivery from "./views/Delivery";
+// import Services from './views/Services'
 import Footer from './views/Footer'
 
 export default {
@@ -108,8 +108,8 @@ export default {
     AboutView,
     RainbowAtricleView,
     OrderCall,
-    Services,
     Prices,
+    // Services,
     Delivery,
     Footer,
     Carousel

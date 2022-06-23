@@ -108,7 +108,7 @@
   content: "";
   width: 20px;
   height: 20px;
-  background: url("../assets/ico-check.svg") no-repeat center center;
+  background: url("../assets/icon_article.svg") no-repeat center center;
   background-size: auto;
   background-size: cover;
   position: absolute;

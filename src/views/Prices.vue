@@ -1,6 +1,7 @@
 <template>
 <div style="position: relative">
   <v-container >
+    <h2 class="prices__title">Услуги</h2>
     <v-row style="display: flex; justify-content: center;margin: auto; ">
       <button @click="type = 2" :class="type === 1 ? 'btn-type-active' : 'btn-type'">Одноразовые тарифы</button>
       <button @click="type = 1"  :class="type === 2 ? 'btn-type-active' : 'btn-type'">Регулярные тарифы <br> без инструктора </button>
@@ -13,8 +14,8 @@
           <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img">
           <h3 class="pricing-header" v-html=" type === 1 ? $t('prices.titleTwo__one') : $t('prices.titleOne__one') "></h3>
           <ul class="pricing-features">
-            <li class="pricing-features-item">Custom domains</li>
-            <li class="pricing-features-item">Sleeps after 30 mins of inactivity</li>
+            <li class="pricing-features-item">	Клиенту предоставляется Rainbow в назначенные дни и часы</li>
+            <li class="pricing-features-item">для самостоятельного использования в доме. </li>
           </ul>
           <span class="pricing-price" v-html=" type === 1 ? $t('prices__price.priceTwo__one') + ' сум' :  $t('prices__price.priceOne__one') + ' сум' "></span>
           <a href="#/" class="pricing-button">Заказать</a>
@@ -24,8 +25,8 @@
           <img src="https://s28.postimg.cc/ju5bnc3x9/plane.png" alt="" class="pricing-img">
           <h3 class="pricing-header" v-html=" type === 1 ? $t('prices.titleTwo__two') :  $t('prices.titleOne__two') "></h3>
           <ul class="pricing-features">
-            <li class="pricing-features-item">Never sleeps</li>
-            <li class="pricing-features-item">Multiple workers for more powerful apps</li>
+            <li class="pricing-features-item">-	Клиенту предоставляется Rainbow в назначенные дни и часы </li>
+            <li class="pricing-features-item">для самостоятельного использования в доме. </li>
           </ul>
           <span class="pricing-price" v-html=" type === 1 ? $t('prices__price.priceTwo__two') + ' сум' :  $t('prices__price.priceOne__two') + ' сум'"></span>
           <a href="#/" class="pricing-button is-featured">Заказать</a>
@@ -35,12 +36,35 @@
           <img src="https://s21.postimg.cc/tpm0cge4n/space-ship.png" alt="" class="pricing-img">
           <h3 class="pricing-header" v-html=" type === 1 ? $t('prices.titleTwo__three') :  $t('prices.titleOne__three')"></h3>
           <ul class="pricing-features">
-            <li class="pricing-features-item">Dedicated</li>
-            <li class="pricing-features-item">Simple horizontal scalability</li>
+            <li class="pricing-features-item">  Клиенту предоставляется Rainbow для самостоятельного использования в доме. </li>
+            <li class="pricing-features-item"> подписка на регулярные тарифы возможна при прохождении специализированного тренинга по использованию Rainbow </li>
           </ul>
           <span class="pricing-price" v-html=" type === 1 ? $t('prices__price.priceTwo__three') + ' сум' :  $t('prices__price.priceOne__three') + ' сум' "></span>
           <a href="#/" class="pricing-button">Заказать</a>
         </div>
+        <!-- осталось 2 блока
+         -->
+          <div class="pricing-plan">
+          <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img">
+          <h3 class="pricing-header" v-html=" type === 1 ? $t('prices.titleTwo__one') : $t('prices.titleOne__one') "></h3>
+          <ul class="pricing-features">
+            <li class="pricing-features-item">	Клиенту предоставляется Rainbow в назначенные дни и часы</li>
+            <li class="pricing-features-item">для самостоятельного использования в доме. </li>
+          </ul>
+          <span class="pricing-price" v-html=" type === 1 ? $t('prices__price.priceTwo__one') + ' сум' :  $t('prices__price.priceOne__one') + ' сум' "></span>
+          <a href="#/" class="pricing-button">Заказать</a>
+        </div>
+          <div class="pricing-plan">
+          <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img">
+          <h3 class="pricing-header" v-html=" type === 1 ? $t('prices.titleTwo__one') : $t('prices.titleOne__one') "></h3>
+          <ul class="pricing-features">
+            <li class="pricing-features-item">	Клиенту предоставляется Rainbow в назначенные дни и часы</li>
+            <li class="pricing-features-item">для самостоятельного использования в доме. </li>
+          </ul>
+          <span class="pricing-price" v-html=" type === 1 ? $t('prices__price.priceTwo__one') + ' сум' :  $t('prices__price.priceOne__one') + ' сум' "></span>
+          <a href="#/" class="pricing-button">Заказать</a>
+        </div>
+        <!--  -->
       </div>
     </div>
   </div>
@@ -62,6 +86,18 @@ export default {
 <style scoped>
 *, *:before, *:after {
   box-sizing: border-box;
+}
+li{
+  list-style: none;
+}
+.prices__title{
+   margin-top: 40px;
+  margin-bottom: 60px;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 66px;
+  text-align: center;
+  color: #455560;
 }
 .btn-type{
   width: 300px;
@@ -196,7 +232,7 @@ export default {
 }
 
 .pricing-button {
-  border: 1px solid #9dd1ff;
+  border: 1px solid #6aaf38;
   border-radius: 10px;
   color: #6aaf38;
   display: inline-block;

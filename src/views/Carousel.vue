@@ -17,7 +17,7 @@ export default {
     return{
       items: [
         {
-          src: require('../assets/carousel1.jpg'),
+          src:('https://rainbowsystem.com/wp-content/uploads/2019/11/Power-Nozzle-1919x722_SFW_OPT4-1-100x50.jpg'),
         },
         {
           src: require('../assets/carousel3.jpg'),
