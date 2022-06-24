@@ -4,8 +4,10 @@
       <v-row>
        <v-col>
         <address class="footer__afress">адрес г. Ташкент ул. Олтинтепа 28</address>
-        <a class="footer__link" href="tel:+998950507060">Контакт  +998 95 050 70 60</a>
+        <img src="../assets/footer__call.svg" alt="">
+        <a class="footer__link" href="tel:+998950507060">Контакт +998 95 050 70 60</a>
         <br>
+        <img src="../assets/footer__icon.svg" alt="">
         <a class="footer__link" href="http://healthyhome.uz">Instagram</a>
        </v-col>
       </v-row>
@@ -35,8 +37,8 @@ li{
 .footer__link{
   color: white;
   font-weight: bold;
-  margin-bottom: 20px;
   font-size: 20px;
+  margin-left: 10px;
 }
 .contacts__container{
    background: #6aaf38;;

@@ -12,21 +12,21 @@
       <div class="panel pricing-table">
 
         <div class="panel__one" v-if="type===2">
-           <div class="pricing-plan">
+
+           <div class="pricing-plan panel__one-pricing">
           <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img">
           <h3 class="pricing-header" v-html=" type === 1 ? $t('prices.titleTwo__one') : $t('prices.titleOne__one') "></h3>
           <ul class="pricing-features">
-            <li class="pricing-features-item">	(без инструктора, проводится после прохождения специализированного тренинга) </li>
+            <li class="pricing-features-item">	(без инструктора, проводится после прохождения тренинга) </li>
             <li class="pricing-features-item">сухая чистка стен, потолков, полов, техники и т.д. (очистка от пыли и грязи)
-- сухая глубинная чистка ковров, матрацев, подушек, ковров, диванов (очистка от пыли, гниющей органической массы, пылевых клещей и продуктов их жизнедеятельности, «мертвого» ворса ковров и т.д.)
-- очистка воздуха от пыли, аллергенов, бактерий, с последующей ароматизацией и озонированием
+
  </li>
           </ul>
           <span class="pricing-price" v-html=" type === 1 ? $t('prices__price.priceTwo__one') + ' сум' :  $t('prices__price.priceOne__one') + ' сум' "></span>
           <a href="#/" class="pricing-button">Заказать</a>
         </div>
 
-        <div class="pricing-plan">
+        <div class="pricing-plan panel__one-pricing">
           <img src="https://s28.postimg.cc/ju5bnc3x9/plane.png" alt="" class="pricing-img">
           <h3 class="pricing-header" v-html=" type === 1 ? $t('prices.titleTwo__two') :  $t('prices.titleOne__two') "></h3>
           <ul class="pricing-features">
@@ -40,20 +40,18 @@
           <a href="#/" class="pricing-button is-featured">Заказать</a>
         </div>
 
-        <div class="pricing-plan">
+        <div class="pricing-plan panel__one-pricing">
           <img src="https://s21.postimg.cc/tpm0cge4n/space-ship.png" alt="" class="pricing-img">
           <h3 class="pricing-header" v-html=" type === 1 ? $t('prices.titleTwo__three') :  $t('prices.titleOne__three')"></h3>
           <ul class="pricing-features">
-            <li class="pricing-features-item"> сухая чистка стен, потолков, полов, техники и т.д. (очистка от пыли и грязи)
- сухая глубинная чистка ковров, матрацев, подушек, ковров, диванов
- </li>
-            <li class="pricing-features-item"> (очистка от пыли, гниющей органической массы, пылевых клещей и продуктов их жизнедеятельности, метвого ворса ковров и т.д.) очистка воздуха от пыли, аллергенов, бактерий, с последующей ароматизацией и озонированием </li>
+            <li class="pricing-features-item"> сухая чистка стен, потолков, полов, техники и т.д. (очистка от пыли и грязи </li>
+            <li class="pricing-features-item"> (очистка от пыли, гниющей органической массы, пылевых клещей и продуктов их жизнедеятельности)</li>
           </ul>
           <span class="pricing-price" v-html=" type === 1 ? $t('prices__price.priceTwo__three') + ' сум' :  $t('prices__price.priceOne__three') + ' сум' "></span>
           <a href="#/" class="pricing-button">Заказать</a>
         </div>
 
-          <div class="pricing-plan">
+          <div class="pricing-plan panel__one-pricing">
           <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img">
           <h3 class="pricing-header">	Сухая глубинная чистка ковров и ковровых покрытий – 8.000 сумов/м2</h3>
           <ul class="pricing-features">
@@ -64,7 +62,7 @@
           <a href="#/" class="pricing-button">Заказать</a>
         </div>
 
-          <div class="pricing-plan one-child">
+          <div class="pricing-plan panel__one-pricing">
           <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img">
           <h3 class="pricing-header" >Rainbow на час
 </h3>
@@ -149,10 +147,13 @@ li{
   color: #455560;
 }
 .panel__one{
-  display: grid;
   flex-direction: row;
-  grid-template-columns: 1fr 1fr 1fr;
-
+display: flex;
+}
+.panel__one-pricing{
+width: 100%;
+max-width: 220px;
+font-size: 8px;
 }
 .one-child{
 display: flex;
@@ -272,7 +273,7 @@ flex-direction: column;
 }
 
 .pricing-features {
-  color: #6aaf38;
+  color:#6aaf38 ;
   font-weight: 600;
   letter-spacing: 1px;
   margin: 20px 0 25px;
