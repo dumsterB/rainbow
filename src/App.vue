@@ -26,7 +26,7 @@
       <div class="d-flex"><img height="65" src="./assets/logo.png" alt=""> <span style="font-weight: 700" class="mt-5 ml-5">Healthy home</span>  </div>
 
       <v-spacer></v-spacer>
-      <div>
+      <div class="hidden-md-and-down">
         <v-btn text class="links" v-scroll-to="'#aboutUs'">
           {{ $t("headerDefault.aboutUs") }}
         </v-btn>
@@ -49,7 +49,6 @@
           >
         </v-btn>
       </div>
-
       <div class="ml-2">
         <v-btn
           v-if="currentLanguage === 'ru'"
@@ -85,8 +84,6 @@
         <Footer></Footer>
       </div>
     </v-main>
-
-    <v-footer app> </v-footer>
   </v-app>
 </template>
 
@@ -144,5 +141,8 @@ export default {
 }
 .v-footer{
   padding: 0px 0px;
+}
+.wow {
+  visibility: hidden;
 }
 </style>
