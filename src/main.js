@@ -5,6 +5,8 @@ import store from "./store";
 import vuetify from "./plugins/vuetify";
 import i18n from "./plugins/i18n";
 import VueScrollTo from "vue-scrollto";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import 'animate.css';
 Vue.use(VueScrollTo, {
   container: "body",
@@ -21,6 +23,9 @@ Vue.use(VueScrollTo, {
 });
 Vue.config.productionTip = false;
 new Vue({
+  created () {
+    AOS.init()
+  },
   router,
   store,
   vuetify,

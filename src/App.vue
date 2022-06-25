@@ -155,6 +155,8 @@ export default {
       this.drawer = !this.drawer;
     },
   },
+  created() {
+  }
 };
 </script>
 <style>

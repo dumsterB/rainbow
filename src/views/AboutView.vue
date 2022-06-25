@@ -1,22 +1,33 @@
 <template>
-
   <div class="about__container">
     <h2 class="aboutOne__title">О нас</h2>
     <div class="about">
       <v-container fluid>
         <v-row>
           <v-col>
-
-
-            <div class=" about__text" >
+            <div class="about__text"  data-aos="fade-right">
               <p class="about__text-item">
-             <span style="font-size: 25px" > Healthy Home - уникальная услуга для улучшения состояния здоровья для всех членов семьи !</span> <br>   <br>
+                <span style="font-size: 25px">
+                  Healthy Home - уникальная услуга для улучшения состояния
+                  здоровья для всех членов семьи !</span
+                >
+                <br />
+                <br />
 
-              Впервые в Узбекистане, проект HealthyHome предлагает к использованию американскую очистительную систему Rainbow, при помощи, которой возможно идеальное очищение воздуха и любых всевозможных поверхностей в доме - от грязи, пыли, песка, пылевых клещей, вирусов, и бактерий, - который не только прекрасно очищает ваш дом, но и улучшает общее состояние вашего здоровья.
+                Впервые в Узбекистане, проект HealthyHome предлагает к
+                использованию американскую очистительную систему Rainbow, при
+                помощи, которой возможно идеальное очищение воздуха и любых
+                всевозможных поверхностей в доме - от грязи, пыли, песка,
+                пылевых клещей, вирусов, и бактерий, - который не только
+                прекрасно очищает ваш дом, но и улучшает общее состояние вашего
+                здоровья.
               </p>
               <p class="about__text-item">
-               Благодаря Rainbow вы можете забыть об аллергии на пыль, раздражении слизистой оболочки носоглотки, и спать спокойно.
-Мы единственная компания в Узбекистане, которая гарантирует, что наш сервис приносит чистоту и здоровье в дом клиента, благодаря возможностям системы Rainbow.
+                Благодаря Rainbow вы можете забыть об аллергии на пыль,
+                раздражении слизистой оболочки носоглотки, и спать спокойно. Мы
+                единственная компания в Узбекистане, которая гарантирует, что
+                наш сервис приносит чистоту и здоровье в дом клиента, благодаря
+                возможностям системы Rainbow.
               </p>
             </div>
           </v-col>
@@ -25,17 +36,53 @@
               <v-container>
                 <v-row class="pl-4 pr-4">
                   <v-col cols="3">
-                    <img height="120" src="../assets/circle_card1.png" alt="" class="about__img" />
-                    <img height="120" src="../assets/circle_card2.png" alt="" class="about__img" />
-                    <img height="120" src="../assets/circle_card3.png" alt="" class="about__img" />
+                    <img
+                      height="120"
+                      src="../assets/circle_card1.png"
+                      alt=""
+                      class="about__img"
+                    />
+                    <img
+                      height="120"
+                      src="../assets/circle_card2.png"
+                      alt=""
+                      class="about__img"
+                    />
+                    <img
+                      height="120"
+                      src="../assets/circle_card3.png"
+                      alt=""
+                      class="about__img"
+                    />
                   </v-col>
-                  <v-col cols="6" >
-                    <img  height="350" src="../assets/image2.png" alt="" class="about__img" style="margin-left: -10px" />
+                  <v-col cols="6">
+                    <img
+                      height="350"
+                      src="../assets/image2.png"
+                      alt=""
+                      class="about__img"
+                      style="margin-left: -10px"
+                    />
                   </v-col>
                   <v-col cols="3">
-                    <img height="120" src="../assets/circle_card4.png" alt="" class="about__img" />
-                    <img height="120" src="../assets/circle_card6.jpg" alt="" class="about__img" />
-                    <img height="120" src="../assets/circle_card5.jpg" alt="" class="about__img" />
+                    <img
+                      height="120"
+                      src="../assets/circle_card4.png"
+                      alt=""
+                      class="about__img"
+                    />
+                    <img
+                      height="120"
+                      src="../assets/circle_card6.jpg"
+                      alt=""
+                      class="about__img"
+                    />
+                    <img
+                      height="120"
+                      src="../assets/circle_card5.jpg"
+                      alt=""
+                      class="about__img"
+                    />
                   </v-col>
                 </v-row>
               </v-container>
@@ -48,7 +95,13 @@
     <v-container>
       <v-row>
         <v-col>
-          <img class="wp-image-6059 size-full aligncenter" src="https://rainbowsystem.com/wp-content/uploads/2019/11/RainbowSRX-animation2.gif" alt="Rainbow SRX Animation" width="600" height="600">
+          <img
+            class="wp-image-6059 size-full aligncenter"
+            src="https://rainbowsystem.com/wp-content/uploads/2019/11/RainbowSRX-animation2.gif"
+            alt="Rainbow SRX Animation"
+            width="600"
+            height="600"
+          />
         </v-col>
         <v-col>
           <div style="margin-top: 100px">
@@ -74,14 +127,11 @@
 </template>
 
 <script>
- import {WOW} from 'wowjs';
-    export default {
+export default {
   data() {
     return {
       show: false,
-       mounted() {
-            new WOW().init();
-        },
+      mounted() {},
     };
   },
 };
@@ -112,7 +162,7 @@
   max-width: 700px;
 }
 .about__img {
-  border-radius: 50%;  /* Скругление углов изображения */
+  border-radius: 50%; /* Скругление углов изображения */
   border: 5px solid #fff;
 }
 .work__span {
