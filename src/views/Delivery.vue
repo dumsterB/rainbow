@@ -105,14 +105,7 @@
 .timeline_item {
   width: 700px;
 }
-.circle {
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  background: #016ff9;
-  position: absolute;
-  top: 10px;
-}
+
 .contact {
   position: relative;
 }

@@ -480,15 +480,18 @@ padding-top: 100px;
   color: #6aaf38;
   display: inline-block;
   margin: 25px 0;
-  padding: 15px 35px;
+  padding: 15px 30px;
   text-decoration: none;
   transition: all 150ms ease-in-out;
   /* margin-bottom: auto; */
 }
-
+.pricing-button.is-featured{
+  font-size: 14px;
+  font-weight: 700;
+}
 .pricing-button:hover,
 .pricing-button:focus {
-  background-color: #e1f1ff;
+  background-color: #6ca14691 ;
 }
 
 .pricing-button.is-featured {

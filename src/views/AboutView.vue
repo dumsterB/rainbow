@@ -1,11 +1,14 @@
 <template>
+
   <div class="about__container">
     <h2 class="aboutOne__title">О нас</h2>
     <div class="about">
       <v-container fluid>
         <v-row>
           <v-col>
-            <div class="about__text animate__animated animate__bounce">
+
+
+            <div class=" about__text" >
               <p class="about__text-item">
              <span style="font-size: 25px" > Healthy Home - уникальная услуга для улучшения состояния здоровья для всех членов семьи !</span> <br>   <br>
 
@@ -71,10 +74,14 @@
 </template>
 
 <script>
-export default {
+ import {WOW} from 'wowjs';
+    export default {
   data() {
     return {
       show: false,
+       mounted() {
+            new WOW().init();
+        },
     };
   },
 };

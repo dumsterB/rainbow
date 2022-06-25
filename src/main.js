@@ -6,8 +6,6 @@ import vuetify from "./plugins/vuetify";
 import i18n from "./plugins/i18n";
 import VueScrollTo from "vue-scrollto";
 import 'animate.css';
-import vWow from 'v-wow'
-Vue.use(vWow);
 Vue.use(VueScrollTo, {
   container: "body",
   duration: 500,

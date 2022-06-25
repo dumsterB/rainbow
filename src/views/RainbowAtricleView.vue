@@ -116,4 +116,14 @@
   left: 0;
   z-index: 1;
 }
+
+@media(max-width:1245px){
+.rainbow__wrap{
+  display: none;
+
+  
+
+
+}
+}
 </style>

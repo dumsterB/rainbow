@@ -3,11 +3,33 @@
     <v-navigation-drawer app v-model="drawer" temporary>
       <v-card class="mx-auto" max-width="300" tile elevation="0">
         <v-list dense>
-          <v-subheader>REPORTS</v-subheader>
           <v-list-item-group v-model="selectedItem" color="primary">
             <v-list-item>
               <v-list-item-content>
-                <v-list-item-title></v-list-item-title>
+                <v-list-item-title>
+                    <v-btn text class="links" v-scroll-to="'#aboutUs'">
+          {{ $t("headerDefault.aboutUs") }}
+        </v-btn>
+             <v-btn text class="links" v-scroll-to="'#services'">
+          {{ $t("headerDefault.services") }}
+        </v-btn>
+        <v-btn text class="links" v-scroll-to="'#function'">
+          {{ $t("headerDefault.function") }}
+        </v-btn>
+        <v-btn text class="links" v-scroll-to="'#delivery'">
+          {{ $t("headerDefault.delivery") }}
+        </v-btn>
+        <v-btn text class="links" v-scroll-to="">
+          {{ $t("headerDefault.quality") }}
+        </v-btn>
+        <v-btn class="primary" depressed v-scroll-to="'#order_call'">
+          <a style="text-decoration: none; color: white" href="">
+           {{ $t("headerDefault.call") }}
+           </a
+          >
+        </v-btn>
+
+                </v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </v-list-item-group>
