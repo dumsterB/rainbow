@@ -1,66 +1,107 @@
-<template>
-  <div class="container contacts__container">
-    <v-container>
-      <v-row>
-       <v-col>
-        <address class="footer__afress">адрес г. Ташкент ул. Олтинтепа 28</address>
-        <img src="../assets/footer__call.svg" alt="">
-        <a class="footer__link" href="tel:+998950507060">Контакт +998 95 050 70 60</a>
-        <br>
-        <img src="../assets/footer__icon.svg" alt="">
-        <a class="footer__link" href="http://healthyhome.uz">Instagram</a>
-       </v-col>
-      </v-row>
-    </v-container>
-  </div>
+
+ <template>
+ <div class="contacts__container">
+ <v-footer class="footer"
+    dark
+    padless
+  >
+    <v-card
+      flat
+      tile
+      class="indigo lighten-1 white--text text-center"
+    >
+      <v-card-text>
+        <v-btn
+          v-for="icon in icons"
+          :key="icon"
+          class="mx-4 white--text"
+          icon
+        >
+          <v-icon size="24px">
+            {{ icon }}
+          </v-icon>
+        </v-btn>
+      </v-card-text>
+
+      <v-card-text class="white--text pt-0">
+        <ul class="footer__list">
+          <li><a  class="footer__link" href="#">О нас</a></li>
+          <li><a  class="footer__link" href="#">Услуги</a></li>
+          <li><a  class="footer__link" href="#">Функции RS</a></li>
+          <li><a  class="footer__link" href="#">Доставка</a></li>
+          <li><a  class="footer__link" href="#">Качество</a></li>
+        </ul>
+
+      </v-card-text>
+
+      <v-divider></v-divider>
+      <hr class="foooter__hr">
+
+      <v-card-text class="white--text">
+        {{ new Date().getFullYear() }} — <strong>RAINBOW</strong>
+      </v-card-text>
+    </v-card>
+  </v-footer>
+ </div>
+
 </template>
 <script>
-export default {
-  data: () => ({
-    icons: ["mdi-facebook", "mdi-gmail", "mdi-instagram"],
-  }),
-};
+
+  export default {
+    data: () => ({
+      icons: [
+        'mdi-facebook',
+        'mdi-phone',
+        'mdi-instagram',
+      ],
+    }),
+  }
+
 </script>
+
 <style scoped>
-a{
-  text-decoration: none;
-}
-li{
-  list-style: none;
-}
-.footer__afress{
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-.footer__link{
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  margin-left: 10px;
-}
-.contacts__container{
-   background: #6aaf38;;
-   padding-top: 50px;
-   padding-bottom: 50px;
-}
-.contacts__container {
-  background-color: #6aaf38;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-left: max(72px, calc((100% - 1180px) / 2));
-  padding-right: 0;
-  max-width: none;
-}
-li {
-  list-style: none;
+.content__icon{
+  padding-top: 30px 0;
 }
 a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+.v-application .indigo.lighten-1 {
+  background-color: #6aaf38 !important;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-right: 0;
+  max-width: none;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.foooter__hr{
+  color: white;
+  width: 800px;
+  margin: 0 auto;
 
+}
 
+.footer__link{
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+.footer__list{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  }
+  .theme--dark.v-sheet{
+    background: #6aaf38 !important;;
+  }
 </style>

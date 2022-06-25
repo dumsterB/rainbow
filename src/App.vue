@@ -136,6 +136,9 @@ export default {
 };
 </script>
 <style>
+.v-btn{
+  text-transform: none;
+}
 .links {
   font-size: 17px !important;
 }

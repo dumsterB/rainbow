@@ -128,7 +128,7 @@
 
             <div class="pricing-plan panel__one-pricing">
               <img
-                src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png"
+                  src="https://s28.postimg.cc/ju5bnc3x9/plane.png"
                 alt=""
                 class="pricing-img"
               />
@@ -174,6 +174,7 @@
               <span class="pricing-price">150.000 Сум</span>
               <a href="#/" class="pricing-button">Заказать</a>
             </div>
+
           </div>
         </div>
       </div>
@@ -299,6 +300,7 @@ export default {
 </script>
 
 <style scoped>
+.pricing-table
 *,
 *:before,
 *:after {
@@ -306,6 +308,9 @@ export default {
 }
 li {
   list-style: none;
+}
+.container-fluid{
+padding-top: 100px;
 }
 .prices__title {
   margin-top: 40px;
@@ -317,20 +322,18 @@ li {
   color: #455560;
 }
 .panel__one {
-  flex-direction: row;
-  display: flex;
+ display: flex;
+   display: column;
+
 }
 .panel__one-pricing {
   width: 100%;
-  margin-top: 100px;
-  font-size: 8px;
-}
-.one-child {
+  font-size: 12px;
+
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
+
 .panel__two {
   display: flex;
   flex-direction: row;
@@ -343,6 +346,7 @@ li {
   color: white;
   border: 2px solid transparent;
   font-size: 20px;
+
 }
 .btn-type-active {
   font-weight: 700;
@@ -354,7 +358,7 @@ li {
 }
 
 .background {
-  padding: 0 25px 25px;
+  padding:  0 25px 25px;
   position: relative;
   width: 100%;
 }
@@ -413,6 +417,7 @@ li {
 .pricing-plan {
   border-bottom: 1px solid #e1f1ff;
   padding: 25px;
+
 }
 
 .pricing-plan:last-child {
@@ -466,6 +471,7 @@ li {
   display: block;
   font-size: 25px;
   font-weight: 700;
+  margin-top: auto;
 }
 
 .pricing-button {
@@ -477,6 +483,7 @@ li {
   padding: 15px 35px;
   text-decoration: none;
   transition: all 150ms ease-in-out;
+  /* margin-bottom: auto; */
 }
 
 .pricing-button:hover,
