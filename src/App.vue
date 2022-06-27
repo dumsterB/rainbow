@@ -179,4 +179,9 @@ export default {
 .wow {
   visibility: hidden;
 }
+@media(max-width: 800px){
+  *{
+    overflow: hidden;
+  }
+}
 </style>
