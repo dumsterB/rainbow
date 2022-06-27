@@ -226,7 +226,9 @@ export default {
   line-height: 60px;
 }
 .order__row{
- min-width: 300px;
+  display: flex;
+ min-width: 350px;
+
 }
 }
 </style>
