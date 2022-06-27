@@ -85,7 +85,6 @@ li {
 }
 .foooter__hr{
   color: white;
-  width: 800px;
   margin: 0 auto;
 
 }
