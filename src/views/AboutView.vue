@@ -1,5 +1,6 @@
 <template>
-  <div class="about__container">
+<div>
+ <div class="about__container">
     <h2 class="aboutOne__title">О нас</h2>
     <div class="about">
       <v-container fluid>
@@ -7,7 +8,7 @@
           <v-col>
             <div class="about__text"  data-aos="fade-right">
               <p class="about__text-item">
-                <span style="font-size: 25px">
+                <span class="about__span" >
                   Healthy Home - уникальная услуга для улучшения состояния
                   здоровья для всех членов семьи !</span
                 >
@@ -32,7 +33,7 @@
             </div>
           </v-col>
           <v-col>
-            <div class="about__images">
+            <div class="about__images" data-aos="fade-left">
               <v-container>
                 <v-row class="pl-4 pr-4">
                   <v-col cols="3">
@@ -94,7 +95,7 @@
     <h2 class="about__title">{{ $t("principWork.title") }}</h2>
     <v-container>
       <v-row>
-        <v-col>
+        <v-col  data-aos="fade-right">
           <img
             class="wp-image-6059 size-full aligncenter"
             src="https://rainbowsystem.com/wp-content/uploads/2019/11/RainbowSRX-animation2.gif"
@@ -104,7 +105,7 @@
           />
         </v-col>
         <v-col>
-          <div style="margin-top: 100px">
+          <div style="margin-top: 100px"  data-aos="fade-left">
             <p class="work__span">{{ $t("principWork.title__one") }}</p>
             <br />
             <p class="work__description">
@@ -123,6 +124,134 @@
       </v-row>
     </v-container>
   </div>
+
+
+
+<div class="about__container-mobile">
+    <h2 class="aboutOne__title">О нас</h2>
+    <div class="about">
+      <v-container fluid>
+        <v-row>
+          <v-col>
+            <div class="about__text"  data-aos="fade-right">
+              <p class="about__text-item">
+                <span class="about__span" >
+                  Healthy Home - уникальная услуга для улучшения состояния
+                  здоровья для всех членов семьи !</span
+                >
+                <br />
+                <br />
+
+                Впервые в Узбекистане, проект HealthyHome предлагает к
+                использованию американскую очистительную систему Rainbow, при
+                помощи, которой возможно идеальное очищение воздуха и любых
+                всевозможных поверхностей в доме - от грязи, пыли, песка,
+                пылевых клещей, вирусов, и бактерий, - который не только
+                прекрасно очищает ваш дом, но и улучшает общее состояние вашего
+                здоровья.
+              </p>
+              <p class="about__text-item">
+                Благодаря Rainbow вы можете забыть об аллергии на пыль,
+                раздражении слизистой оболочки носоглотки, и спать спокойно. Мы
+                единственная компания в Узбекистане, которая гарантирует, что
+                наш сервис приносит чистоту и здоровье в дом клиента, благодаря
+                возможностям системы Rainbow.
+              </p>
+            </div>
+          </v-col>
+          <v-col>
+            <div class="about__images" data-aos="fade-right">
+              <v-container>
+                <v-row class="pl-4 pr-4">
+                  <v-col cols="3">
+                    <img
+                      height="120"
+                      src="../assets/circle_card1.png"
+                      alt=""
+                      class="about__img"
+                    />
+                    <img
+                      height="120"
+                      src="../assets/circle_card2.png"
+                      alt=""
+                      class="about__img"
+                    />
+                    <img
+                      height="120"
+                      src="../assets/circle_card3.png"
+                      alt=""
+                      class="about__img"
+                    />
+                  </v-col>
+                  <v-col cols="6">
+                    <img
+                      height="350"
+                       src="../assets/image2.png"
+                      alt=""
+                      class="about__img"
+                      style="margin-left: -10px"
+                    />
+                  </v-col>
+                  <v-col cols="3">
+                    <img
+                      height="120"
+                      src="../assets/circle_card4.png"
+                      alt=""
+                      class="about__img"
+                    />
+                    <img
+                      height="120"
+                      src="../assets/circle_card6.jpg"
+                      alt=""
+                      class="about__img"
+                    />
+                    <img
+                      height="120"
+                      src="../assets/circle_card5.jpg"
+                      alt=""
+                      class="about__img"
+                    />
+                  </v-col>
+                </v-row>
+              </v-container>
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
+    <h2 class="about__title">{{ $t("principWork.title") }}</h2>
+    <v-container>
+      <v-row>
+        <v-col cols="12"  data-aos="fade-right">
+          <img
+            class="img__gif wp-image-6059 size-full aligncenter"
+            src="https://rainbowsystem.com/wp-content/uploads/2019/11/RainbowSRX-animation2.gif"
+            alt="Rainbow SRX Animation"
+
+          />
+        </v-col>
+        <v-col>
+          <div style="margin-top: 60px"  data-aos="fade-right">
+            <p class="work__span">{{ $t("principWork.title__one") }}</p>
+            <br />
+            <p class="work__description">
+              {{ $t("principWork.description__one") }}
+            </p>
+            <p class="work__span">{{ $t("principWork.title__two") }}</p>
+            <p class="work__description">
+              <br />
+              {{ $t("principWork.description__two") }}
+            </p>
+            <p class="work__span">
+              {{ $t("principWork.description__three") }}
+            </p>
+          </div>
+        </v-col>
+      </v-row>
+    </v-container>
+  </div>
+</div>
+
   <!-- <h2 class="about__title">Преимущества</h2> -->
 </template>
 
@@ -154,6 +283,9 @@ export default {
   font-weight: 300;
   text-align: center;
   color: #455560;
+}
+.about__span{
+  font-size: 25px;
 }
 .about__images {
   max-width: 700px;
@@ -219,5 +351,39 @@ export default {
   justify-content: center;
   display: flex;
   margin: auto;
+}
+.about__container{
+  display: none !important;
+}
+@media(max-width: 800px){
+.about__container{
+  display: none !important;
+}
+.about__container-mobile{
+  display: block !important;
+}
+.aboutOne__title{
+    font-size: 40px;
+    line-height: 60px;
+  }
+.about__span{
+  font-size: 18px;
+}
+.about__text-item{
+  font-size: 14px;
+}
+.about__title{
+  font-size: 40px;
+}
+.img__gif{
+width: 380px;
+height: 400px;
+}
+.work__span{
+  font-size: 16px;
+}
+.work__description{
+font-size: 14px;
+}
 }
 </style>

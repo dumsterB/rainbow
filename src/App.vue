@@ -5,7 +5,7 @@
         <v-list dense>
           <v-list-item-group v-model="selectedItem" color="primary">
             <v-list-item>
-              <v-list-item-content>
+              <v-list-item-content class="mobile__list">
                 <v-list-item-title>
                     <v-btn text class="links" v-scroll-to="'#aboutUs'">
           {{ $t("headerDefault.aboutUs") }}
@@ -46,6 +46,7 @@
       ></v-app-bar-nav-icon>
 
       <div class="d-flex"><img height="65" src="./assets/logo.png" alt=""> <span style="font-weight: 700" class="mt-5 ml-5">Healthy home</span>  </div>
+
 
       <v-spacer></v-spacer>
       <div class="hidden-md-and-down">
@@ -162,6 +163,12 @@ export default {
 <style>
 .v-btn{
   text-transform: none;
+}
+.mobile__list{
+
+  flex-direction: column;
+  align-items:center;
+
 }
 .links {
   font-size: 17px !important;

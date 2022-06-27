@@ -74,11 +74,84 @@
       </v-container>
 
     </div>
+
+      <div class="rainbow__wrap-mobile" data-aos="fade-left">
+      <v-container>
+        <v-row>
+          <v-col cols="12" >
+            <v-card elevation="0" class=" rainbow__card" min-width="280">
+              <v-card-text class="card__text">
+               {{ $t("possibility.pillarOne__one") }}
+              </v-card-text>
+              <v-card-text class="card__text">
+              {{ $t("possibility.pillarOne__two") }}
+              </v-card-text>
+              <v-card-text class="card__text">
+               {{ $t("possibility.pillarOne__three") }}
+              </v-card-text>
+               <v-card-text class="card__text">
+                дезинфекция
+              </v-card-text>
+            </v-card>
+          </v-col>
+          <v-col   cols="12" >
+            <v-card elevation="0" class="rainbow__card" min-width="280">
+              <v-card-text class="card__text">
+                {{ $t("possibility.pillarTwo__one") }}
+              </v-card-text>
+              <v-card-text class="card__text">
+               {{ $t("possibility.pillarTwo__two") }}
+              </v-card-text>
+              <v-card-text class="card__text">
+                {{ $t("possibility.pillarTwo__three") }}
+              </v-card-text>
+              <v-card-text class="card__text">
+                ароматизации
+              </v-card-text>
+            </v-card>
+          </v-col>
+          <v-col  cols="12"  >
+            <v-card elevation="0" class=" mx-auto rainbow__card" min-width="280">
+              <v-card-text class="card__text">
+              {{ $t("possibility.pillarThree__one") }}
+              </v-card-text>
+              <v-card-text class="card__text">
+                 {{ $t("possibility.pillarThree__two") }}
+              </v-card-text>
+              <v-card-text class="card__text">
+               {{ $t("possibility.pillarThree__three") }}
+              </v-card-text>
+               <v-card-text class="card__text">
+               ионизации воздуха
+              </v-card-text>
+
+            </v-card>
+          </v-col>
+          <v-col  cols="12" >
+            <v-card elevation="0" class=" mx-auto rainbow__card " min-width="280">
+              <v-card-text class="card__text">
+               {{ $t("possibility.pillarFour__one") }}
+              </v-card-text>
+              <v-card-text class="card__text">
+               {{ $t("possibility.pillarFour__two") }}
+              </v-card-text>
+              <v-card-text class="card__text">
+                {{ $t("possibility.pillarFour__three") }}
+              </v-card-text>
+
+              <v-card-text class="card__text">
+             сухой глубинной чистки мягких поверхностей
+              </v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+
+    </div>
   </div>
 </template>
 
 <style scoped lang="css">
-
 .rainbow__card {
   background: linear-gradient(to bottom, #eef2f7 0%, rgba(125, 185, 232, 0) 100%) !important;
   padding: 55px 30px;
@@ -116,14 +189,21 @@
   left: 0;
   z-index: 1;
 }
+.rainbow__wrap-mobile{
+  display: none !important;
+}
 
-@media(max-width:1245px){
+@media(max-width:800px){
 .rainbow__wrap{
-  display: none;
+  display: none !important;
+}
+.rainbow__wrap-mobile{
+  display:  block !important;
 
-  
-
-
+}
+.rainbow__title{
+  font-size: 35px;
+  line-height: 60px;
 }
 }
 </style>

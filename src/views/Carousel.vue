@@ -5,7 +5,7 @@
         v-for="(item, i) in items"
         :key="i"
         :src="item.src"
-        style=""
+
       >
         <v-row class="fill-height" align="center" justify="center">
           <div class="carousel__text">
@@ -117,5 +117,16 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media(max-width:800px){
+  .carousel__title{
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .carousel__link{
+    font-size: 12px;
+    line-height: 16px;
+
+  }
 }
 </style>

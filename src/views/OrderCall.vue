@@ -1,5 +1,6 @@
 <template>
-  <div>
+<div>
+ <div class="order__wrap">
     <v-dialog v-model="dialog" width="800">
       <v-card class="pa-5">
         <v-card-text>
@@ -65,6 +66,79 @@
       </v-row>
     </v-container>
   </div>
+
+
+      <div class="order__wrap-mobile">
+    <v-dialog v-model="dialog" width="800">
+      <v-card class="pa-5">
+        <v-card-text>
+           {{ $t("callBlock.callRegist") }}
+          <br />
+           {{ $t("callBlock.callThanks") }}
+        </v-card-text>
+
+        <v-divider></v-divider>
+
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="primary" text @click="dialog = false"> {{ $t("callBlock.undest") }} </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+    <v-container>
+      <h2 class="call__title" > {{ $t("callBlock.title") }}</h2>
+      <v-row>
+
+        <v-col>
+          <v-card class="contactTryCard">
+            <iframe
+             width="100%"
+             height="275px"
+              src="https://www.youtube.com/embed/45FcfPW4S5M"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </v-card>
+        </v-col>
+          <v-col cols="12">
+          <v-card  elevation="1" class="contactTryCard">
+            <v-form ref="form" v-model="valid" lazy-validation class="pa-10">
+              <v-text-field
+                v-model="name"
+                label="Ваше имя"
+                required
+              ></v-text-field>
+
+              <v-text-field
+                v-model="phone"
+                label="Ваш номер"
+                :rules="[(v) => !!v || 'Номер необходима']"
+                required
+              ></v-text-field>
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn
+                  dark
+                  large
+                  elevation="0"
+                  class="primary"
+                  @click="submitForm"
+                >
+                 {{ $t("callBlock.send") }}
+                </v-btn>
+              </v-card-actions>
+            </v-form>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+  </div>
+</div>
+
+
+
 </template>
 
 <script>
@@ -138,5 +212,19 @@ export default {
   text-align: center;
   color: #455560;
 }
-
+.order__wrap{
+  display: none !important;
+}
+@media(max-width:800px){
+.order__wrap{
+  display: none !important;
+}
+.order__wrap-mobile{
+  display: block !important;
+}
+.call__title{
+  font-size: 40px;
+  line-height: 60px;
+}
+}
 </style>

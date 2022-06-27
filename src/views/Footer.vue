@@ -104,4 +104,18 @@ li {
   .theme--dark.v-sheet{
     background: #6aaf38 !important;;
   }
+  @media(max-width: 800px){
+    .footer{
+      flex-wrap: wrap;
+    }
+    .footer__list{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+    }
+   .footer__list li {
+    padding-top: 10px;
+   }
+  }
 </style>

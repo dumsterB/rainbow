@@ -1,5 +1,6 @@
 <template>
-  <div style="position: relative">
+<div>
+ <div style="position: relative" class="wrap__price">
     <v-container>
       <h2 class="prices__title">Услуги</h2>
       <v-row style="display: flex; justify-content: center; margin: auto">
@@ -286,6 +287,298 @@
       </div>
     </div>
   </div>
+    <div style="position: relative" class="wrap__price-mobile">
+    <v-container>
+      <h2 class="prices__title">Услуги</h2>
+      <v-row style="display: flex;justify-content: center; align-items: center; margin: auto" cols="12">
+        <button
+          @click="type = 2"
+          :class="type === 1 ? 'btn-type-active' : 'btn-type'"
+
+        >
+          Одноразовые тарифы
+        </button>
+        <button
+          @click="type = 1"
+          :class="type === 2 ? 'btn-type-active' : 'btn-type'"
+
+        >
+          Регулярные тарифы <br />
+          без инструктора
+        </button>
+      </v-row>
+    </v-container>
+    <div class="background">
+      <div class="container-fluid" v-if="type === 2">
+        <div class="panel pricing-table">
+          <div class="panel__one">
+
+            <div class="pricing-plan panel__one-pricing" cols="12">
+              <img
+                src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png"
+                alt=""
+                class="pricing-img"
+              />
+              <h3
+                class="pricing-header"
+                v-html="
+                  type === 1
+                    ? $t('prices.titleTwo__one')
+                    : $t('prices.titleOne__one')
+                "
+              ></h3>
+              <ul class="pricing-features">
+                <li class="pricing-features-item">
+                  (без инструктора, проводится после прохождения тренинга)
+                </li>
+                <li class="pricing-features-item">
+                  сухая чистка стен, потолков, полов, техники и т.д. (очистка от
+                  пыли и грязи)
+                </li>
+              </ul>
+              <span
+                class="pricing-price"
+                v-html="
+                  type === 1
+                    ? $t('prices__price.priceTwo__one') + ' сум'
+                    : $t('prices__price.priceOne__one') + ' сум'
+                "
+              ></span>
+              <a href="#/" class="pricing-button">Заказать</a>
+            </div>
+
+            <div class="pricing-plan panel__one-pricing"  cols="12">
+              <img
+                src="https://s28.postimg.cc/ju5bnc3x9/plane.png"
+                alt=""
+                class="pricing-img"
+              />
+              <h3
+                class="pricing-header"
+                v-html="
+                  type === 1
+                    ? $t('prices.titleTwo__two')
+                    : $t('prices.titleOne__two')
+                "
+              ></h3>
+              <ul class="pricing-features">
+                <li class="pricing-features-item">
+                  -(двухспальный), 80.000 сумов (односпальный), 50.000 сумов
+                  (детский)
+                </li>
+                <li class="pricing-features-item">
+                  (очистка от пыли, гниющей органической массы, пылевых клещей и
+                  продуктов их жизнедеятельности и т.д.)
+                </li>
+              </ul>
+              <span
+                class="pricing-price"
+                v-html="
+                  type === 1
+                    ? $t('prices__price.priceTwo__two') + ' сум'
+                    : $t('prices__price.priceOne__two') + ' сум'
+                "
+              ></span>
+              <a href="#/" class="pricing-button is-featured">Заказать</a>
+            </div>
+
+            <div class="pricing-plan panel__one-pricing"  cols="12">
+              <img
+                src="https://s21.postimg.cc/tpm0cge4n/space-ship.png"
+                alt=""
+                class="pricing-img"
+              />
+              <h3
+                class="pricing-header"
+                v-html="
+                  type === 1
+                    ? $t('prices.titleTwo__three')
+                    : $t('prices.titleOne__three')
+                "
+              ></h3>
+              <ul class="pricing-features">
+                <li class="pricing-features-item">
+                  сухая чистка стен, потолков, полов, техники и т.д. (очистка от
+                  пыли и грязи
+                </li>
+                <li class="pricing-features-item">
+                  (очистка от пыли, гниющей органической массы, пылевых клещей и
+                  продуктов их жизнедеятельности)
+                </li>
+              </ul>
+              <span
+                class="pricing-price"
+                v-html="
+                  type === 1
+                    ? $t('prices__price.priceTwo__three') + ' сум'
+                    : $t('prices__price.priceOne__three') + ' сум'
+                "
+              ></span>
+              <a href="#/" class="pricing-button">Заказать</a>
+            </div>
+
+            <div class="pricing-plan panel__one-pricing"  cols="12">
+              <img
+                  src="https://s28.postimg.cc/ju5bnc3x9/plane.png"
+                alt=""
+                class="pricing-img"
+              />
+              <h3 class="pricing-header">
+                Сухая глубинная чистка ковров и ковровых покрытий – 8.000
+                сумов/м2
+              </h3>
+              <ul class="pricing-features">
+                <li class="pricing-features-item">
+                  (очистка от пыли, грязи, волос, гниющей органической массы,
+                </li>
+                <li class="pricing-features-item">
+                  пылевых клещей и продуктов их жизнедеятельности, «мертвого»
+                  ворса ковров и т.д.)
+                </li>
+              </ul>
+              <span
+                class="pricing-price"
+                v-html="
+                  type === 1
+                    ? $t('prices__price.priceTwo__one') + ' сум'
+                    : $t('prices__price.priceOne__one') + ' сум'
+                "
+              ></span>
+              <a href="#/" class="pricing-button">Заказать</a>
+            </div>
+
+            <div class="pricing-plan panel__one-pricing" cols="12">
+              <img
+                src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png"
+                alt=""
+                class="pricing-img"
+              />
+              <h3 class="pricing-header">Rainbow на час</h3>
+              <br />
+              <ul class="pricing-features">
+                <li class="pricing-features-item">
+                  очистка любых поверхностей в доме от грязи, пыли; очистка и
+                  ароматизация воздуха
+                </li>
+              </ul>
+              <br />
+              <span class="pricing-price">150.000 Сум</span>
+              <a href="#/" class="pricing-button">Заказать</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="container" v-if="type === 1">
+        <div class="panel pricing-table">
+          <div class="panel__two">
+            <div class="pricing-plan">
+              <img
+                src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png"
+                alt=""
+                class="pricing-img"
+              />
+              <h3
+                class="pricing-header"
+                v-html="
+                  type === 1
+                    ? $t('prices.titleTwo__one')
+                    : $t('prices.titleOne__one')
+                "
+              ></h3>
+              <ul class="pricing-features">
+                <li class="pricing-features-item">
+                  - Клиенту предоставляется Rainbow в назначенные дни и часы,
+                </li>
+                <li class="pricing-features-item">
+                  для самостоятельного использования в доме.
+                </li>
+              </ul>
+              <span
+                class="pricing-price"
+                v-html="
+                  type === 1
+                    ? $t('prices__price.priceTwo__one') + ' сум'
+                    : $t('prices__price.priceOne__one') + ' сум'
+                "
+              ></span>
+              <a href="#/" class="pricing-button">Заказать</a>
+            </div>
+
+            <div class="pricing-plan"  cols="12">
+              <img
+                src="https://s28.postimg.cc/ju5bnc3x9/plane.png"
+                alt=""
+                class="pricing-img"
+              />
+              <h3
+                class="pricing-header"
+                v-html="
+                  type === 1
+                    ? $t('prices.titleTwo__two')
+                    : $t('prices.titleOne__two')
+                "
+              ></h3>
+              <ul class="pricing-features">
+                <li class="pricing-features-item">
+                  - Клиенту предоставляется Rainbow в назначенные дни и часы
+                </li>
+                <li class="pricing-features-item">
+                  для самостоятельного использования в доме.
+                </li>
+              </ul>
+              <span
+                class="pricing-price"
+                v-html="
+                  type === 1
+                    ? $t('prices__price.priceTwo__two') + ' сум'
+                    : $t('prices__price.priceOne__two') + ' сум'
+                "
+              ></span>
+              <a href="#/" class="pricing-button is-featured">Заказать</a>
+            </div>
+
+            <div class="pricing-plan" cols="12">
+              <img
+                src="https://s21.postimg.cc/tpm0cge4n/space-ship.png"
+                alt=""
+                class="pricing-img"
+              />
+              <h3
+                class="pricing-header"
+                v-html="
+                  type === 1
+                    ? $t('prices.titleTwo__three')
+                    : $t('prices.titleOne__three')
+                "
+              ></h3>
+              <ul class="pricing-features">
+                <li class="pricing-features-item">
+                  Клиенту предоставляется Rainbow для самостоятельного
+                  использования в доме.
+                </li>
+                <li class="pricing-features-item">
+                  подписка на регулярные тарифы возможна при прохождении
+                  специализированного тренинга по использованию Rainbow
+                </li>
+              </ul>
+              <span
+                class="pricing-price"
+                v-html="
+                  type === 1
+                    ? $t('prices__price.priceTwo__three') + ' сум'
+                    : $t('prices__price.priceOne__three') + ' сум'
+                "
+              ></span>
+              <a href="#/" class="pricing-button">Заказать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </template>
 
 <script>
@@ -308,6 +601,9 @@ export default {
 }
 li {
   list-style: none;
+}
+.wrap__price{
+  display: none !important;
 }
 .container-fluid{
 padding-top: 100px;
@@ -506,5 +802,21 @@ padding-top: 100px;
 .container-fluid{
   padding-right: 30px;
   padding-left: 30px;
+}
+@media(max-width:800px){
+  .wrap__price{
+  display: none !important;
+}
+.wrap__price-mobile{
+  display:block !important;
+}
+.panel__one{
+  display: flex;
+  flex-direction: column;
+}
+.panel__two{
+  display: flex;
+  flex-direction: column;
+}
 }
 </style>
