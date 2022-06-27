@@ -222,7 +222,7 @@
     <h2 class="about__title">{{ $t("principWork.title") }}</h2>
     <v-container>
       <v-row>
-        <v-col cols="12"  data-aos="fade-right">
+        <v-col data-aos="fade-right">
           <img
             class="img__gif wp-image-6059 size-full aligncenter"
             src="https://rainbowsystem.com/wp-content/uploads/2019/11/RainbowSRX-animation2.gif"

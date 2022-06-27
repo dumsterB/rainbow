@@ -3,7 +3,7 @@
  <div style="position: relative" class="wrap__price">
     <v-container>
       <h2 class="prices__title">Услуги</h2>
-      <v-row style="display: flex; justify-content: center; margin: auto">
+      <v-row class="prices__row" >
         <button
           @click="type = 2"
           :class="type === 1 ? 'btn-type-active' : 'btn-type'"
@@ -290,7 +290,7 @@
     <div style="position: relative" class="wrap__price-mobile">
     <v-container>
       <h2 class="prices__title">Услуги</h2>
-      <v-row style="display: flex;justify-content: center; align-items: center; margin: auto" cols="12">
+      <v-row class="prices__row" >
         <button
           @click="type = 2"
           :class="type === 1 ? 'btn-type-active' : 'btn-type'"
@@ -617,6 +617,12 @@ padding-top: 100px;
   text-align: center;
   color: #455560;
 }
+.prices__row{
+   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .panel__one {
  display: flex;
    display: column;
@@ -817,6 +823,20 @@ padding-top: 100px;
 .panel__two{
   display: flex;
   flex-direction: column;
+}
+.prices__row{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-type{
+  width: 150px;
+  font-size:15px;
+}
+.btn-type-active{
+  width: 150px;
+  font-size: 15px;
 }
 }
 </style>

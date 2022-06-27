@@ -68,7 +68,7 @@
   </div>
 
 
-      <div class="order__wrap-mobile">
+       <div class="order__wrap-mobile">
     <v-dialog v-model="dialog" width="800">
       <v-card class="pa-5">
         <v-card-text>
@@ -87,9 +87,8 @@
     </v-dialog>
     <v-container>
       <h2 class="call__title" > {{ $t("callBlock.title") }}</h2>
-      <v-row>
-
-        <v-col>
+      <v-row  >
+        <v-col class="order__row" >
           <v-card class="contactTryCard">
             <iframe
              width="100%"
@@ -102,7 +101,7 @@
             ></iframe>
           </v-card>
         </v-col>
-          <v-col cols="12">
+          <v-col >
           <v-card  elevation="1" class="contactTryCard">
             <v-form ref="form" v-model="valid" lazy-validation class="pa-10">
               <v-text-field
@@ -225,6 +224,9 @@ export default {
 .call__title{
   font-size: 40px;
   line-height: 60px;
+}
+.order__row{
+ min-width: 300px;
 }
 }
 </style>
