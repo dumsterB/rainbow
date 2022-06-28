@@ -35,8 +35,6 @@
       </v-card-text>
 
       <v-divider></v-divider>
-      <hr class="foooter__hr">
-
       <v-card-text class="white--text">
         {{ new Date().getFullYear() }} — <strong>RAINBOW</strong>
       </v-card-text>
@@ -83,11 +81,7 @@ li {
   justify-content: center;
   align-self: center;
 }
-.foooter__hr{
-  color: white;
-  margin: 0 auto;
 
-}
 
 .footer__link{
   color: white;
@@ -104,9 +98,7 @@ li {
     background: #6aaf38 !important;;
   }
   @media(max-width: 800px){
-    .footer{
-      flex-wrap: wrap;
-    }
+    
     .footer__list{
      display: flex;
      justify-content: center;

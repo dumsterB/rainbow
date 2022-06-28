@@ -88,7 +88,7 @@
     <v-container>
       <h2 class="call__title" > {{ $t("callBlock.title") }}</h2>
       <v-row  >
-        <v-col class="order__row" >
+        <v-col class="order__row">
           <v-card class="contactTryCard">
             <iframe
              width="100%"
@@ -225,10 +225,6 @@ export default {
   font-size: 40px;
   line-height: 60px;
 }
-.order__row{
-  display: flex;
- min-width: 350px;
 
-}
 }
 </style>
