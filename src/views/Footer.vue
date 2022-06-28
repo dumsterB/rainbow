@@ -35,7 +35,6 @@
       </v-card-text>
 
       <v-divider></v-divider>
-
       <v-card-text class="white--text">
         {{ new Date().getFullYear() }} — <strong>RAINBOW</strong>
       </v-card-text>
@@ -60,7 +59,7 @@
 
 <style scoped>
 .content__icon{
-  padding-top: 30px 0px;
+  padding-top: 30px 0;
 }
 a {
   text-decoration: none;
@@ -82,11 +81,7 @@ li {
   justify-content: center;
   align-self: center;
 }
-.foooter__hr{
-  color: white;
-  margin: 0 auto;
 
-}
 
 .footer__link{
   color: white;
@@ -103,9 +98,7 @@ li {
     background: #6aaf38 !important;;
   }
   @media(max-width: 800px){
-    .footer{
-      flex-wrap: wrap;
-    }
+    
     .footer__list{
      display: flex;
      justify-content: center;
