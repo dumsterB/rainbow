@@ -35,7 +35,6 @@
       </v-card-text>
 
       <v-divider></v-divider>
-      <hr class="foooter__hr">
 
       <v-card-text class="white--text">
         {{ new Date().getFullYear() }} — <strong>RAINBOW</strong>
@@ -61,7 +60,7 @@
 
 <style scoped>
 .content__icon{
-  padding-top: 30px 0;
+  padding-top: 30px 0px;
 }
 a {
   text-decoration: none;
