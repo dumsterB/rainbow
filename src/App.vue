@@ -5,33 +5,49 @@
         <v-list dense>
           <v-list-item-group v-model="selectedItem" color="primary">
             <v-list-item>
-              <v-list-item-content class="mobile__list">
-                <v-list-item-title>
-                    <v-btn text class="links" v-scroll-to="'#aboutUs'">
-          {{ $t("headerDefault.aboutUs") }}
-        </v-btn>
-             <v-btn text class="links" v-scroll-to="'#services'">
-          {{ $t("headerDefault.services") }}
-        </v-btn>
-        <v-btn text class="links" v-scroll-to="'#function'">
-          {{ $t("headerDefault.function") }}
-        </v-btn>
-        <v-btn text class="links" v-scroll-to="'#delivery'">
-          {{ $t("headerDefault.delivery") }}
-        </v-btn>
-        <v-btn text class="links" v-scroll-to="">
-          {{ $t("headerDefault.quality") }}
-        </v-btn>
-        <v-btn class="primary" depressed v-scroll-to="'#order_call'">
-          <a style="text-decoration: none; color: white" href="">
-           {{ $t("headerDefault.call") }}
-           </a
-          >
-        </v-btn>
+              <v-list-item-content>
+                <v-list-item-title >
+                   {{ $t("headerDefault.aboutUs") }}
+                </v-list-item-title>
+              </v-list-item-content>
 
+            </v-list-item>
+
+             <v-list-item>
+              <v-list-item-content>
+                <v-list-item-title >
+ {{ $t("headerDefault.services") }}
+                </v-list-item-title>
+              </v-list-item-content>
+
+            </v-list-item>
+
+             <v-list-item>
+              <v-list-item-content>
+                <v-list-item-title >
+ {{ $t("headerDefault.function") }}
+                </v-list-item-title>
+              </v-list-item-content>
+
+            </v-list-item>
+
+             <v-list-item>
+              <v-list-item-content>
+                <v-list-item-title >
+   {{ $t("headerDefault.delivery") }}
+                </v-list-item-title>
+              </v-list-item-content>
+
+            </v-list-item>
+
+             <v-list-item>
+              <v-list-item-content>
+                <v-list-item-title >
+  {{ $t("headerDefault.quality") }}
                 </v-list-item-title>
               </v-list-item-content>
             </v-list-item>
+
           </v-list-item-group>
         </v-list>
       </v-card>
@@ -65,8 +81,8 @@
         <v-btn text class="links" v-scroll-to="">
           {{ $t("headerDefault.quality") }}
         </v-btn>
-        <v-btn class="primary" depressed v-scroll-to="'#order_call'">
-          <a style="text-decoration: none; color: white" href="">
+        <v-btn class="primary" depressed>
+          <a style="text-decoration: none; color: white" >
            {{ $t("headerDefault.call") }}
            </a
           >
@@ -97,14 +113,13 @@
     <!-- Sizes your content based upon application components -->
     <v-main>
       <div>
-        <Carousel></Carousel>
+        <Carousel id="carousel"></Carousel>
         <AboutView id="aboutUs"></AboutView>
-        <RainbowAtricleView></RainbowAtricleView>
+        <RainbowAtricleView id=""></RainbowAtricleView>
         <OrderCall id="order_call"></OrderCall>
-        <Prices></Prices>
-        <Services></Services>
-        <Delivery></Delivery>
-        <Footer></Footer>
+        <Prices id="prices"></Prices>
+        <Delivery id="delivery"></Delivery>
+        <Footer id="footer"></Footer>
       </div>
     </v-main>
   </v-app>
@@ -118,7 +133,6 @@ import RainbowAtricleView from "./views/RainbowAtricleView";
 import OrderCall from "./views/OrderCall";
 import Prices from './views/Prices';
 import Delivery from "./views/Delivery";
-
 import Footer from './views/Footer'
 
 export default {
@@ -129,7 +143,6 @@ export default {
     RainbowAtricleView,
     OrderCall,
     Prices,
-    // Services,
     Delivery,
     Footer,
     Carousel
@@ -181,7 +194,7 @@ export default {
 }
 @media(max-width: 800px){
   *{
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 }
 </style>

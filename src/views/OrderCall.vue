@@ -212,7 +212,11 @@ export default {
   text-align: center;
   color: #455560;
 }
-.order__wrap{
+.divider__class{
+  font-size: 40px;
+  margin: 0 auto;
+}
+.order__wrap-mobile{
   display: none !important;
 }
 @media(max-width:800px){

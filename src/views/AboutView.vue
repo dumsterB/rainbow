@@ -163,27 +163,7 @@
             <div class="about__images" data-aos="fade-right">
               <v-container>
                 <v-row class="pl-4 pr-4">
-                  <v-col cols="3">
-                    <img
-                      height="120"
-                      src="../assets/circle_card1.png"
-                      alt=""
-                      class="about__img"
-                    />
-                    <img
-                      height="120"
-                      src="../assets/circle_card2.png"
-                      alt=""
-                      class="about__img"
-                    />
-                    <img
-                      height="120"
-                      src="../assets/circle_card3.png"
-                      alt=""
-                      class="about__img"
-                    />
-                  </v-col>
-                  <v-col cols="6">
+                   <v-col cols="6">
                     <img
                       height="350"
                        src="../assets/image2.png"
@@ -192,24 +172,47 @@
                       style="margin-left: -10px"
                     />
                   </v-col>
-                  <v-col cols="3">
+                </v-row>
+                <v-row class="row__images">
+                  <v-col cols="12">
+                    <img
+                      height="120"
+                      src="../assets/circle_card1.png"
+                      alt=""
+                      class="about__img-circle"
+                    />
+                    <img
+                      height="120"
+                      src="../assets/circle_card2.png"
+                      alt=""
+                      class="about__img-circle"
+                    />
+                    <img
+                      height="120"
+                      src="../assets/circle_card3.png"
+                      alt=""
+                      class="about__img-circle"
+                    />
+                  </v-col>
+
+                  <v-col cols="12">
                     <img
                       height="120"
                       src="../assets/circle_card4.png"
                       alt=""
-                      class="about__img"
+                      class="about__img-circle"
                     />
                     <img
                       height="120"
                       src="../assets/circle_card6.jpg"
                       alt=""
-                      class="about__img"
+                      class="about__img-circle"
                     />
                     <img
                       height="120"
                       src="../assets/circle_card5.jpg"
                       alt=""
-                      class="about__img"
+                      class="about__img-circle"
                     />
                   </v-col>
                 </v-row>
@@ -227,7 +230,6 @@
             class="img__gif wp-image-6059 size-full aligncenter"
             src="https://rainbowsystem.com/wp-content/uploads/2019/11/RainbowSRX-animation2.gif"
             alt="Rainbow SRX Animation"
-
 
           />
         </v-col>
@@ -353,7 +355,7 @@ export default {
   display: flex;
   margin: auto;
 }
-.about__container{
+.about__container-mobile{
   display: none !important;
 }
 @media(max-width: 800px){
@@ -390,5 +392,19 @@ height: 400px;
 .work__description{
 font-size: 14px;
 }
+.about__img{
+  border-radius: none;
+}
+.row__images{
+  margin: 0 auto;
+}
+
+.about__img-circle{
+  margin-bottom: 20px;
+  width: 100px;
+  margin-right: 20px;
+  padding: 0;
+}
+
 }
 </style>

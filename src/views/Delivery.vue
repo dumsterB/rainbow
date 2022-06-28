@@ -73,8 +73,9 @@
       </v-timeline-item>
     </div>
   </div>
+
    <div class="contact-mobile">
-    <h2 class="divider__class">Как заказать услугу</h2>
+    <h2 class="">Как заказать услугу</h2>
     <br >
     <div class="content-mobile">
       <v-row class="d-flex justify-center">
@@ -137,19 +138,35 @@
 .timeline_item {
   width: 700px;
 }
+.divider__class{
 
-.content-mobile{
+  margin-top: 40px;
+  margin-bottom: 60px;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 66px;
+  text-align: center;
+  color: #455560;
+
+}
+.contact-mobile{
   display: none!important;
 }
 @media(max-width:800px){
 .contact{
   display: none !important;
 }
+.divider__class{
+  font-size: 30px;
+   margin-top: 30px;
+  margin-bottom: 50px;
+  font-weight: 300;
+  line-height: 48px;
+  text-align: center;
+  color: #455560;
+}
 .contact-mobile{
   display: block !important;
-}
-.v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse) .v-timeline-item:nth-child(2n+1):not(.v-timeline-item--before), .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse) .v-timeline-item--after {
-  flex-direction: row;
 }
 }
 </style>

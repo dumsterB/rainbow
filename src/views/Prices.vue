@@ -642,21 +642,24 @@ padding-top: 100px;
 }
 .btn-type {
   width: 300px;
-  padding: 20px 0;
+  padding: 25px 0;
   background: #6aaf38;
   font-weight: 700;
   color: white;
   border: 2px solid transparent;
   font-size: 20px;
+  height: 100px;
 
 }
 .btn-type-active {
   font-weight: 700;
   border: 2px solid #6aaf38;
   color: black;
-  padding: 20px 0;
   font-size: 20px;
+  padding: 25px 0;
+
   width: 300px;
+  height: 100px;
 }
 
 .background {
@@ -831,11 +834,11 @@ padding-top: 100px;
   align-items: center;
 }
 .btn-type{
-  width: 150px;
+  width: 160px;
   font-size:15px;
 }
 .btn-type-active{
-  width: 150px;
+  width: 160px;
   font-size: 15px;
 }
 }
