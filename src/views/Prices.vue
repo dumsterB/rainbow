@@ -379,7 +379,7 @@
                     : $t('prices__price.priceOne__two') + ' сум'
                 "
               ></span>
-              <a href="#/" class="pricing-button is-featured">Заказать</a>
+              <a href="#/" class="pricing-button ">Заказать</a>
             </div>
 
             <div class="pricing-plan panel__one-pricing"  cols="12">
