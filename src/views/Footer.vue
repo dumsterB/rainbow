@@ -1,14 +1,14 @@
 
  <template>
  <div class="contacts__container">
- <v-footer class="footer"
+ <v-footer class="footer "
     dark
     padless
   >
     <v-card
       flat
       tile
-      class="indigo lighten-1 white--text text-center"
+      class="indigo lighten-1 white--text text-center "
     >
       <v-card-text>
         <v-btn
@@ -79,7 +79,7 @@ li {
   list-style: none;
 }
 .v-application .indigo.lighten-1 {
-  background-color: #6aaf38 !important;
+  background-color:#4FC3F7  !important;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -105,7 +105,7 @@ li {
   align-items:center;
   }
   .theme--dark.v-sheet{
-    background: #6aaf38 !important;;
+    background:#4FC3F7  !important;;
   }
   @media(max-width: 800px){
 

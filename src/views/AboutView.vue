@@ -84,18 +84,17 @@
     </div>
     <h2 class="about__title">{{ $t("principWork.title") }}</h2>
     <v-container>
-      <v-row>
+      <v-row class="about__giw-wrap">
         <v-col  data-aos="fade-right">
           <img
-            class="wp-image-6059 size-full aligncenter"
+            class=" img__gif wp-image-6059 size-full aligncenter"
             src="https://rainbowsystem.com/wp-content/uploads/2019/11/RainbowSRX-animation2.gif"
             alt="Rainbow SRX Animation"
-            width="600"
-            height="600"
+
           />
         </v-col>
         <v-col>
-          <div style="margin-top: 100px"  data-aos="fade-left">
+          <div  class="wrap__text-about" style="margin-top: 100px"  data-aos="fade-left">
             <p class="work__span">{{ $t("principWork.title__one") }}</p>
             <br />
             <p class="work__description">
@@ -118,7 +117,7 @@
 
 
 <div class="about__container-mobile">
-    <h2 class="aboutOne__title">{ $t("aboutUS.title") }}</h2>
+    <h2 class="aboutOne__title">{{ $t("aboutUS.title") }}</h2>
     <div class="about">
       <v-container fluid>
         <v-row >
@@ -348,6 +347,15 @@ export default {
 .about__container-mobile{
   display: none !important;
 }
+@media(max-width:1300px){
+  .img__gif{
+    width: 450px;
+    height: 450px;
+    margin-top: 45px;
+  }
+
+  }
+
 @media(max-width: 800px){
 .about__container{
   display: none !important;

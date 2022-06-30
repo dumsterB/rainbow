@@ -81,7 +81,7 @@ export default {
   margin-bottom: 50px;
 }
 .carousel__link {
-  background-color: rgb(101, 172, 50);
+  background-color:#4FC3F7 ;
   font-family: "Roboto";
   cursor: pointer;
   outline: currentcolor none medium;

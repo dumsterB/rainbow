@@ -175,8 +175,12 @@
   display: none!important;
 }
 @media(max-width:800px){
+
 .contact{
   display: none !important;
+}
+.services_title{
+  font-size: 35px;
 }
 .divider__class{
   font-size: 30px;

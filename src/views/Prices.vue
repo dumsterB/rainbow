@@ -1,6 +1,6 @@
 <template>
 <div   data-aos="fade-right">
- <div style="position: relative" class="wrap__price">
+ <div style="position: relative" class="wrap__price " >
     <v-container>
       <h2 class="prices__title"> {{ $t("prices.title") }}</h2>
       <v-row style="display: flex; justify-content: center; margin: auto">
@@ -19,10 +19,10 @@
         </button>
       </v-row>
     </v-container>
-    <div class="background">
+    <div class="background " >
       <div class="container-fluid" v-if="type === 2">
         <div class="panel pricing-table" >
-          <div class="panel__one">
+          <div class="panel__one ">
             <div class="pricing-plan panel__one-pricing">
               <img
                 src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png"
@@ -628,7 +628,7 @@ padding-top: 100px;
 .btn-type {
   width: 300px;
   padding: 25px 0;
-  background: #6aaf38;
+  background: #4FC3F7 ;
   font-weight: 700;
   color: white;
   border: 2px solid transparent;
@@ -638,7 +638,7 @@ padding-top: 100px;
 }
 .btn-type-active {
   font-weight: 700;
-  border: 2px solid #6aaf38;
+  border: 2px solid#4FC3F7 ;
   color: black;
   font-size: 20px;
   padding: 25px 0;
@@ -655,7 +655,7 @@ padding-top: 100px;
 
 .background::after {
   content: "";
-  background: #6aaf38;
+  background:#4FC3F7 ;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60a9ff', endColorstr='#4394f4',GradientType=0 );
   height: 450px;
   left: 0;
@@ -739,7 +739,7 @@ padding-top: 100px;
 }
 
 .pricing-features {
-  color: #6aaf38;
+  color: #4FC3F7 ;
   font-weight: 600;
   letter-spacing: 1px;
   margin: 20px 0 25px;
@@ -757,7 +757,7 @@ padding-top: 100px;
 }
 
 .pricing-price {
-  color: #6aaf38;
+  color:#4FC3F7 ;
   display: block;
   font-size: 25px;
   font-weight: 700;
@@ -765,9 +765,9 @@ padding-top: 100px;
 }
 
 .pricing-button {
-  border: 1px solid #6aaf38;
+  border: 1px solid#4FC3F7 ;
   border-radius: 10px;
-  color: #6aaf38;
+  color: #4FC3F7 ;
   display: inline-block;
   margin: 25px 0;
   padding: 15px 30px;
@@ -781,17 +781,17 @@ padding-top: 100px;
 }
 .pricing-button:hover,
 .pricing-button:focus {
-  background-color: #6ca14691 ;
+  background-color:#4FC3F7  ;
 }
 
 .pricing-button.is-featured {
-  background-color: #6aaf38;
+  background-color:#4FC3F7 ;
   color: #fff;
 }
 
 .pricing-button.is-featured:hover,
 .pricing-button.is-featured:active {
-  background-color: #6aaf38;
+  background-color:#4FC3F7 ;
 }
 .container-fluid{
   padding-right: 30px;
@@ -800,6 +800,9 @@ padding-top: 100px;
 @media(max-width:800px){
   .wrap__price{
   display: none !important;
+}
+.prices__title{
+  font-size: 40px;
 }
 .wrap__price-mobile{
   display:block !important;

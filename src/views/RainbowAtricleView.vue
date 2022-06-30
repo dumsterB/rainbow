@@ -3,7 +3,7 @@
     <h2 class="rainbow__title">{{ $t("possibility.title") }}</h2>
     <div class="rainbow__wrap">
       <v-container>
-        <v-row>
+        <v-row class="wrap__cards">
           <v-col lg="3" md="3" cols="6" sm="6">
             <v-card elevation="0" class=" rainbow__card" min-width="280">
               <v-card-text class="card__text">
@@ -182,7 +182,7 @@
   content: "";
   width: 20px;
   height: 20px;
-  background: url("../assets/icon_article.svg") no-repeat center center;
+  background: url("../assets/iconArtic.svg") no-repeat center center;
   background-size: auto;
   background-size: cover;
   position: absolute;
@@ -194,10 +194,18 @@
   display: none !important;
 }
 
+@media(max-width:1230px){
+.wrap__cards{
+
+  display: flex;
+  justify-content: space-between;
+}
+}
 @media(max-width:800px){
 .rainbow__wrap{
   display: none !important;
 }
+
 .rainbow__wrap-mobile{
   display:  block !important;
 
