@@ -1,7 +1,7 @@
 <template>
 <div>
  <div class="about__container">
-    <h2 class="aboutOne__title">О нас</h2>
+    <h2 class="aboutOne__title"> {{ $t("aboutUS.title") }}</h2>
     <div class="about">
       <v-container fluid>
         <v-row>
@@ -9,26 +9,16 @@
             <div class="about__text"  data-aos="fade-right">
               <p class="about__text-item">
                 <span class="about__span" >
-                  Healthy Home - уникальная услуга для улучшения состояния
-                  здоровья для всех членов семьи !</span
+                            {{ $t("aboutUS.about-titleOne") }}
+                 </span
                 >
                 <br />
                 <br />
+                  {{ $t("aboutUS.about-titleTwo") }}
 
-                Впервые в Узбекистане, проект HealthyHome предлагает к
-                использованию американскую очистительную систему Rainbow, при
-                помощи, которой возможно идеальное очищение воздуха и любых
-                всевозможных поверхностей в доме - от грязи, пыли, песка,
-                пылевых клещей, вирусов, и бактерий, - который не только
-                прекрасно очищает ваш дом, но и улучшает общее состояние вашего
-                здоровья.
               </p>
               <p class="about__text-item">
-                Благодаря Rainbow вы можете забыть об аллергии на пыль,
-                раздражении слизистой оболочки носоглотки, и спать спокойно. Мы
-                единственная компания в Узбекистане, которая гарантирует, что
-                наш сервис приносит чистоту и здоровье в дом клиента, благодаря
-                возможностям системы Rainbow.
+                {{ $t("aboutUS.about-titleThree") }}
               </p>
             </div>
           </v-col>
@@ -128,7 +118,7 @@
 
 
 <div class="about__container-mobile">
-    <h2 class="aboutOne__title">О нас</h2>
+    <h2 class="aboutOne__title">{ $t("aboutUS.title") }}</h2>
     <div class="about">
       <v-container fluid>
         <v-row >
@@ -397,6 +387,8 @@ font-size: 14px;
 }
 .row__images{
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .about__img-circle{

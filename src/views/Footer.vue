@@ -25,11 +25,21 @@
 
       <v-card-text class="white--text pt-0">
         <ul class="footer__list">
-          <li><a  class="footer__link" href="#">О нас</a></li>
-          <li><a  class="footer__link" href="#">Услуги</a></li>
-          <li><a  class="footer__link" href="#">Функции RS</a></li>
-          <li><a  class="footer__link" href="#">Доставка</a></li>
-          <li><a  class="footer__link" href="#">Качество</a></li>
+         <v-btn text class="links" v-scroll-to="'#aboutUs'">
+          {{ $t("headerDefault.aboutUs") }}
+        </v-btn>
+         <v-btn text class="links" v-scroll-to="'#services'">
+          {{ $t("headerDefault.services") }}
+        </v-btn>
+            <v-btn text class="links" v-scroll-to="'#function'">
+          {{ $t("headerDefault.function") }}
+        </v-btn>
+          <v-btn text class="links" v-scroll-to="'#delivery'">
+          {{ $t("headerDefault.delivery") }}
+        </v-btn>
+          <v-btn text class="links" v-scroll-to="">
+          {{ $t("headerDefault.quality") }}
+        </v-btn>
         </ul>
 
       </v-card-text>
@@ -98,7 +108,7 @@ li {
     background: #6aaf38 !important;;
   }
   @media(max-width: 800px){
-    
+
     .footer__list{
      display: flex;
      justify-content: center;

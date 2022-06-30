@@ -1,43 +1,43 @@
 <template>
 <div>
-   <div class="contact">
-    <h2 class="services_title"  >Как заказать услугу</h2>
+   <div class="contact" data-aos="fade-right">
+    <h2 class="services_title"> {{ $t("delivery.title") }} </h2>
     <br >
-    <div class="content">
+    <div class="content"  >
       <v-row class="d-flex justify-center">
-        <v-timeline  class="pa-5 hiddenMobileProcess">
+        <v-timeline  class="pa-5 hiddenMobileProcess" >
           <v-timeline-item class="timeline_item" icon="1">
             <v-card class="cardProcess">
-              <p class="timilineText">Отправляете контакт на сайт </p>
+              <p class="timilineText">  {{ $t("delivery.one") }} </p>
             </v-card>
           </v-timeline-item>
           <v-timeline-item class="text-right" icon="2">
             <v-card class="cardProcess">
               <p class="timilineText">
-                Наш специалист с вами свяжется и назначит время
+                  {{ $t("delivery.two") }}
               </p>
             </v-card>
           </v-timeline-item>
           <v-timeline-item  icon="3">
             <v-card class="cardProcess">
               <p class="timilineText">
-                Мы приедем на обучение пользования аппаратом
+                {{ $t("delivery.three") }}
               </p>
             </v-card>
           </v-timeline-item>
           <v-timeline-item class="text-right" icon="4" >
             <v-card class="cardProcess">
-              <p class="timilineText">Вы получаете сертификат эксперта</p>
+              <p class="timilineText"> {{ $t("delivery.four") }}</p>
             </v-card>
           </v-timeline-item>
           <v-timeline-item  icon="5">
             <v-card class="cardProcess">
-              <p class="timilineText">Мы назначаем частоту и опцию аренды</p>
+              <p class="timilineText"> {{ $t("delivery.five") }}</p>
             </v-card>
           </v-timeline-item>
           <v-timeline-item class="text-right" icon="6">
             <v-card class="cardProcess">
-              <p class="timilineText">Вы имеете чистый дом и свежий воздух</p>
+              <p class="timilineText"> {{ $t("delivery.six") }}</p>
             </v-card>
           </v-timeline-item>
         </v-timeline>
@@ -74,8 +74,10 @@
     </div>
   </div>
 
-   <div class="contact-mobile">
-    <h2 class="services_title">Как заказать услугу</h2>
+
+
+   <div class="contact-mobile" data-aos="fade-left">
+    <h2 class="services_title"> {{ $t("delivery.title") }}</h2>
     <br >
     <div class="content-mobile">
       <v-row class="d-flex justify-center">
@@ -83,37 +85,37 @@
           <v-timeline-item style="margin-left: -20px" class="text-right" icon="1">
             <v-card class="cardProcess">
               <p class="timilineText">
-                Наш специалист с вами свяжется и назначит время
+                {{ $t("delivery.one") }}
               </p>
             </v-card>
           </v-timeline-item>
           <v-timeline-item style="margin-left: -20px"  class="text-right" icon="2">
             <v-card class="cardProcess">
               <p class="timilineText">
-                Наш специалист с вами свяжется и назначит время
+               {{ $t("delivery.two") }}
               </p>
             </v-card>
           </v-timeline-item>
           <v-timeline-item  style="margin-left: -20px" icon="3">
             <v-card class="cardProcess">
               <p class="timilineText">
-                Мы приедем на обучение пользования аппаратом
+                 {{ $t("delivery.three") }}
               </p>
             </v-card>
           </v-timeline-item>
           <v-timeline-item style="margin-left: -20px" class="text-right" icon="4" >
             <v-card class="cardProcess">
-              <p class="timilineText">Вы получаете сертификат эксперта</p>
+              <p class="timilineText"> {{ $t("delivery.four") }}</p>
             </v-card>
           </v-timeline-item>
           <v-timeline-item  style="margin-left: -20px" icon="5">
             <v-card class="cardProcess">
-              <p class="timilineText">Мы назначаем частоту и опцию аренды</p>
+              <p class="timilineText"> {{ $t("delivery.five") }}</p>
             </v-card>
           </v-timeline-item>
           <v-timeline-item style="margin-left: -20px" class="text-right" icon="6">
             <v-card class="cardProcess">
-              <p class="timilineText">Вы имеете чистый дом и свежий воздух</p>
+              <p class="timilineText"> {{ $t("delivery.six") }}</p>
             </v-card>
           </v-timeline-item>
         </v-timeline>

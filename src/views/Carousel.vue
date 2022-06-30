@@ -10,10 +10,10 @@
         <v-row class="fill-height" align="center" justify="center">
           <div class="carousel__text">
             <h2 class="carousel__title">
-              {{ item.text }}
+             {{ $t (item.title)}}
             </h2>
             <a href="#" class="carousel__link"
-              >ЗАПЛАНИРУЙТЕ ДЕМОНСТРАЦИЮ НА ДОМУ</a
+              > {{ $t("carousel.slidelink") }}</a
             >
           </div>
         </v-row>
@@ -27,27 +27,29 @@ export default {
   name: "Carousel",
   data() {
     return {
-      items: [
-        {
-          src: require("../assets/slide4.jpg"),
-          text: " Радуга ® Система очистки обеспечивает сертифицированную очистку воздуха в вашем доме.",
-        },
-        {
-          src: require("../assets/slide5.jpg"),
-          text: "Оригинальная система домашней уборки на водной основе. Построен на века.",
-        },
-        {
-          src: require("../assets/slide1.jpg"),
-          text: "Объедините силу радуги ® Система очистки с линейкой эксклюзивных ароматов Rainbow для дома, который выглядит, пахнет и ощущается восхитительно чистым.",
-        },
-        {
-          src: require("../assets/slide3.jpg"),
-          text: "Rainbow сертифицирована asthma & allergy friendly ™ Американским фондом по борьбе с астмой и аллергией*.",
-        },
-      ],
-    };
-  },
-};
+
+           items: [
+               {
+                  src: require("../assets/slide4.jpg"),
+                  title: "carousel.slideOne"
+               },
+               {
+                 src: require("../assets/slide5.jpg"),
+                 title: "carousel.slideTwo",
+               },
+                {
+                  src: require("../assets/slide1.jpg"),
+                  title: "carousel.slideThree"
+               },
+               {
+                 src: require("../assets/slide3.jpg"),
+                 title: "carousel.slideFour",
+               },
+            ]
+        }
+    }
+}
+
 </script>
 <style>
 .v-image__image {

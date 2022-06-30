@@ -1,5 +1,5 @@
 <template>
-  <div class="rainbow__containter">
+  <div class="rainbow__containter" data-aos="fade-right">
     <h2 class="rainbow__title">{{ $t("possibility.title") }}</h2>
     <div class="rainbow__wrap">
       <v-container>
@@ -16,7 +16,7 @@
                {{ $t("possibility.pillarOne__three") }}
               </v-card-text>
                <v-card-text class="card__text">
-                дезинфекция
+                {{ $t("possibility.pillarOne__four") }}
               </v-card-text>
             </v-card>
           </v-col>
@@ -32,7 +32,7 @@
                 {{ $t("possibility.pillarTwo__three") }}
               </v-card-text>
               <v-card-text class="card__text">
-                ароматизации
+                  {{ $t("possibility.pillarTwo__four") }}
               </v-card-text>
             </v-card>
           </v-col>
@@ -48,7 +48,7 @@
                {{ $t("possibility.pillarThree__three") }}
               </v-card-text>
                <v-card-text class="card__text">
-               ионизации воздуха
+               {{ $t("possibility.pillarThree__four") }}
               </v-card-text>
 
             </v-card>
@@ -66,7 +66,7 @@
               </v-card-text>
 
               <v-card-text class="card__text">
-             сухой глубинной чистки мягких поверхностей
+              {{ $t("possibility.pillarFour__four") }}
               </v-card-text>
             </v-card>
           </v-col>
@@ -78,6 +78,7 @@
       <div class="rainbow__wrap-mobile" data-aos="fade-left">
       <v-container>
         <v-row>
+
           <v-col cols="12" >
             <v-card elevation="0" class=" rainbow__card" min-width="280">
               <v-card-text class="card__text">
@@ -90,11 +91,12 @@
                {{ $t("possibility.pillarOne__three") }}
               </v-card-text>
                <v-card-text class="card__text">
-                дезинфекция
+               {{ $t("possibility.pillarOne__four") }}
               </v-card-text>
             </v-card>
           </v-col>
-          <v-col   cols="12" >
+
+          <v-col cols="12" >
             <v-card elevation="0" class="rainbow__card" min-width="280">
               <v-card-text class="card__text">
                 {{ $t("possibility.pillarTwo__one") }}
@@ -105,8 +107,8 @@
               <v-card-text class="card__text">
                 {{ $t("possibility.pillarTwo__three") }}
               </v-card-text>
-              <v-card-text class="card__text">
-                ароматизации
+              <v-card-text class="card__text">\
+                  {{ $t("possibility.pillarTwo__four") }}
               </v-card-text>
             </v-card>
           </v-col>
@@ -122,7 +124,7 @@
                {{ $t("possibility.pillarThree__three") }}
               </v-card-text>
                <v-card-text class="card__text">
-               ионизации воздуха
+                {{ $t("possibility.pillarThree__four") }}
               </v-card-text>
 
             </v-card>
@@ -138,9 +140,8 @@
               <v-card-text class="card__text">
                 {{ $t("possibility.pillarFour__three") }}
               </v-card-text>
-
               <v-card-text class="card__text">
-             сухой глубинной чистки мягких поверхностей
+                {{ $t("possibility.pillarFour__four") }}
               </v-card-text>
             </v-card>
           </v-col>

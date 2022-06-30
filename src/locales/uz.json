@@ -7,6 +7,20 @@
     "quality": "Sifat",
     "call": "Qo'ng'iroqni talab qiling"
   },
+
+   "carousel":{
+    "slideOne":"Rainbow ® Purification System sizning uyingizda sertifikatlangan havoni tozalash imkonini beradi.",
+    "slideTwo":"Asl suvga asoslangan uy tozalash tizimi. Barqarorlik uchun qurilgan.",
+    "slideThree":"Rainbow® tozalash tizimining kuchini bir qator eksklyuziv Rainbow xushbo'y hidlari bilan birlashtirib, uyning ko'rinishi, hidi va yoqimli tozaligini his eting.",
+    "slideFour":"Rainbow Amerika astma va allergiya fondi* tomonidan astma va allergiyaga qarshi sertifikatlangan. ",
+    "slidelink":"UYDA DEMONI REJAJLASH"
+   },
+   "aboutUS":{
+    "title":"Biz haqimizda",
+    "about-titleOne":" Sog'lom uy - barcha oila a'zolari salomatligini yaxshilash uchun noyob xizmat!",
+    "about-titleTwo":"O'zbekistonda birinchi marta HealthyHome loyihasi Amerikaning Rainbow tozalash tizimidan foydalanishni taklif qiladi, uning yordamida uydagi havo va barcha turdagi yuzalarni – axloqsizlik, chang, qum, chang oqadilar, viruslardan mukammal tozalash mumkin. , va bakteriyalar - bu nafaqat uyingizni mukammal darajada tozalaydi, balki umumiy sog'lig'ingizni yaxshilaydi.",
+    "about-titleThree":"Rainbow tufayli siz chang allergiyasini, nazofarenkning shilliq qavatining tirnash xususiyati haqida unutishingiz va tinchgina uxlashingiz mumkin. Biz Rainbow tizimining imkoniyatlari tufayli xizmatimiz mijozning uyiga tozalik va salomatlik olib kelishini kafolatlaydigan O'zbekistondagi yagona kompaniyamiz."
+  },
   "principWork": {
     "title": "Ish printsipi",
     "title__one": "Aerodinamika: harakatdagi havo",
@@ -20,15 +34,23 @@
     "pillarOne__one": "O'yinchoqlarni tozalash ",
     "pillarOne__two": "Kiyimlarni tozalash",
     "pillarOne__three": "Yumshoq va qattiq yuzalarni nam tozalash",
+     "pillarOne__four": "dezinfeksiya",
+
     "pillarTwo__one": "Nam tozalash ",
     "pillarTwo__two": "Quruq tozalash ",
     "pillarTwo__three": "Kirish qiyin bo'lgan joylarni tozalash",
+    "pillarTwo__four": "aromatizatsiya",
+
     "pillarThree__one": "Yumshoq mebellarni chuqur tozalash ",
     "pillarThree__two": "Yumshoq mebel uchun sirtni tozalash  ",
     "pillarThree__three": "To'shak va sharlarni puflash",
+    "pillarThree__four": "havo ionlanishi",
+
+
     "pillarFour__one": "Gilam yuvish",
     "pillarFour__two": "Yostiqni tozalash ",
-    "pillarFour__three": "aromaterapiya "
+    "pillarFour__three": "aromaterapiya ",
+    "pillarFour__four": "yumshoq yuzalarni quruq chuqur tozalash"
   },
   "callBlock": {
     "title": "Qo'ng'iroqni talab qiling",
@@ -38,32 +60,42 @@
     "yourName": "Sizning ismingiz",
     "send": "yuborish"
   },
-  "services": {
-    "title": "Bizning xizmatlarimiz",
-    "servicesTitle__one": "Kvartiralarni muntazam tozalash",
-    "servicesDescription__one": "Ishonamizki, bizning qiyin paytimizda sizning kvartirangizni tozalashdan ko'ra muhimroq va qiziqarli qiladigan ishlaringiz bor yoki uyda narsalarni tartibga solish uchun siz ko'p vaqt va kuch sarflaysiz. ",
-    "servicesTitle__two": "Ta'mirlashdan keyin tozalash  ",
-    "servicesDescription__two": "Shunday qilib, sizning uzoq kutilgan ta'mirlashingiz nihoyasiga yetdi. Quruvchilar sizga qo'ng'iroq qilib, ularning ishi tugaganligini va egasi(lar)i kelib ishni qabul qilishlari kerakligini ma'lum qiladi.",
-    "servicesTitle__three": "A dan Z gacha umumiy tozalash",
-    "servicesDescription__three": "Umumiy tozalash har doim egalari tomonidan uzoq, birinchi navbatda, hissiy tayyorgarlik bilan birga keladi. ",
-    "servicesTitle__four": "Uy va kottejlarni tozalash",
-    "servicesDescription__four": "Har qanday styuardessa yoki egasi hatto uyni hozirgi tozalash ham juda mashaqqatli va zerikarli jarayon ekanligini tasdiqlaydi, ayniqsa og'ir kundan keyin.",
-    "servicesTitle__five": "Matraslarni Shomildan tozalash",
-    "servicesDescription__five": "Xullas, iliq kunlar yaqinlashmoqda va styuardessalar o'zlarining gilamlari va gilamlarini yuvish va changdan tozalash uchun chiday boshlaydilar.Bu jarayon juda qiyin.",
-    "servicesTitle__six": "Professional ofis tozalash",
-    "servicesDescription__six": "Ofisingiz doimo toza bo'lishini xohlaysizmi? Xodimlarni ko'paytirish va texnik xodimlarning ishiga haq to'lashning mutlaqo hojati yo'q. "
-  },
   "prices":{
+    "title":"Xizmatlar",
     "TitleOne":"Bir martalik tariflar:",
     "TitleTwo__one":"Oddiy tariflar",
     "TitleTwo__two":"o'qituvchisiz",
+
     "titleOne__one":"O'qituvchisiz 8 soat",
    "titleOne__two":"To'shakni chang oqadilaridan tozalash",
    "titleOne__three":"O'qituvchi bilan 4 soat",
+   "titleOne__four":"Gilam va gilamlarni quruq chuqur tozalash - 8.000 so'm/m2",
+   "titleOne__five":"Bir soat davomida kamalak",
+
+
 
    "titleTwo__one":"Haftada - haftasiga 3 marta 8 soatdan",
    "titleTwo__two":"Oylik standart - bir oy davomida haftasiga 3 marta   ",
-   "titleTwo__three":"Oylik cheksiz"
+   "titleTwo__three":"Oylik cheksiz",
+
+   "titleDesc__one-one":"(o'qituvchisiz, treningdan keyin o'tkaziladi)",
+   "titleDesc__one-two":"(ikki kishilik), 80 000 so'm (bir kishilik), 50 000 so'm (bolalar) ",
+   "titleDesc__one-three":"devorlar, shiftlar, pollar, maishiy texnika va boshqalarni quruq tozalash. (chang va axloqsizlikdan tozalash ",
+   "titleDesc__one-four":"(chang, axloqsizlik, sochlar, chirigan organik moddalardan tozalash, ",
+   "titleDesc__one-five":"uydagi har qanday sirtni axloqsizlik, changdan tozalash; havoni tozalash va aromatizatsiya qilish",
+
+   "titleDesc__two-one":"devorlar, shiftlar, pollar, maishiy texnika va boshqalarni quruq tozalash. (chang va axloqsizlikdan tozalash) ",
+   "titleDesc__two-two":"(changdan tozalash, chirigan organik moddalar, chang oqadilar va ularning chiqindilari va boshqalar) ",
+   "titleDesc__two-three":"(chang, chirigan organik moddalar, chang oqadilar va ularning chiqindilaridan tozalash)",
+   "titleDesc__two-four":"chang oqadilar va ularning metabolik mahsulotlari, gilamlarning o'lik uyumi va boshqalar) ",
+
+   "titleDesc__free-one":" Rainbow mijozga belgilangan kun va soatlarda taqdim etiladi",
+    "titleDesc__free-two":"mijozga belgilangan kun va soatlarda Rainbow beriladi ",
+    "titleDesc__free-three":"Xaridorga uyda o'z-o'zidan foydalanish uchun Rainbow taqdim etiladi. ",
+
+   "titleDesc__freTwo-one":" uy foydalanish uchun.",
+    "titleDesc__freTwo-two":"  uy foydalanish uchun.",
+   "titleDesc__freTwo-three":" oddiy tariflarga obuna bo'lish Rainbow-dan foydalanish bo'yicha maxsus treningdan o'tish bilan mumkin"
    },
    "prices__price":{
     "priceOne__one":"300.000",
@@ -75,5 +107,15 @@
     "priceTwo__three":"2.500000"
 
 
+
+  },
+  "delivery":{
+    "title":"Xizmatga qanday buyurtma berish kerak",
+    "one":"Saytga kontakt yuboring",
+    "two":" Mutaxassisimiz siz bilan bog'lanadi va vaqtni belgilaydi",
+    "three":"Qurilmadan qanday foydalanishni o'rganish uchun kelamiz ",
+    "four":" Siz ekspert sertifikatini olasiz",
+    "five":"Biz chastota va ijara opsiyasini tayinlaymiz",
+    "six":"Sizda toza uy va toza havo bor"
   }
 }

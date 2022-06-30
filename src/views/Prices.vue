@@ -1,27 +1,27 @@
 <template>
-<div>
+<div   data-aos="fade-right">
  <div style="position: relative" class="wrap__price">
     <v-container>
-      <h2 class="prices__title">Услуги</h2>
+      <h2 class="prices__title"> {{ $t("prices.title") }}</h2>
       <v-row style="display: flex; justify-content: center; margin: auto">
         <button
           @click="type = 2"
           :class="type === 1 ? 'btn-type-active' : 'btn-type'"
         >
-          Одноразовые тарифы
+        {{ $t("prices.TitleOne") }}
         </button>
         <button
           @click="type = 1"
           :class="type === 2 ? 'btn-type-active' : 'btn-type'"
         >
-          Регулярные тарифы <br />
-          без инструктора
+          {{ $t("prices.TitleTwo__one") }} <br />
+           {{ $t("prices.TitleTwo__two") }}
         </button>
       </v-row>
     </v-container>
     <div class="background">
       <div class="container-fluid" v-if="type === 2">
-        <div class="panel pricing-table">
+        <div class="panel pricing-table" >
           <div class="panel__one">
             <div class="pricing-plan panel__one-pricing">
               <img
@@ -39,11 +39,10 @@
               ></h3>
               <ul class="pricing-features">
                 <li class="pricing-features-item">
-                  (без инструктора, проводится после прохождения тренинга)
+                  {{ $t('prices.titleDesc__one-one') }}
                 </li>
                 <li class="pricing-features-item">
-                  сухая чистка стен, потолков, полов, техники и т.д. (очистка от
-                  пыли и грязи)
+                   {{ $t('prices.titleDesc__two-one') }}
                 </li>
               </ul>
               <span
@@ -73,12 +72,11 @@
               ></h3>
               <ul class="pricing-features">
                 <li class="pricing-features-item">
-                  -(двухспальный), 80.000 сумов (односпальный), 50.000 сумов
-                  (детский)
+                {{ $t('prices.titleDesc__one-two')}}
+
                 </li>
                 <li class="pricing-features-item">
-                  (очистка от пыли, гниющей органической массы, пылевых клещей и
-                  продуктов их жизнедеятельности и т.д.)
+                   {{ $t('prices.titleDesc__two-two')}}
                 </li>
               </ul>
               <span
@@ -108,12 +106,10 @@
               ></h3>
               <ul class="pricing-features">
                 <li class="pricing-features-item">
-                  сухая чистка стен, потолков, полов, техники и т.д. (очистка от
-                  пыли и грязи
+                  {{$t('prices.titleDesc__one-three')}}
                 </li>
                 <li class="pricing-features-item">
-                  (очистка от пыли, гниющей органической массы, пылевых клещей и
-                  продуктов их жизнедеятельности)
+                 {{$t('prices.titleDesc__two-three')}}
                 </li>
               </ul>
               <span
@@ -134,16 +130,14 @@
                 class="pricing-img"
               />
               <h3 class="pricing-header">
-                Сухая глубинная чистка ковров и ковровых покрытий – 8.000
-                сумов/м2
+                {{ $t('prices.titleOne__four')}}
               </h3>
               <ul class="pricing-features">
                 <li class="pricing-features-item">
-                  (очистка от пыли, грязи, волос, гниющей органической массы,
+                 {{$t('prices.titleDesc__one-four')}}
                 </li>
                 <li class="pricing-features-item">
-                  пылевых клещей и продуктов их жизнедеятельности, «мертвого»
-                  ворса ковров и т.д.)
+                   {{$t('prices.titleDesc__two-four')}}
                 </li>
               </ul>
               <span
@@ -163,12 +157,11 @@
                 alt=""
                 class="pricing-img"
               />
-              <h3 class="pricing-header">Rainbow на час</h3>
+              <h3 class="pricing-header"> {{ $t('prices.titleOne__five')}}</h3>
               <br />
               <ul class="pricing-features">
                 <li class="pricing-features-item">
-                  очистка любых поверхностей в доме от грязи, пыли; очистка и
-                  ароматизация воздуха
+                 {{ $t('prices.titleDesc__one-five')}}
                 </li>
               </ul>
               <br />
@@ -198,10 +191,11 @@
               ></h3>
               <ul class="pricing-features">
                 <li class="pricing-features-item">
-                  - Клиенту предоставляется Rainbow в назначенные дни и часы,
+
+                  {{ $t('prices.titleDesc__free-one')}}
                 </li>
                 <li class="pricing-features-item">
-                  для самостоятельного использования в доме.
+                 {{ $t('prices.titleDesc__freTwo-one')}}
                 </li>
               </ul>
               <span
@@ -231,10 +225,11 @@
               ></h3>
               <ul class="pricing-features">
                 <li class="pricing-features-item">
-                  - Клиенту предоставляется Rainbow в назначенные дни и часы
+                  {{ $t('prices.titleDesc__free-two')}}
                 </li>
                 <li class="pricing-features-item">
-                  для самостоятельного использования в доме.
+                  {{ $t('prices.titleDesc__freTwo-two ')}}
+
                 </li>
               </ul>
               <span
@@ -264,12 +259,10 @@
               ></h3>
               <ul class="pricing-features">
                 <li class="pricing-features-item">
-                  Клиенту предоставляется Rainbow для самостоятельного
-                  использования в доме.
+                   {{ $t('prices.titleDesc__free-three')}}
                 </li>
                 <li class="pricing-features-item">
-                  подписка на регулярные тарифы возможна при прохождении
-                  специализированного тренинга по использованию Rainbow
+                   {{ $t('prices. titleDesc__freTwo-three')}}
                 </li>
               </ul>
               <span
@@ -287,24 +280,26 @@
       </div>
     </div>
   </div>
+
+
     <div style="position: relative" class="wrap__price-mobile">
     <v-container>
-      <h2 class="prices__title">Услуги</h2>
+      <h2 class="prices__title">{{ $t("prices.title") }}</h2>
       <v-row class="prices__row" >
         <button
           @click="type = 2"
           :class="type === 1 ? 'btn-type-active' : 'btn-type'"
 
         >
-          Одноразовые тарифы
+          {{ $t("prices.TitleOne") }}
         </button>
         <button
           @click="type = 1"
           :class="type === 2 ? 'btn-type-active' : 'btn-type'"
 
         >
-          Регулярные тарифы <br />
-          без инструктора
+             {{ $t("prices.TitleTwo__one") }} <br />
+           {{ $t("prices.TitleTwo__two") }}
         </button>
       </v-row>
     </v-container>
@@ -329,11 +324,10 @@
               ></h3>
               <ul class="pricing-features">
                 <li class="pricing-features-item">
-                  (без инструктора, проводится после прохождения тренинга)
+                  {{ $t('prices.titleDesc__one-one')}}
                 </li>
                 <li class="pricing-features-item">
-                  сухая чистка стен, потолков, полов, техники и т.д. (очистка от
-                  пыли и грязи)
+                   {{ $t('prices.titleDesc__two-one')}}
                 </li>
               </ul>
               <span
@@ -363,12 +357,10 @@
               ></h3>
               <ul class="pricing-features">
                 <li class="pricing-features-item">
-                  -(двухспальный), 80.000 сумов (односпальный), 50.000 сумов
-                  (детский)
+                 {{ $t('prices.titleDesc__one-two')}}
                 </li>
                 <li class="pricing-features-item">
-                  (очистка от пыли, гниющей органической массы, пылевых клещей и
-                  продуктов их жизнедеятельности и т.д.)
+                  {{ $t('prices.titleDesc__two-two')}}
                 </li>
               </ul>
               <span
@@ -382,7 +374,7 @@
               <a href="#/" class="pricing-button ">Заказать</a>
             </div>
 
-            <div class="pricing-plan panel__one-pricing"  cols="12">
+            <div class="pricing-plan panel__one-pricing" cols="12">
               <img
                 src="https://s21.postimg.cc/tpm0cge4n/space-ship.png"
                 alt=""
@@ -398,12 +390,10 @@
               ></h3>
               <ul class="pricing-features">
                 <li class="pricing-features-item">
-                  сухая чистка стен, потолков, полов, техники и т.д. (очистка от
-                  пыли и грязи
+                 {{$t('prices.titleDesc__one-three')}}
                 </li>
                 <li class="pricing-features-item">
-                  (очистка от пыли, гниющей органической массы, пылевых клещей и
-                  продуктов их жизнедеятельности)
+                   {{$t('prices.titleDesc__two-three')}}
                 </li>
               </ul>
               <span
@@ -424,16 +414,14 @@
                 class="pricing-img"
               />
               <h3 class="pricing-header">
-                Сухая глубинная чистка ковров и ковровых покрытий – 8.000
-                сумов/м2
+              {{ $t('prices.titleOne__four')}}
               </h3>
               <ul class="pricing-features">
                 <li class="pricing-features-item">
-                  (очистка от пыли, грязи, волос, гниющей органической массы,
+                 {{$t('prices.titleDesc__one-four')}}
                 </li>
                 <li class="pricing-features-item">
-                  пылевых клещей и продуктов их жизнедеятельности, «мертвого»
-                  ворса ковров и т.д.)
+                  {{$t('prices.titleDesc__two-four')}}
                 </li>
               </ul>
               <span
@@ -453,12 +441,11 @@
                 alt=""
                 class="pricing-img"
               />
-              <h3 class="pricing-header">Rainbow на час</h3>
+              <h3 class="pricing-header"> {{ $t('prices.titleOne__five')}}</h3>
               <br />
               <ul class="pricing-features">
                 <li class="pricing-features-item">
-                  очистка любых поверхностей в доме от грязи, пыли; очистка и
-                  ароматизация воздуха
+                 {{$t('prices.titleDesc__one-five')}}
                 </li>
               </ul>
               <br />
@@ -488,10 +475,10 @@
               ></h3>
               <ul class="pricing-features">
                 <li class="pricing-features-item">
-                  - Клиенту предоставляется Rainbow в назначенные дни и часы,
+{{ $t('prices.titleDesc__free-one')}}
                 </li>
                 <li class="pricing-features-item">
-                  для самостоятельного использования в доме.
+   {{ $t('prices.titleDesc__freTwo-one')}}
                 </li>
               </ul>
               <span
@@ -521,10 +508,10 @@
               ></h3>
               <ul class="pricing-features">
                 <li class="pricing-features-item">
-                  - Клиенту предоставляется Rainbow в назначенные дни и часы
+                 {{ $t('prices.titleDesc__free-two')}}
                 </li>
                 <li class="pricing-features-item">
-                  для самостоятельного использования в доме.
+                    {{ $t('prices.titleDesc__freTwo-two')}}
                 </li>
               </ul>
               <span
@@ -554,12 +541,10 @@
               ></h3>
               <ul class="pricing-features">
                 <li class="pricing-features-item">
-                  Клиенту предоставляется Rainbow для самостоятельного
-                  использования в доме.
+                {{ $t('prices.titleDesc__free-three')}}
                 </li>
                 <li class="pricing-features-item">
-                  подписка на регулярные тарифы возможна при прохождении
-                  специализированного тренинга по использованию Rainbow
+                   {{ $t('prices.titleDesc__freTwo-three')}}
                 </li>
               </ul>
               <span
@@ -828,10 +813,8 @@ padding-top: 100px;
   flex-direction: column;
 }
 .prices__row{
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0;
+
 }
 .btn-type{
   width: 160px;

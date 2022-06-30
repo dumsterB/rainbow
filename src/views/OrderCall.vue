@@ -1,6 +1,6 @@
 <template>
 <div>
- <div class="order__wrap">
+ <div class="order__wrap" data-aos="fade-right">
     <v-dialog v-model="dialog" width="800">
       <v-card class="pa-5">
         <v-card-text>
@@ -68,7 +68,7 @@
   </div>
 
 
-      <div class="order__wrap-mobile">
+      <div class="order__wrap-mobile" data-aos="fade-right">
     <v-dialog v-model="dialog" width="800">
       <v-card class="pa-5">
         <v-card-text>
