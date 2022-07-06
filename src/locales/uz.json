@@ -5,7 +5,7 @@
     "function": "RS Funktsiyalari",
     "delivery": "Yetkazib berish",
     "quality": "Sifat",
-    "call": "Qo'ng'iroqni talab qiling"
+    "call": "Qo'ng'iroq qilish"
   },
 
    "carousel":{
@@ -53,7 +53,7 @@
     "pillarFour__four": "yumshoq yuzalarni quruq chuqur tozalash"
   },
   "callBlock": {
-    "title": "Qo'ng'iroqni talab qiling",
+    "title": "Aloqaga chiqish",
     "callRegist": " Ro'yxatdan o'tganingiz uchun tashakkur!",
     "callThanks": "Bizning operatorlarimiz ro'yxatdan o'tishni tasdiqlash va savollaringizga javob berish uchun siz bilan bog'lanadi. Hurmat bilan, Rainbow ",
     "undest": "aniq",
