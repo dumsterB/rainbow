@@ -155,19 +155,19 @@
                 <v-row class="row__images">
                   <v-col cols="12">
                     <img
-                      height="120"
+
                       src="../assets/circle_card1.png"
                       alt=""
                       class="about__img-circle"
                     />
                     <img
-                      height="120"
+
                       src="../assets/circle_card2.png"
                       alt=""
                       class="about__img-circle"
                     />
                     <img
-                      height="120"
+
                       src="../assets/circle_card3.png"
                       alt=""
                       class="about__img-circle"
@@ -176,19 +176,18 @@
 
                   <v-col cols="12">
                     <img
-                      height="120"
+
                       src="../assets/circle_card4.png"
                       alt=""
                       class="about__img-circle"
                     />
                     <img
-                      height="120"
                       src="../assets/circle_card6.jpg"
                       alt=""
                       class="about__img-circle"
                     />
                     <img
-                      height="120"
+
                       src="../assets/circle_card5.jpg"
                       alt=""
                       class="about__img-circle"
@@ -384,16 +383,20 @@ font-size: 14px;
   border-radius: none;
 }
 .row__images{
-  margin: 0 auto;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
+
 }
 
 .about__img-circle{
   margin-bottom: 20px;
-  width: 100px;
-  margin-right: 20px;
-  padding: 0;
+  width: 135px;
+  height: 135px;
+  /* margin-right: 20px; */
+  padding: 0px;
+
+
 }
 
 }

@@ -114,9 +114,11 @@ li {
      justify-content: center;
      align-items: center;
      flex-direction: column;
+
+
     }
    .footer__list li {
-    padding-top: 10px;
+    /* padding-top: 10px; */
    }
   }
 </style>

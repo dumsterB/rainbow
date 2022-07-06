@@ -77,7 +77,7 @@
 
       <div class="rainbow__wrap-mobile" data-aos="fade-left">
       <v-container>
-        <v-row>
+        <v-row class="pl-2 pr-2">
 
           <v-col cols="12" >
             <v-card elevation="0" class=" rainbow__card" min-width="280">
@@ -214,5 +214,9 @@
   font-size: 35px;
   line-height: 60px;
 }
+.rainbow__card{
+
+}
+
 }
 </style>

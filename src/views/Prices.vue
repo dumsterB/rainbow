@@ -308,7 +308,7 @@
         <div class="panel pricing-table">
           <div class="panel__one">
 
-            <div class="pricing-plan panel__one-pricing" cols="12">
+            <div class="pricing-plan panel__one-pricing mt-2" cols="12">
               <img
                 src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png"
                 alt=""
@@ -638,7 +638,7 @@ padding-top: 100px;
 }
 .btn-type-active {
   font-weight: 700;
-  border: 2px solid#4FC3F7 ;
+  border: 3px solid#4FC3F7 ;
   color: black;
   font-size: 20px;
   padding: 25px 0;
@@ -814,18 +814,23 @@ padding-top: 100px;
 .panel__two{
   display: flex;
   flex-direction: column;
+
 }
 .prices__row{
   margin: 0;
 
 }
 .btn-type{
-  width: 160px;
+  width: 180px;
   font-size:15px;
+
 }
 .btn-type-active{
-  width: 160px;
+  width: 180px;
   font-size: 15px;
+}
+.pricing-plan{
+  margin-top: 20px;
 }
 }
 </style>

@@ -80,7 +80,7 @@
     <h2 class="services_title"> {{ $t("delivery.title") }}</h2>
     <br >
     <div class="content-mobile">
-      <v-row class="d-flex justify-center">
+      <v-row class="d-flex justify-center pl-2 pr-2">
         <v-timeline dense clipped :reverse="false" class="pa-5 hiddenMobileProcess" >
           <v-timeline-item style="margin-left: -20px" class="text-right" icon="1">
             <v-card class="cardProcess">

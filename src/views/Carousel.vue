@@ -124,10 +124,16 @@ export default {
   .carousel__title{
     font-size: 25px;
     line-height: 40px;
+    margin-top: -40px;
   }
   .carousel__link{
     font-size: 12px;
-    line-height: 16px;
+    width: 300px;
+    padding: 20px 0;
+    display: block;
+
+
+
 
   }
 }
