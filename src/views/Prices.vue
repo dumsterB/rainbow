@@ -371,7 +371,7 @@
                     : $t('prices__price.priceOne__two') + ' сум'
                 "
               ></span>
-              <a href="#/" class="pricing-button ">Заказать</a>
+              <a href="#/" class="pricing-button">Заказать</a>
             </div>
 
             <div class="pricing-plan panel__one-pricing" cols="12">
@@ -571,7 +571,7 @@ export default {
   name: "Prices",
   data() {
     return {
-      type: 1,
+      type: 2,
     };
   },
 };
