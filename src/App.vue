@@ -118,7 +118,10 @@
         <RainbowAtricleView id=""></RainbowAtricleView>
         <OrderCall id="order_call"></OrderCall>
         <Prices id="prices"></Prices>
+        <Option></Option>
+
         <Delivery id="delivery"></Delivery>
+       <Certificate></Certificate>
         <Footer id="footer"></Footer>
       </div>
     </v-main>
@@ -126,6 +129,8 @@
 </template>
 
 <script>
+
+import Certificate from "./views/Certificate";
 import Carousel from "@/views/Carousel";
 import CountryFlag from "vue-country-flag";
 import AboutView from "./views/AboutView";
@@ -134,6 +139,8 @@ import OrderCall from "./views/OrderCall";
 import Prices from './views/Prices';
 import Delivery from "./views/Delivery";
 import Footer from './views/Footer'
+import Option from './views/Option.vue'
+
 
 export default {
   name: "App",
@@ -145,7 +152,9 @@ export default {
     Prices,
     Delivery,
     Footer,
-    Carousel
+    Carousel,
+    Certificate,
+    Option
 },
 
   data() {
