@@ -117,5 +117,22 @@
     "four":" Siz rainbow sertifikatini olasiz",
     "five":"Biz chastota va ijara opsiyasini tayinlaymiz",
     "six":"Sizda toza uy va toza havo bor"
+  },
+  "certificate":{
+  "title":"Kompaniya sertifikatlari",
+ "one":"Gilam va gilam instituti sertifikati changyutgich gilam va pollarni tozalash standartlariga javob berishini tasdiqlaydi, shu bilan birga paxmoqning ko'rinishini saqlab qoladi.",
+ "two":"AHAM assotsiatsiyasi Rainbow havoni yuqori sifatli tozalashni ta'minlovchi changyutgich ekanligini tasdiqladi.",
+ "three":"Allergiya va astma bilan kasallanganlar uchun Rainbow Cleaningning samaradorligi AAFA (Amerika Astma va Allergiya Jamg'armasi) va ASL (Allergiya Standartlari Limited) tomonidan sinovdan o'tgan. "
+  },
+  "option":{
+    "option__one":"Suvning tabiiy kuchi - The Power of Water® yordamida uyingizni tozalaydi",
+    "option__two":"Rainbow axloqsizlik va hidlarni o'zlashtirish uchun tabiatning eng samarali elementi bo'lgan suvdan foydalanadi, uyingizdagi havoni tabiiy ravishda tozalaydi va tozalaydi.    ",
+    "option__three":" Vakuumli qoplarsiz",
+    "option__four":"Akvafiltr ",
+    "option__five":" Tabiatga zarar keltirmaydigan    ",
+    "option__six":"Sertifikatlangan havo tozalagich",
+    "option__seven":" Xushbo'y hidlarni yo'q qiling",
+    "option__eight":" Allergiyaga qarshi davolash"
+
   }
 }

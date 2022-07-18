@@ -6,21 +6,21 @@
   font-size: 42px;
   font-weight: 400;
   text-align: center;
-  color: #455560;">Убирает ваш дом, используя естественную силу воды — <br> The Power of Water®</h2>
+  color: #455560;">{{ $t("option.option__one") }}</h2>
 
  <p style="max-width: 800px;
-margin: 0 auto; text-align: center; color: #455560; padding-top: 15px;">Rainbow использует самый эффективный природный элемент — воду — для поглощения грязи и запахов, выполняя естественную очистку и промывку воздуха жилых помещений.</p>
+margin: 0 auto; text-align: center; color: #455560; padding-top: 15px;">{{ $t("option.option__two") }}</p>
 <div class="wrap__option">
 	<v-col-4 class="left_option">
-<span> <label class="label__option"> Без вакуумных мешков</label>
+<span> <label class="label__option"> {{ $t("option.option__three") }}</label>
 <img src="../assets/option_1.webp" class="img__option">
 
 </span>
-<span><label class="label__option">Аквафильтр</label>
+<span><label class="label__option">{{ $t("option.option__four") }}</label>
 <img src="../assets/option_2.webp" alt="" class="img__option">
 
 </span>
-<span><label  class="label__option"> Экологически безопасный</label>
+<span><label  class="label__option"> {{ $t("option.option__five") }}</label>
 <img src="../assets/option_3.webp" alt="" class="img__option">
 
 </span>
@@ -35,15 +35,15 @@ margin: 0 auto; text-align: center; color: #455560; padding-top: 15px;">Rainbow 
 
 <span>
 <img src="../assets/option_4.webp" alt="" class="img__option">
- <label  class="label__option"> Сертифицированный очиститель воздуха</label>
+ <label  class="label__option"> {{ $t("option.option__six") }}</label>
 </span>
 <span>
 <img src="../assets/option_5.webp" alt="" class="img__option">
-<label  class="label__option"> Устранение запахов</label>
+<label  class="label__option"> {{ $t("option.option__seven") }}</label>
 </span>
 <span>
 <img src="../assets/option_6.webp" alt="" class="img__option">
-<label  class="label__option"> Противоаллергенная обработка</label>
+<label  class="label__option"> {{ $t("option.option__eight") }}</label>
 </span>
 
 	</v-col-4>
@@ -63,7 +63,6 @@ margin: 0 auto; text-align: center; color: #455560; padding-top: 15px;">Rainbow 
 	margin: 0 auto;
 	padding-top: 50px;
 	margin-bottom: 50px;
-
 }
 .right__option{
 	display: flex;

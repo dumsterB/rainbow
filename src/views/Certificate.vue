@@ -9,32 +9,27 @@
         text-align: center;
         color: #455560;"
     >
-      Сертификаты Компании
+      {{$t("certificate.title" )}}
     </h2>
     <div class="wrap__certificate">
       <div class="certificate__card">
         <img src="../assets/certificate1.png"  >
         <p class="certificate__text">
-          Сертификат «The Carpet and Rug Institute» подтверждает соответствие
-          пылесоса стандартам очистки ковров и напольных покрытий с сохранением
-          внешнего вида ворса.
+           {{$t("certificate.one" )}}
         </p>
       </div>
 
       <div class="certificate__card">
         <img src="../assets/certificate_2.png"  >
         <p class="certificate__text">
-          Ассоциация AHAM подтвердила, что Rainbow – пылесос, обеспечивающий
-          высокое качество очистки воздуха.
+          {{$t("certificate.two" )}}
         </p>
       </div>
 
       <div class="certificate__card">
         <img src="../assets/certificate_3.png" >
         <p class="certificate__text">
-          Эффективность уборки Rainbow для страдающих от аллергии и астмы
-          подтверждена тестами организаций AAFA (Asthma and allergy Foundation
-          of America) и ASL (Allergy Standards Limited).
+         {{$t("certificate.three" )}}
         </p>
       </div>
     </div>
