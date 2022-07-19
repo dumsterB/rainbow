@@ -6,63 +6,59 @@
           <v-list-item-group v-model="selectedItem" color="primary">
             <v-list-item>
               <v-list-item-content>
-                <v-list-item-title >
-                   {{ $t("headerDefault.aboutUs") }}
+                <v-list-item-title>
+                  {{ $t("headerDefault.aboutUs") }}
                 </v-list-item-title>
               </v-list-item-content>
-
             </v-list-item>
 
-             <v-list-item>
+            <v-list-item>
               <v-list-item-content>
-                <v-list-item-title >
- {{ $t("headerDefault.services") }}
+                <v-list-item-title>
+                  {{ $t("headerDefault.services") }}
                 </v-list-item-title>
               </v-list-item-content>
-
             </v-list-item>
 
-             <v-list-item>
+            <v-list-item>
               <v-list-item-content>
-                <v-list-item-title >
- {{ $t("headerDefault.function") }}
+                <v-list-item-title>
+                  {{ $t("headerDefault.function") }}
                 </v-list-item-title>
               </v-list-item-content>
-
             </v-list-item>
 
-             <v-list-item>
+            <v-list-item>
               <v-list-item-content>
-                <v-list-item-title >
-   {{ $t("headerDefault.delivery") }}
+                <v-list-item-title>
+                  {{ $t("headerDefault.delivery") }}
                 </v-list-item-title>
               </v-list-item-content>
-
             </v-list-item>
 
-             <v-list-item>
+            <v-list-item>
               <v-list-item-content>
-                <v-list-item-title >
-  {{ $t("headerDefault.quality") }}
+                <v-list-item-title v-scroll-to="'#sertificate'">
+                  {{ $t("headerDefault.sertificate") }}
                 </v-list-item-title>
               </v-list-item-content>
             </v-list-item>
-
           </v-list-item-group>
         </v-list>
       </v-card>
     </v-navigation-drawer>
 
-    <v-app-bar elevate-on-scroll  app  style="background: white!important;">
-
+    <v-app-bar elevate-on-scroll app style="background: white !important">
       <v-app-bar-nav-icon
         class="hidden-md-and-up"
         style="color: #269aff"
         @click="drawer = !drawer"
       ></v-app-bar-nav-icon>
 
-      <div class="d-flex"><img height="55" src="./assets/logoBlue.png" alt=""> <span style="font-weight: 700" class="mt-5 ml-5">Healthy home</span>  </div>
-
+      <div class="d-flex">
+        <img height="55" src="./assets/logoBlue.png" alt="" />
+        <span style="font-weight: 700" class="mt-5 ml-5">Healthy home</span>
+      </div>
 
       <v-spacer></v-spacer>
       <div class="hidden-md-and-down">
@@ -72,20 +68,16 @@
         <v-btn text class="links" v-scroll-to="'#services'">
           {{ $t("headerDefault.services") }}
         </v-btn>
-        <v-btn text class="links" v-scroll-to="'#function'">
-          {{ $t("headerDefault.function") }}
-        </v-btn>
         <v-btn text class="links" v-scroll-to="'#delivery'">
           {{ $t("headerDefault.delivery") }}
         </v-btn>
-        <v-btn text class="links" v-scroll-to="">
-          {{ $t("headerDefault.quality") }}
+        <v-btn text class="links" v-scroll-to="'#sertificate'">
+          {{ $t("headerDefault.sertificate") }}
         </v-btn>
-        <v-btn class="primary" depressed>
-          <a style="text-decoration: none; color: white" >
-           {{ $t("headerDefault.call") }}
-           </a
-          >
+        <v-btn class="primary" depressed v-scroll-to="'#call'">
+          <a style="text-decoration: none; color: white">
+            {{ $t("headerDefault.call") }}
+          </a>
         </v-btn>
       </div>
       <div class="ml-2">
@@ -113,15 +105,14 @@
     <!-- Sizes your content based upon application components -->
     <v-main>
       <div>
-        <Carousel id="carousel"></Carousel>
-        <AboutView id="aboutUs"></AboutView>
+        <Carousel></Carousel>
+        <Option id="aboutUs"></Option>
+        <AboutView ></AboutView>
         <RainbowAtricleView id=""></RainbowAtricleView>
-        <OrderCall id="order_call"></OrderCall>
-        <Prices id="prices"></Prices>
-        <Option></Option>
-
+        <Prices id="services"></Prices>
+        <OrderCall id="call"></OrderCall>
         <Delivery id="delivery"></Delivery>
-       <Certificate></Certificate>
+        <Certificate id="sertificate"></Certificate>
         <Footer id="footer"></Footer>
       </div>
     </v-main>
@@ -129,18 +120,16 @@
 </template>
 
 <script>
-
 import Certificate from "./views/Certificate";
 import Carousel from "@/views/Carousel";
 import CountryFlag from "vue-country-flag";
 import AboutView from "./views/AboutView";
 import RainbowAtricleView from "./views/RainbowAtricleView";
 import OrderCall from "./views/OrderCall";
-import Prices from './views/Prices';
+import Prices from "./views/Prices";
 import Delivery from "./views/Delivery";
-import Footer from './views/Footer'
-import Option from './views/Option.vue'
-
+import Footer from "./views/Footer";
+import Option from "./views/Option.vue";
 
 export default {
   name: "App",
@@ -154,8 +143,8 @@ export default {
     Footer,
     Carousel,
     Certificate,
-    Option
-},
+    Option,
+  },
 
   data() {
     return {
@@ -178,31 +167,28 @@ export default {
       this.drawer = !this.drawer;
     },
   },
-  created() {
-  }
+  created() {},
 };
 </script>
 <style>
-.v-btn{
+.v-btn {
   text-transform: none;
 }
-.mobile__list{
-
+.mobile__list {
   flex-direction: column;
-  align-items:center;
-
+  align-items: center;
 }
 .links {
   font-size: 17px !important;
 }
-.v-footer{
+.v-footer {
   padding: 0px 0px;
 }
 .wow {
   visibility: hidden;
 }
-@media(max-width: 800px){
-  *{
+@media (max-width: 800px) {
+  * {
     /* overflow: hidden; */
   }
 }

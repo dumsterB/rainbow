@@ -1,14 +1,6 @@
 <template>
   <div>
-    <h2 style="  text-align: center;
-        margin-top: 40px;
-        line-height: 48px;
-        margin-bottom: 20px;
-        font-size: 60px !important;
-        font-weight: 300;
-        text-align: center;
-        color: #455560;"
-    >
+    <h2 class="main-title">
       {{$t("certificate.title" )}}
     </h2>
     <div class="wrap__certificate">
@@ -60,8 +52,24 @@
   margin-top: auto;
   padding-top: 20px;
   font-size: 18px;
+  text-align: center;
   font-weight: 500;
   font-family: sans-serif;
 
+}
+.main-title{
+  text-align: center;
+  margin-top: 40px;
+  line-height: 48px;
+  margin-bottom: 20px;
+  font-size: 60px !important;
+  font-weight: 300;
+  text-align: center;
+  color: #455560;
+}
+@media(max-width: 700px){
+  .main-title{
+    font-size: 35px !important;
+  }
 }
 </style>

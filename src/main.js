@@ -12,7 +12,7 @@ Vue.use(VueScrollTo, {
   container: "body",
   duration: 500,
   easing: "ease",
-  offset: -50,
+  offset: -70,
   force: true,
   cancelable: true,
   onStart: false,
@@ -24,7 +24,10 @@ Vue.use(VueScrollTo, {
 Vue.config.productionTip = false;
 new Vue({
   created () {
-    AOS.init()
+    AOS.init({
+      debounceDelay: 80, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 130, //
+    })
   },
   router,
   store,
