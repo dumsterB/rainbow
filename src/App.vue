@@ -57,7 +57,7 @@
 
       <div class="d-flex">
         <img height="55" src="./assets/logoBlue.png" alt="" />
-        <span style="font-weight: 700" class="mt-5 ml-5">Healthy home</span>
+        <span style="font-weight: 700" class="mt-5 ml-5">Healthy Home</span>
       </div>
 
       <v-spacer></v-spacer>
@@ -107,11 +107,12 @@
       <div>
         <Carousel></Carousel>
         <Option id="aboutUs"></Option>
-        <AboutView ></AboutView>
+        <AboutView></AboutView>
         <RainbowAtricleView id=""></RainbowAtricleView>
         <Prices id="services"></Prices>
         <OrderCall id="call"></OrderCall>
         <Delivery id="delivery"></Delivery>
+        <Reviews id="reviews"></Reviews>
         <Certificate id="sertificate"></Certificate>
         <Footer id="footer"></Footer>
       </div>
@@ -130,6 +131,7 @@ import Prices from "./views/Prices";
 import Delivery from "./views/Delivery";
 import Footer from "./views/Footer";
 import Option from "./views/Option.vue";
+import Reviews from "./views/Reviews";
 
 export default {
   name: "App",
@@ -144,6 +146,7 @@ export default {
     Carousel,
     Certificate,
     Option,
+    Reviews,
   },
 
   data() {

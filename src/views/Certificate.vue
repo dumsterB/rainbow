@@ -1,27 +1,27 @@
 <template>
   <div>
     <h2 class="main-title">
-      {{$t("certificate.title" )}}
+      {{ $t("certificate.title") }}
     </h2>
     <div class="wrap__certificate">
       <div class="certificate__card">
-        <img src="../assets/certificate1.png"  >
+        <img src="../assets/certificate_3.png" />
         <p class="certificate__text">
-           {{$t("certificate.one" )}}
+          {{ $t("certificate.three") }}
         </p>
       </div>
 
       <div class="certificate__card">
-        <img src="../assets/certificate_2.png"  >
+        <img src="../assets/certificate_2.png" />
         <p class="certificate__text">
-          {{$t("certificate.two" )}}
+          {{ $t("certificate.two") }}
         </p>
       </div>
 
       <div class="certificate__card">
-        <img src="../assets/certificate_3.png" >
+        <img src="../assets/certificate1.png" />
         <p class="certificate__text">
-         {{$t("certificate.three" )}}
+          {{ $t("certificate.one") }}
         </p>
       </div>
     </div>
@@ -29,17 +29,16 @@
 </template>
 
 <style scoped>
-.title{
-
+.title {
 }
-.wrap__certificate{
+.wrap__certificate {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
   flex-wrap: wrap;
 }
-.certificate__card{
+.certificate__card {
   padding-top: 40px;
   display: flex;
   justify-content: center;
@@ -48,16 +47,15 @@
   width: 300px;
   margin-bottom: 50px;
 }
-.certificate__text{
+.certificate__text {
   margin-top: auto;
   padding-top: 20px;
   font-size: 18px;
   text-align: center;
   font-weight: 500;
   font-family: sans-serif;
-
 }
-.main-title{
+.main-title {
   text-align: center;
   margin-top: 40px;
   line-height: 48px;
@@ -67,8 +65,8 @@
   text-align: center;
   color: #455560;
 }
-@media(max-width: 700px){
-  .main-title{
+@media (max-width: 700px) {
+  .main-title {
     font-size: 35px !important;
   }
 }
